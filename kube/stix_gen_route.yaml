@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: stix-gen-route
+  namespace: stix-gen
+spec:
+  path: /
+  to:
+    kind: Service
+    name: stix-gen-svc
+  port:
+    targetPort: 5000

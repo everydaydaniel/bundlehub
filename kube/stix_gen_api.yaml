@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stix-gen
+  namespace: stix-gen
+  labels:
+    app: stix-gen
+spec:
+  containers:
+  - name: stix-gen-mongo
+    image: andrewcampagna/stix-builder-api:beta-1.0.5
+    ports:
+    - containerPort: 5000
+      name: stixgen
+    env:
+    - name: MONGO_HOST
+      valueFrom:
+        configMapKeyRef:
+          name: stix-gen-cm
+          key: mongo_host
+    - name: OCP_CLUSTER
+      valueFrom:
+        configMapKeyRef:
+          name: stix-gen-cm
+          key: ocp_url

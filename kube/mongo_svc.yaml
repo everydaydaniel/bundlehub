@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: stix-gen-mongo-svc
+  namespace: stix-gen
+spec:
+  selector:
+    app: stix-gen-mongo
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017

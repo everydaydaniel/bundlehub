@@ -1,0 +1,29 @@
+---
+# - name: Creating project stix-gen...
+#   shell: |
+#     oc create project stix-gen
+#     oc project stix-gen
+    
+- name: Deploying mongodb...
+  shell: |
+    oc create -f kube/mongo.yaml
+    oc create -f kube/mongo_svc.yaml
+
+- name: Editing stix-gen ConfigMap...
+  shell: |
+    sed -i '' "s/CLUSTER_IP/$(oc describe svc stix-gen-mongo-svc |grep IP: |awk '{print $2}')/g" kube/mongo_config.yaml
+    sed -i '' 's/CLUSTER_URL/{{ ocp_cluster }}/g' kube/mongo_config.yaml
+
+- name: Deploying STIX2 Generator ConfigMap...
+  shell: oc create -f kube/mongo_config.yaml
+
+- name: Deploying STIX2 Generator API...
+  shell: |
+    oc create -f kube/stix_gen_api.yaml
+    oc create -f kube/stix_gen_svc.yaml
+    oc create -f kube/stix_gen_route.yaml
+
+- name: Cleaning up...
+  shell: |
+    sed -i '' "s/$(oc describe svc stix-gen-mongo-svc |grep IP: |awk '{print $2}')/CLUSTER_IP/g" kube/mongo_config.yaml
+    sed -i '' 's/{{ ocp_cluster }}/CLUSTER_URL/g' kube/mongo_config.yaml

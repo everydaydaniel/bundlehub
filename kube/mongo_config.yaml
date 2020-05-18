@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stix-gen-cm
+  namespace: stix-gen
+data:
+  mongo_host: CLUSTER_IP
+  ocp_url: CLUSTER_URL
