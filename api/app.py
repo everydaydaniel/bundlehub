@@ -31,6 +31,12 @@ def grab_bundle():
 	del result["_id"]
 	return json.dumps(result)
 
+@app.route("/gen_random_bundle", methods=["GET"])
+def gen_random_bundle():
+	rawbundle = generator.randomBundle()
+	jsonbundle = json.loads(rawbundle)
+	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
+	return mongo_bundle_url
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
