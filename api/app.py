@@ -32,10 +32,5 @@ def grab_bundle():
 	return json.dumps(result)
 
 
-@app.route("/")
-def main():
-	return "HELLO TYLER"
-
-
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
