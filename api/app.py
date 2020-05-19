@@ -31,6 +31,7 @@ def grab_bundle():
 	del result["_id"]
 	return json.dumps(result)
 
+
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
 	rawbundle = generator.randomBundle()
