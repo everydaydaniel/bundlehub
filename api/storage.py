@@ -43,12 +43,12 @@ def search(industry):
 
 	client, db, collection = mongo_connection()
 	results = []
-	for x in collection.find():
+	for stix_obj in collection.find():
 		hasKey = 'industry' in x.keys()
 		if(hasKey and x['industry'] == industry):
-			del x['_id']
-			del x['industry']
+			del stix_obj['_id']
+			del stix_obj['industry']
 
-			results.append(x)
+			results.append(stix_obj)
 	print(f"[STIX2 SEARCH] Mongo found {len(results)} stix bundles for {industry}")
 	return results
