@@ -44,8 +44,8 @@ def search(industry):
 	client, db, collection = mongo_connection()
 	results = []
 	for stix_obj in collection.find():
-		hasKey = 'industry' in x.keys()
-		if(hasKey and x['industry'] == industry):
+		hasKey = 'industry' in stix_obj.keys()
+		if(hasKey and stix_obj['industry'] == industry):
 			del stix_obj['_id']
 			del stix_obj['industry']
 
