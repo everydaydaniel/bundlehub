@@ -35,3 +35,20 @@ def grab_stix_bundle(row_id):
 	client, db, collection = mongo_connection()
 	result = collection.find_one({"_id": ObjectId(row_id)})
 	return result
+
+
+
+##		 Mongo Search 		##
+def search(industry):
+
+	client, db, collection = mongo_connection()
+	results = []
+	for x in collection.find():
+		hasKey = 'industry' in x.keys()
+		if(hasKey and x['industry'] == industry):
+			del x['_id']
+			del x['industry']
+
+			results.append(x)
+	print(f"[STIX2 SEARCH] Mongo found {len(results)} stix bundles for {industry}")
+	return results
