@@ -32,5 +32,21 @@ def grab_bundle():
 	return json.dumps(result)
 
 
+@app.route("/gen_random_bundle", methods=["GET"])
+def gen_random_bundle():
+	rawbundle = generator.randomBundle()
+	print(rawbundle)
+	jsonbundle = json.loads(rawbundle)
+	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
+	return mongo_bundle_url
+
+
+@app.route("/search_bundles", methods=["GET, POST"])
+def search_bundles():
+	bundle_label = request.args.get("label")
+	result = 'GRAB STIX BUNDLE THAT WAS SEARCHED'
+	# if none are returned try fuzzy search
+	monogo_bundle_url = 'GET URLS FROM MONDODB'
+	
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
