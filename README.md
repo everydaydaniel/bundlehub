@@ -3,6 +3,8 @@
 stix-gen is a cloud native API ready to be deployed on OpenShift using Ansible; See `api/README.md` for details on application
 routes.
 
+Developers: Andrew Campagna, Charles Neblett, Tyler Stendara, Daniel Herrera
+
 #### Key Features
 - Generates dummy QRadar bundles from hosted CSV databases.
 - MongoDB storage of all bundles generated.
