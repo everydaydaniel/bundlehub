@@ -6,7 +6,7 @@ STIX2 Bundle Generator
 
 from stix2 import *
 import pandas as pd
-import helper
+import randomsdo
 import json
 import datetime
 
@@ -47,8 +47,8 @@ def gen_from_url(url):
 	return bundle
 
 def randomBundle():
-    md5 = helper.hashing()
-    new_observables = helper.creatingObservedObject()
+    md5 = randomsdo.hashing()
+    new_observables = randomsdo.creatingObservedObject()
 
     indicator = Indicator(
     name="File hash for malware variant",

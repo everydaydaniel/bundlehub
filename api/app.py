@@ -17,6 +17,7 @@ app.debug = True
 
 @app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
+	# industry = request.args.get("industry") upon setting a custom sitx bundle, ask for label as well to search for 
 	url = request.args.get("url")
 	rawbundle = str(generator.gen_from_url(url))
 	jsonbundle = json.loads(rawbundle)
@@ -35,18 +36,18 @@ def grab_bundle():
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
 	rawbundle = generator.randomBundle()
-	print(rawbundle)
 	jsonbundle = json.loads(rawbundle)
+	# jsonbundle["industry"] = "healthcare" 
 	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
 	return mongo_bundle_url
 
 
-@app.route("/search_bundles", methods=["GET, POST"])
+@app.route("/search_bundles", methods=["GET", "POST"])
 def search_bundles():
-	bundle_label = request.args.get("label")
-	result = 'GRAB STIX BUNDLE THAT WAS SEARCHED'
-	# if none are returned try fuzzy search
-	monogo_bundle_url = 'GET URLS FROM MONDODB'
+	industry = request.args.get("label")
+	result = storage.search(industry)
+	
+	return json.dumps(result)
 	
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
