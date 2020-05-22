@@ -14,9 +14,8 @@ import logging
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
-logging.basicConfig(level=logging.DEBUG)
 
 
 @app.route("/gen_from_url", methods=["GET", "POST"])
@@ -54,4 +53,4 @@ def search_bundles():
 	return json.dumps(result)
 	
 if __name__ == "__main__":
-	app.run(host="0.0.0.0", ssl_context="adhoc")
+	app.run(host="0.0.0.0")
