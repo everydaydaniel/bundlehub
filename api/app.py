@@ -5,6 +5,7 @@ STIX2 Bundle Generator
 """
 
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import json
 import generator
 import pandas as pd
@@ -12,6 +13,7 @@ import storage
 
 
 app = Flask(__name__)
+CORS(app)
 app.debug = True
 
 
