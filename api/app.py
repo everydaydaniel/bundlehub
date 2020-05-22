@@ -14,6 +14,9 @@ import storage
 app = Flask(__name__)
 app.debug = True
 
+@app.route("/")
+def homepage():
+	return "hello"
 
 @app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
@@ -31,6 +34,9 @@ def grab_bundle():
 	del result["_id"]
 	return json.dumps(result)
 
+@app.route("/create_bundle", methods=["GET","POST"])
+def create_bundle():
+	pass
 
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
@@ -47,6 +53,6 @@ def search_bundles():
 	result = 'GRAB STIX BUNDLE THAT WAS SEARCHED'
 	# if none are returned try fuzzy search
 	monogo_bundle_url = 'GET URLS FROM MONDODB'
-	
+
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
