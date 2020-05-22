@@ -10,15 +10,16 @@ import json
 import generator
 import pandas as pd
 import storage
+import logging
 
 
 app = Flask(__name__)
-CORS(app)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 app.debug = True
+logging.basicConfig(level=logging.DEBUG)
 
 
-@app.route("/gen_from_url", methods=["GET", "POST", "OPTIONS"])
-@crossdomain(origin='*')
+@app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
 	# industry = request.args.get("industry") upon setting a custom sitx bundle, ask for label as well to search for 
 	url = request.args.get("url")
