@@ -5,14 +5,18 @@ STIX2 Bundle Generator
 """
 
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import json
 import generator
 import pandas as pd
 import storage
+import logging
 from stix_generators.stix_objects import return_bundle
 
 
+
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
 
 @app.route("/")
@@ -21,6 +25,7 @@ def homepage():
 
 @app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
+	# industry = request.args.get("industry") upon setting a custom sitx bundle, ask for label as well to search for
 	url = request.args.get("url")
 	rawbundle = str(generator.gen_from_url(url))
 	jsonbundle = json.loads(rawbundle)
@@ -43,13 +48,13 @@ def create_bundle():
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
 	rawbundle = generator.randomBundle()
-	print(rawbundle)
 	jsonbundle = json.loads(rawbundle)
+	# jsonbundle["industry"] = "healthcare"
 	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
 	return mongo_bundle_url
 
 
-@app.route("/search_bundles", methods=["GET, POST"])
+@app.route("/search_bundles", methods=["GET", "POST"])
 def search_bundles():
 	bundle_label = request.args.get("label")
 	result = 'GRAB STIX BUNDLE THAT WAS SEARCHED'
