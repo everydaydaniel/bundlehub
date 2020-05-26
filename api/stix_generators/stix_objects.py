@@ -48,6 +48,3 @@ def return_bundle():
     objects = [identity, observed_data]
     bundle = create_bundle(objects)
     return bundle.serialize()
-
-
-return_bundle()
