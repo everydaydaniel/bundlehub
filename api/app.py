@@ -9,6 +9,7 @@ import json
 import generator
 import pandas as pd
 import storage
+from stix_generators.stix_objects import return_bundle
 
 
 app = Flask(__name__)
@@ -36,7 +37,9 @@ def grab_bundle():
 
 @app.route("/create_bundle", methods=["GET","POST"])
 def create_bundle():
-	pass
+	bundle = return_bundle()
+
+	return bundle
 
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():

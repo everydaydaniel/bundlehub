@@ -1,10 +1,12 @@
 import datetime
+import json
 import time
 import random
 import socket
 import struct
 from stix2 import Bundle, IPv4Address, Identity, ObservedData
 from uuid import uuid4
+
 
 
 def create_bundle(objects):
@@ -39,12 +41,13 @@ def create_observed_data(objects):
 
 
 
+def return_bundle():
+    addr = create_ipv4_object()
+    identity = create_identity(name="db2")
+    observed_data = create_observed_data(addr)
+    objects = [identity, observed_data]
+    bundle = create_bundle(objects)
+    return bundle.serialize()
 
-addr = create_ipv4_object()
-identity = create_identity(name="db2")
-observed_data = create_observed_data(addr)
-objects = [identity, observed_data]
-bundle = create_bundle(objects)
 
-
-print(bundle)
+return_bundle()
