@@ -41,9 +41,9 @@ def create_observed_data(objects):
 
 
 
-def return_bundle():
+def return_bundle(name):
     addr = create_ipv4_object()
-    identity = create_identity(name="db2")
+    identity = create_identity(name=name)
     observed_data = create_observed_data(addr)
     objects = [identity, observed_data]
     bundle = create_bundle(objects)

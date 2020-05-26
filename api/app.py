@@ -37,8 +37,7 @@ def grab_bundle():
 
 @app.route("/create_bundle", methods=["GET","POST"])
 def create_bundle():
-	bundle = return_bundle()
-
+	bundle = return_bundle("charles")
 	return bundle
 
 @app.route("/gen_random_bundle", methods=["GET"])
