@@ -38,7 +38,7 @@ def grab_bundle():
 
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
-	rawbundle = generator.randomBundle()
+	rawbundle = str(generator.gen_random_bundle())
 	jsonbundle = json.loads(rawbundle)
 	# jsonbundle["industry"] = "healthcare" 
 	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
@@ -49,7 +49,6 @@ def gen_random_bundle():
 def search_bundles():
 	industry = request.args.get("label")
 	result = storage.search(industry)
-	
 	return json.dumps(result)
 	
 if __name__ == "__main__":

@@ -46,7 +46,10 @@ def gen_from_url(url):
 
 	return bundle
 
-def randomBundle():
+
+##      Generates random bundle of SDO's        ##
+def gen_random_bundle():
+    
     md5 = randomsdo.hashing()
     new_observables = randomsdo.creatingObservedObject()
 
@@ -73,4 +76,4 @@ def randomBundle():
     target_ref=indicator.id)
 
     bundle = Bundle(indicator, observed, malware)
-    return str(bundle)
+    return bundle
