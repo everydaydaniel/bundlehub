@@ -34,7 +34,7 @@ def grab_bundle():
 	bundle_object_id = request.args.get("id")
 	result = storage.grab_stix_bundle(bundle_object_id)
 	del result["_id"]
-	# del result["industry"]
+	del result["industry"]
 	return json.dumps(result)
 
 
