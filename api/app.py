@@ -18,27 +18,34 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
 
 
+##		Tag and transform bundle for storage		##
+def transform_bundle(bundle):
+	rawbundle = str(bundle)
+	jsonbundle = json.loads(rawbundle)
+	return jsonbundle
+
 
 ##		Generates bundle from CSV or JSON database		##
 @app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
 	url = request.args.get("url")
-	bundle = generator.gen_from_url(url)
-	rawbundle = str(bundle["bundle"])
-	industry = bundle["industry"]
-	jsonbundle = json.loads(rawbundle)
-	mongo_bundle_url = storage.store_stix_bundle(jsonbundle, industry)
+	label = request.args.get("label")
+
+	if url.split(".")[-1] == "csv":
+		bundle = generator.gen_from_csv(url)
+	else:
+		return "INVALID URL"
+
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label)
 	return mongo_bundle_url
 
 
 ##		Generates randomly populated bundle 		##
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
+	label = request.args.get("label")
 	bundle = generator.gen_random_bundle()
-	rawbundle = str(bundle["bundle"])
-	industry = bundle["industry"]
-	jsonbundle = json.loads(rawbundle)
-	mongo_bundle_url = storage.store_stix_bundle(jsonbundle, industry)
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label)
 	return mongo_bundle_url
 
 
@@ -48,7 +55,7 @@ def grab_bundle():
 	bundle_object_id = request.args.get("id")
 	result = storage.grab_stix_bundle(bundle_object_id)
 	del result["_id"]
-	del result["industry"]
+	del result["label"]
 	return json.dumps(result)
 
 
@@ -58,16 +65,17 @@ def grab_bundle_pretty():
 	bundle_object_id = request.args.get("id")
 	result = storage.grab_stix_bundle(bundle_object_id)
 	del result["_id"]
-	del result["industry"]
+	del result["label"]
 	return jsonify(result)
 
 
 ##		Search for bundles by label		##
 @app.route("/search_bundles", methods=["GET", "POST"])
 def search_bundles():
-	industry = request.args.get("label")
-	result = storage.search(industry)
+	label = request.args.get("label")
+	result = storage.search(label)
 	return json.dumps(result)
 	
+
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
