@@ -20,9 +20,10 @@ def mongo_connection():
 
 
 ##		Returns bson.ObjectId in string format		##
-def store_stix_bundle(bundle):
+def store_stix_bundle(bundle, industry):
 
 	client, db, collection = mongo_connection()
+	bundle["industry"] = industry
 	bundle_row_id = collection.insert_one(bundle).inserted_id
 	print("[STIX2 GEN] Mongo job finished inserting ", bundle_row_id)
 	return "http://stix-gen-route-stix-gen." + os.environ["OCP_CLUSTER"] + "/grab_bundle?id=" + str(bundle_row_id)
