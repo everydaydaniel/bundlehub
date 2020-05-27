@@ -62,6 +62,7 @@ def grab_bundle_pretty():
 	return jsonify(result)
 
 
+##		Search for bundles by label		##
 @app.route("/search_bundles", methods=["GET", "POST"])
 def search_bundles():
 	industry = request.args.get("label")
