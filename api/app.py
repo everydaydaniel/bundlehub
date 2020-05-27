@@ -22,9 +22,11 @@ app.debug = True
 def gen_from_url():
 	# industry = request.args.get("industry") upon setting a custom sitx bundle, ask for label as well to search for 
 	url = request.args.get("url")
-	rawbundle = str(generator.gen_from_url(url))
+	obj = generator.gen_from_url(url)
+	rawbundle = str(obj["bundle"])
+	industry = obj["industry"]
 	jsonbundle = json.loads(rawbundle)
-	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
+	mongo_bundle_url = storage.store_stix_bundle(jsonbundle, industry)
 	return mongo_bundle_url
 
 
@@ -33,15 +35,17 @@ def grab_bundle():
 	bundle_object_id = request.args.get("id")
 	result = storage.grab_stix_bundle(bundle_object_id)
 	del result["_id"]
+	# del result["industry"]
 	return json.dumps(result)
 
 
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
-	rawbundle = str(generator.gen_random_bundle())
+	obj = generator.gen_random_bundle()
+	rawbundle = str(obj["bundle"])
+	industry = obj["industry"]
 	jsonbundle = json.loads(rawbundle)
-	# jsonbundle["industry"] = "healthcare" 
-	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
+	mongo_bundle_url = storage.store_stix_bundle(jsonbundle, industry)
 	return mongo_bundle_url
 
 
