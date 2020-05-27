@@ -5,6 +5,13 @@ import stix2
 
 ip = ".".join(map(str, (random.randint(0, 255) for _ in range(4))))
 
+def randomIndustry():
+    industries = ["Financial Services","Retail","Transportation",
+	"Media","Professional Services","Government","Education",
+	"Manufacturing", "Energy", "Healthcare"] 
+    
+    return industries[random.randint(0, len(industries) - 1)]
+
 def constructRandomString(num):
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(num))
