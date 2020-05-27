@@ -18,17 +18,31 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
 
 
+
+##		Generates bundle from CSV or JSON database		##
 @app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
 	url = request.args.get("url")
-	obj = generator.gen_from_url(url)
-	rawbundle = str(obj["bundle"])
-	industry = obj["industry"]
+	bundle = generator.gen_from_url(url)
+	rawbundle = str(bundle["bundle"])
+	industry = bundle["industry"]
 	jsonbundle = json.loads(rawbundle)
 	mongo_bundle_url = storage.store_stix_bundle(jsonbundle, industry)
 	return mongo_bundle_url
 
 
+##		Generates randomly populated bundle 		##
+@app.route("/gen_random_bundle", methods=["GET"])
+def gen_random_bundle():
+	bundle = generator.gen_random_bundle()
+	rawbundle = str(bundle["bundle"])
+	industry = bundle["industry"]
+	jsonbundle = json.loads(rawbundle)
+	mongo_bundle_url = storage.store_stix_bundle(jsonbundle, industry)
+	return mongo_bundle_url
+
+
+##		Returns raw bundle by bson.ObjectID 		##
 @app.route("/grab_bundle", methods=["GET", "POST"])
 def grab_bundle():
 	bundle_object_id = request.args.get("id")
@@ -38,14 +52,14 @@ def grab_bundle():
 	return json.dumps(result)
 
 
-@app.route("/gen_random_bundle", methods=["GET"])
-def gen_random_bundle():
-	obj = generator.gen_random_bundle()
-	rawbundle = str(obj["bundle"])
-	industry = obj["industry"]
-	jsonbundle = json.loads(rawbundle)
-	mongo_bundle_url = storage.store_stix_bundle(jsonbundle, industry)
-	return mongo_bundle_url
+##		Returns pretty bundle by bson.ObjectID 		##
+@app.route("/grab_bundle_pretty", methods=["GET", "POST"])
+def grab_bundle_pretty():
+	bundle_object_id = request.args.get("id")
+	result = storage.grab_stix_bundle(bundle_object_id)
+	del result["_id"]
+	del result["industry"]
+	return jsonify(result)
 
 
 @app.route("/search_bundles", methods=["GET", "POST"])

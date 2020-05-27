@@ -29,7 +29,6 @@ def store_stix_bundle(bundle, industry):
 	return "http://stix-gen-route-stix-gen." + os.environ["OCP_CLUSTER"] + "/grab_bundle?id=" + str(bundle_row_id)
 
 
-
 ##		Grabs bundle using string representing bson.ObjectId 		##
 def grab_stix_bundle(row_id):
 
@@ -38,8 +37,7 @@ def grab_stix_bundle(row_id):
 	return result
 
 
-
-##		 Mongo Search 		##
+##		 Bundle search by label 		##
 def search(industry):
 
 	client, db, collection = mongo_connection()
