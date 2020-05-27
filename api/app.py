@@ -20,7 +20,6 @@ app.debug = True
 
 @app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
-	# industry = request.args.get("industry") upon setting a custom sitx bundle, ask for label as well to search for 
 	url = request.args.get("url")
 	obj = generator.gen_from_url(url)
 	rawbundle = str(obj["bundle"])
