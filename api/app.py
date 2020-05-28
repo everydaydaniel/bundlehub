@@ -23,57 +23,64 @@ app.debug = True
 def homepage():
 	return "hello"
 
+##		Tag and transform bundle for storage		##
+def transform_bundle(bundle):
+	rawbundle = str(bundle)
+	jsonbundle = json.loads(rawbundle)
+	return jsonbundle
+
+
+##		Generates bundle from CSV or JSON database		##
 @app.route("/gen_from_url", methods=["GET", "POST"])
 def gen_from_url():
-	# industry = request.args.get("industry") upon setting a custom sitx bundle, ask for label as well to search for
 	url = request.args.get("url")
-	rawbundle = str(generator.gen_from_url(url))
-	jsonbundle = json.loads(rawbundle)
-	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
+	label = request.args.get("label")
+
+	if url.split(".")[-1] == "csv":
+		bundle = generator.gen_from_csv(url)
+	else:
+		return "INVALID URL"
+
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label)
 	return mongo_bundle_url
 
 
+##		Generates randomly populated bundle 		##
+@app.route("/gen_random_bundle", methods=["GET"])
+def gen_random_bundle():
+	label = request.args.get("label")
+	bundle = generator.gen_random_bundle()
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label)
+	return mongo_bundle_url
+
+
+##		Returns raw bundle by bson.ObjectID 		##
 @app.route("/grab_bundle", methods=["GET", "POST"])
 def grab_bundle():
 	bundle_object_id = request.args.get("id")
 	result = storage.grab_stix_bundle(bundle_object_id)
 	del result["_id"]
+	del result["label"]
 	return json.dumps(result)
 
 
-@app.route("/get_object_map", methods=["GET","POST"])
-def get_object_map():
-	bundle_object = BundleGenerate()
-	return bundle_object.object_map_json()
-
-@app.route("/create_bundle", methods=["GET","POST"])
-def create_bundle():
-	# expected input
-	# data = {
-	#         "dataSourceName": "testBundle",
-	#         "numberOfRows": 10,
-	#         "rowContents": ["IPv4Address"]
-	#         }
-	data = request.get_json()
-	bundle_gen = BundleGenerate(data)
-	bundle = bundle_gen.return_bundle()
-	return bundle
-
-@app.route("/gen_random_bundle", methods=["GET"])
-def gen_random_bundle():
-	rawbundle = generator.randomBundle()
-	jsonbundle = json.loads(rawbundle)
-	# jsonbundle["industry"] = "healthcare"
-	mongo_bundle_url = storage.store_stix_bundle(jsonbundle)
-	return mongo_bundle_url
+##		Returns pretty bundle by bson.ObjectID 		##
+@app.route("/grab_bundle_pretty", methods=["GET", "POST"])
+def grab_bundle_pretty():
+	bundle_object_id = request.args.get("id")
+	result = storage.grab_stix_bundle(bundle_object_id)
+	del result["_id"]
+	del result["label"]
+	return jsonify(result)
 
 
+##		Search for bundles by label		##
 @app.route("/search_bundles", methods=["GET", "POST"])
 def search_bundles():
-	bundle_label = request.args.get("label")
-	result = 'GRAB STIX BUNDLE THAT WAS SEARCHED'
-	# if none are returned try fuzzy search
-	monogo_bundle_url = 'GET URLS FROM MONDODB'
+	label = request.args.get("label")
+	result = storage.search(label)
+	return json.dumps(result)
+
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")

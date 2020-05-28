@@ -20,13 +20,13 @@ def mongo_connection():
 
 
 ##		Returns bson.ObjectId in string format		##
-def store_stix_bundle(bundle):
+def store_stix_bundle(bundle, label):
 
 	client, db, collection = mongo_connection()
+	bundle["label"] = label
 	bundle_row_id = collection.insert_one(bundle).inserted_id
-	print("[STIX2 GEN] Mongo job finished inserting ", bundle_row_id)
+	print(f"[STIX2 GEN] Mongo job finished inserting {bundle_row_id}")
 	return "http://stix-gen-route-stix-gen." + os.environ["OCP_CLUSTER"] + "/grab_bundle?id=" + str(bundle_row_id)
-
 
 
 ##		Grabs bundle using string representing bson.ObjectId 		##
@@ -37,18 +37,17 @@ def grab_stix_bundle(row_id):
 	return result
 
 
-
-##		 Mongo Search 		##
-def search(industry):
+##		 Bundle search by label 		##
+def search(label):
 
 	client, db, collection = mongo_connection()
 	results = []
 	for stix_obj in collection.find():
-		hasKey = 'industry' in stix_obj.keys()
-		if(hasKey and stix_obj['industry'] == industry):
+		hasKey = 'label' in stix_obj.keys()
+		if(hasKey and stix_obj['label'] == label):
 			del stix_obj['_id']
-			del stix_obj['industry']
+			del stix_obj['label']
 
 			results.append(stix_obj)
-	print(f"[STIX2 SEARCH] Mongo found {len(results)} stix bundles for {industry}")
+	print(f"[STIX2 SEARCH] Mongo found {len(results)} stix bundles for {label}")
 	return results
