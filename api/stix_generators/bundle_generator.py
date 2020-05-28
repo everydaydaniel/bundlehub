@@ -1,3 +1,9 @@
+"""
+
+STIX2 Bundle Generator
+
+"""
+
 import datetime
 import json
 import time
