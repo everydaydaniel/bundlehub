@@ -42,6 +42,12 @@ def grab_bundle():
 
 @app.route("/create_bundle", methods=["GET","POST"])
 def create_bundle():
+	# expected input
+	# data = {
+	#         "dataSourceName": "testBundle",
+	#         "numberOfRows": 10,
+	#         "rowContents": ["IPv4Address"]
+	#         }
 	data = request.get_json()
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
