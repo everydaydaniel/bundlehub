@@ -63,6 +63,8 @@ def gen_from_url():
 
 	if url.split(".")[-1] == "csv":
 		bundle = generator.gen_from_csv(url)
+	elif url.split(".")[-1] == "json":
+		bundle = generator.gen_from_json(url)
 	else:
 		return "INVALID URL"
 
