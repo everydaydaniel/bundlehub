@@ -29,6 +29,25 @@ def transform_bundle(bundle):
 	jsonbundle = json.loads(rawbundle)
 	return jsonbundle
 
+# used with UI to get the availible object maps
+@app.route("/get_object_map", methods=["GET","POST"])
+def get_object_map():
+	bundle_object = BundleGenerate()
+	return bundle_object.object_map_json()
+
+# used with UI to pass in data and create a bundle
+@app.route("/create_bundle", methods=["GET","POST"])
+def create_bundle():
+	# expected input
+	# data = {
+	#         "dataSourceName": "testBundle",
+	#         "numberOfRows": 10,
+	#         "rowContents": ["IPv4Address"]
+	#         }
+	data = request.get_json()
+	bundle_gen = BundleGenerate(data)
+	bundle = bundle_gen.return_bundle()
+	return bundle
 
 ##		Generates bundle from CSV or JSON database		##
 @app.route("/gen_from_url", methods=["GET", "POST"])
