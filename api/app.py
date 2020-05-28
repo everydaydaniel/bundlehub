@@ -11,12 +11,17 @@ import generator
 import pandas as pd
 import storage
 import logging
+from stix_generators.bundle_generator import BundleGenerate
+from stix_generators.bundle_base import BundleBase
 
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
 
+@app.route("/")
+def homepage():
+	return "hello"
 
 ##		Tag and transform bundle for storage		##
 def transform_bundle(bundle):
@@ -24,6 +29,25 @@ def transform_bundle(bundle):
 	jsonbundle = json.loads(rawbundle)
 	return jsonbundle
 
+# used with UI to get the availible object maps
+@app.route("/get_object_map", methods=["GET","POST"])
+def get_object_map():
+	bundle_object = BundleGenerate()
+	return bundle_object.object_map_json()
+
+# used with UI to pass in data and create a bundle
+@app.route("/create_bundle", methods=["GET","POST"])
+def create_bundle():
+	# expected input
+	# data = {
+	#         "dataSourceName": "testBundle",
+	#         "numberOfRows": 10,
+	#         "rowContents": ["IPv4Address"]
+	#         }
+	data = request.get_json()
+	bundle_gen = BundleGenerate(data)
+	bundle = bundle_gen.return_bundle()
+	return bundle
 
 ##		Generates bundle from CSV or JSON database		##
 @app.route("/gen_from_url", methods=["GET", "POST"])
@@ -75,7 +99,7 @@ def search_bundles():
 	label = request.args.get("label")
 	result = storage.search(label)
 	return json.dumps(result)
-	
+
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
