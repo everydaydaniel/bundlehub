@@ -17,6 +17,10 @@ class BundleBase():
             "IPv4Address": self.create_ipv4_object
         }
 
+    def object_map_json(self):
+        object_array = [key for key in self.object_map if key is not "Identity"]
+        return json.dumps(object_array)
+
     def create_bundle(self, objects):
         bundle = Bundle(
             id="bundle--{}".format(uuid4()),

@@ -12,7 +12,7 @@ import pandas as pd
 import storage
 import logging
 from stix_generators.bundle_generator import BundleGenerate
-
+from stix_generators.bundle_base import BundleBase
 
 
 app = Flask(__name__)
@@ -39,6 +39,12 @@ def grab_bundle():
 	result = storage.grab_stix_bundle(bundle_object_id)
 	del result["_id"]
 	return json.dumps(result)
+
+
+@app.route("/get_object_map", methods=["GET","POST"])
+def get_object_map():
+	bundle_object = BundleGenerate()
+	return bundle_object.object_map_json()
 
 @app.route("/create_bundle", methods=["GET","POST"])
 def create_bundle():

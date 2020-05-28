@@ -10,7 +10,7 @@ from stix2 import Bundle, IPv4Address, Identity, ObservedData
 from uuid import uuid4
 
 class BundleGenerate(BundleBase):
-    def __init__(self, data):
+    def __init__(self, data=None):
         super().__init__(BundleBase)
         # data schema
         #  {
@@ -20,7 +20,8 @@ class BundleGenerate(BundleBase):
         # }
         self.data = data
         self.objects = []
-        self.parse_data()
+        if data is not None:
+            self.parse_data()
 
 
     def create_observed_data(self, objects):
