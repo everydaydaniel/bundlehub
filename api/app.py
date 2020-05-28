@@ -11,7 +11,7 @@ import generator
 import pandas as pd
 import storage
 import logging
-from stix_generators.stix_objects import return_bundle
+from stix_generators.bundle_generator import BundleGenerate
 
 
 
@@ -42,7 +42,9 @@ def grab_bundle():
 
 @app.route("/create_bundle", methods=["GET","POST"])
 def create_bundle():
-	bundle = return_bundle("charles")
+	data = request.get_json()
+	bundle_gen = BundleGenerate(data)
+	bundle = bundle_gen.return_bundle()
 	return bundle
 
 @app.route("/gen_random_bundle", methods=["GET"])
