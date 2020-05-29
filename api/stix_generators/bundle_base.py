@@ -8,7 +8,18 @@ from stix2 import *
 from uuid import uuid4
 
 class BundleBase():
-    """docstring for BundleBase."""
+    """
+    docstring for BundleBase.
+    Bundle base holds all the functions that
+    create STIX cyber observable obejcts. The current implementation
+    will generate a desired object with random information.
+    Current pattern is create_stix_object_name(<variables>)
+
+    Once an object creation function has been created add a key with the
+    front end name and refrence to the function as the value.
+    The UI will ping an enpoint that calls object_map_json so that users will
+    know what obejctsare avilible. 
+    """
     # use this object to put all cyber observable
     # creation objects
     def __init__(self, arg):
