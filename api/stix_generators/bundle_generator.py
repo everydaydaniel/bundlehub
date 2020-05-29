@@ -55,6 +55,10 @@ class BundleGenerate(BundleBase):
             observed_data = self.create_observed_data(object_row)
             self.objects.append(observed_data)
 
+    def check_max_row_num(self, number_of_rows):
+        if number_of_rows > 5000:
+            number_of_rows = 5000
+        return number_of_rows
 
     def parse_data(self):
         # create the initial identity object and
@@ -63,5 +67,5 @@ class BundleGenerate(BundleBase):
         identity = self.create_identity_object(name)
         self.objects.append(identity)
         stix_objects = self.data["rowContents"]
-        number_of_rows = self.data["numberOfRows"]
+        number_of_rows = self.check_max_row_num(self.data["numberOfRows"])
         self.create_objects(stix_objects, number_of_rows)
