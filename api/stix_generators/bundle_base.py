@@ -20,7 +20,8 @@ class BundleBase():
     def __init__(self, arg):
         self.object_map = {
             "Identity": self.create_identity_object,
-            "IPv4Address": self.create_ipv4_object
+            "IPv4Address": self.create_ipv4_object,
+            "DomainName": self.create_domain_name_object
         }
 
     def object_map_json(self):
@@ -36,6 +37,13 @@ class BundleBase():
 
         return bundle
 
+    def create_domain_name_object(self, domain_name=None):
+        if domain_name == None:
+            tld = [".com",".org",".gov",".edu",".net",".io"]
+            domain_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
+            domain_name += tld[random.randint(0,len(tld)-1)]
+        return DomainName(value=domain_name)
+
     def create_identity_object(self, name):
         id = Identity(name=name, identity_class="events")
         return id
@@ -45,13 +53,3 @@ class BundleBase():
             addr = socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
             return IPv4Address(value=addr)
         return IPv4Address(value=value)
-
-    def create_observed_data(self, objects):
-        observed_data = ObservedData(
-            id="observed-data--{}".format(uuid4()),
-            number_observed=1,
-            first_observed=datetime.datetime.now(),
-            last_observed=datetime.datetime.now(),
-            objects={"0": objects}
-            )
-        return observed_data
