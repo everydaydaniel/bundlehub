@@ -1,9 +1,3 @@
-"""
-
-STIX2 Bundle Generator
-
-"""
-
 import datetime
 import json
 import time
@@ -53,7 +47,6 @@ class BundleGenerate(BundleBase):
             object_count = 0
             object_row = OrderedDict()
             for stix_object in stix_objects:
-                print(stix_object)
                 object_function = self.object_map.get(stix_object)
                 if object_function is None:
                     continue
