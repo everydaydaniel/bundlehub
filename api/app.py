@@ -45,6 +45,7 @@ def create_bundle():
 	#         "rowContents": ["IPv4Address"]
 	#         }
 	data = request.get_json()
+	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 	return bundle
