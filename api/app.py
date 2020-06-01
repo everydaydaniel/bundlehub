@@ -116,9 +116,5 @@ def allindustries():
 	result = all_Industries()
 	return json.dumps(result)
 
-@app.route("/allIndustries", methods=["GET", "POST"])
-def allindustries():
-	return all_Industries()
-
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
