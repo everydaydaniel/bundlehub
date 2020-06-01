@@ -8,7 +8,7 @@ from stix2 import *
 import pandas as pd
 import json
 import datetime
-
+from stix_generators import randomsdo
 
 ##      Generates random bundle of SDO's        ##
 def gen_random_bundle():
