@@ -15,7 +15,7 @@ import stix_generators.bundle_from_file as generator
 from stix_generators.bundle_generator import BundleGenerate
 from stix_generators.bundle_base import BundleBase
 from stix_generators import randomsdo
-from stix_generators.get_Industries import all_industries
+from stix_generators.get_Industries import all_Industries
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
@@ -113,7 +113,7 @@ def search_bundles():
 
 @app.route("/allIndustries", methods=["GET", "POST"])
 def allindustries():
-	return all_industries
+	return all_Industries()
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")
