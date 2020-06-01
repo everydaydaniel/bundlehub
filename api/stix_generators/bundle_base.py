@@ -28,7 +28,8 @@ class BundleBase():
             "IPv4 Address": self.create_ipv4_object,
             "Domain Name": self.create_domain_name_object,
             "MAC Address": self.create_mac_address_object,
-            "URL": self.create_url_object
+            "URL": self.create_url_object,
+            "UserAccount": self.create_user_account_object
         }
 
     def object_map_json(self):
@@ -79,3 +80,9 @@ class BundleBase():
         ext = uuid4().hex + ".html"
         url = proto + base + ext
       return URL(value=url)
+
+    def create_user_account_object(self, user_id=None):
+      if user_id == None:
+        id = uuid4().hex
+        print(id)
+      return UserAccount(user_id=id)
