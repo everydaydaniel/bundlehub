@@ -11,8 +11,9 @@ def all_Industries():
 
     for objs in rows_of_data:
         curInudstry = objs['name'].replace('Industry Profile', '').strip()
-        allIndustries.append(curInudstry)
 
+        if curInudstry not in allIndustries:
+            allIndustries.append(curInudstry)
 
     return allIndustries
 
