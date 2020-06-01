@@ -16,6 +16,7 @@ from stix_generators.bundle_generator import BundleGenerate
 from stix_generators.bundle_base import BundleBase
 from stix_generators import randomsdo
 from stix_generators.get_Industries import all_industries
+
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
