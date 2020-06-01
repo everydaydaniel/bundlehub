@@ -27,7 +27,8 @@ class BundleBase():
             "Identity": self.create_identity_object,
             "IPv4 Address": self.create_ipv4_object,
             "Domain Name": self.create_domain_name_object,
-            "MAC Address": self.create_mac_address_object
+            "MAC Address": self.create_mac_address_object,
+            "URL": self.create_url_object
         }
 
     def object_map_json(self):
@@ -68,3 +69,13 @@ class BundleBase():
                 random.randint(0x00, 0xff) ]
             mac_address = ':'.join(map(lambda x: "%02x" % x, mac))
         return MACAddress(value=mac_address)
+
+    def create_url_object(self, value=None):
+      if value == None:
+        tld = [".com",".org",".gov",".edu",".net",".io"]
+        proto = "https://"
+        base = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
+        base += tld[random.randint(0,len(tld)-1)] + "/"
+        ext = uuid4().hex + ".html"
+        url = proto + base + ext
+      return URL(value=url)
