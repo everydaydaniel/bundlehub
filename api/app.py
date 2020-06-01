@@ -114,7 +114,6 @@ def search_bundles():
 @app.route("/allIndustries", methods=["GET"])
 def allindustries():
 	result = all_Industries()
-	print(result)
 	return json.dumps(result)
 
 if __name__ == "__main__":
