@@ -84,5 +84,4 @@ class BundleBase():
     def create_user_account_object(self, user_id=None):
       if user_id == None:
         id = uuid4().hex
-        print(id)
       return UserAccount(user_id=id)
