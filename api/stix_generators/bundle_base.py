@@ -29,7 +29,7 @@ class BundleBase():
             "Domain Name": self.create_domain_name_object,
             "MAC Address": self.create_mac_address_object,
             "URL": self.create_url_object,
-            "UserAccount": self.create_user_account_object
+            "User Account": self.create_user_account_object
         }
 
     def object_map_json(self):
