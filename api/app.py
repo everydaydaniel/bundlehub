@@ -14,7 +14,7 @@ import stix_generators.bundle_from_random as randombundle
 import stix_generators.bundle_from_file as generator
 from stix_generators.bundle_generator import BundleGenerate
 from stix_generators.bundle_base import BundleBase
-
+from stix_generators import randomsdo
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
@@ -76,9 +76,9 @@ def gen_from_url():
 ##		Generates randomly populated bundle 		##
 @app.route("/gen_random_bundle", methods=["GET"])
 def gen_random_bundle():
-	label = request.args.get("label")
+	label = request.args.get("label") 
 	bundle = randombundle.gen_random_bundle()
-	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label)
+	mongo_bundle_url = storage.store_stix_bundle(bundle, label)
 	return mongo_bundle_url
 
 
