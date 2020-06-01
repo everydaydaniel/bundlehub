@@ -76,7 +76,7 @@ def gen_from_url():
 
 ##		Generates randomly populated bundle 		##
 @app.route("/gen_random_bundle", methods=["GET"])
-def gen_random_bundle(): # need to add implementation into cyber objects for entered and random industries
+def gen_random_bundle():
 	label = request.args.get("label") or randomsdo.randomIndustry() 
 	bundle = randombundle.gen_random_bundle()
 	mongo_bundle_url = storage.store_stix_bundle(bundle, label)
@@ -115,6 +115,10 @@ def search_bundles():
 def allindustries():
 	result = all_Industries()
 	return json.dumps(result)
+
+@app.route("/allIndustries", methods=["GET", "POST"])
+def allindustries():
+	return all_Industries()
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0")

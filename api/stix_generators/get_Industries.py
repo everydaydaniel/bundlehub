@@ -13,5 +13,7 @@ def all_Industries():
         curInudstry = objs['name'].replace('Industry Profile', '').strip()
         allIndustries.append(curInudstry)
 
+
     return allIndustries
+
 

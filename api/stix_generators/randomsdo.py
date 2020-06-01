@@ -6,9 +6,19 @@ import stix2
 ip = ".".join(map(str, (random.randint(0, 255) for _ in range(4))))
 
 def randomIndustry():
-    industries = ["Financial Services","Retail","Transportation",
-	"Media","Professional Services","Government","Education",
-	"Manufacturing", "Energy", "Healthcare"] 
+    industries = ['Manufacturing','Transportation','Utility','Insurance','Education',
+  'Aviation','Retail','Healthcare','Business Services','Oil & Gas','Energy','Mining',
+  'Professional Services','Government','Telecommunications','US Defense Industrial Base',
+  'Professional Sports','Media and Entertainment','Medical Device Manufacturing',
+  'Information Technology','Financial Services','Travel Agencies and Services',
+  'Pharmaceutical Manufacturing','Hospitality','Lodging','Utility','Consumer Services',
+  'Business Services','Utilities','Mining','Telecommunications','Professional Sports',
+  'Medical Device Manufacturing','Travel Agencies and Services','Hospitality',
+  'Lodging','Government','Energy','US Defense Industrial Base','Information Technology',
+  'Retail','Healthcare','Financial Services','Media and Entertainment','Education',
+  'Pharmaceutical Manufacturing','Oil & Gas','Manufacturing','Transportation',
+  'Professional Services','Aviation','Insurance'
+]
     
     return industries[random.randint(0, len(industries) - 1)]
 

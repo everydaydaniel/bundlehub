@@ -38,3 +38,11 @@
 - description: Finds all bundles with matching label
 - returns list of bundle ID's
 
+```python
+@app.route("/allindustries", methods=["GET"])
+```
+- args: None
+- description: Finds all industries using the IBM X-Force Threat Intelligence API
+- returns an array of strings 
+
+
