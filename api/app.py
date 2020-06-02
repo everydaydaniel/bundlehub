@@ -54,7 +54,14 @@ def create_bundle():
 	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
-	return bundle
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label)
+
+	response = {
+		"url": mongo_bundle_url,
+		"bundle_data": bundle.serialize()
+	}
+	
+	return response
 
 
 ##		Generates bundle from CSV or JSON database		##
