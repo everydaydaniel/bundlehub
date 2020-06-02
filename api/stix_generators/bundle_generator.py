@@ -38,7 +38,7 @@ class BundleGenerate(BundleBase):
 
     def return_bundle(self):
         bundle = self.create_bundle(self.objects)
-        return bundle.serialize(pretty=True)
+        return bundle
 
 
 
