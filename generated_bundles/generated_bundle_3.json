@@ -1,0 +1,30 @@
+{
+    "id": "bundle--d69c3285-1c69-4752-bb43-e8510ea99b88",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Texas-budget",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--dba41a21-1bc8-4ed0-877a-c9d97a4bd7cd",
+            "created": "2020-06-03T21:41:40.660Z",
+            "modified": "2020-06-03T21:41:40.660Z"
+        },
+        {
+            "id": "observed-data--64ad9649-7360-4def-82ff-4cb178d0d17b",
+            "number_observed": 1,
+            "first_observed": "2020-06-03T16:41:40.660524Z",
+            "last_observed": "2020-06-03T16:41:40.660527Z",
+            "objects": {
+                "0": {
+                    "value": "145.184.14.112",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-03T21:41:40.660Z",
+            "modified": "2020-06-03T21:41:40.660Z"
+        }
+    ],
+    "type": "bundle"
+}
