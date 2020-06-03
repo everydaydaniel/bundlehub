@@ -22,17 +22,19 @@ class BundleGenerate(BundleBase):
         print("data in BundleGenerate:", data)
         self.objects = []
         if data is not None:
+            self.custom_data = self.parse_custom()
             self.parse_data()
 
 
     def create_observed_data(self, objects):
         observed_data = ObservedData(
             id="observed-data--{}".format(uuid4()),
-            number_observed=len(objects),
+            number_observed=len(objects.keys()) + 1,
             first_observed=datetime.datetime.now(),
             last_observed=datetime.datetime.now(),
             objects=objects
             )
+        print(observed_data)
         return observed_data
 
 
@@ -41,24 +43,34 @@ class BundleGenerate(BundleBase):
         return bundle
 
 
-
     def create_objects(self, stix_objects, number_of_rows):
         for row in range(number_of_rows):
-            object_count = 0
-            object_row = OrderedDict()
-            for stix_object in stix_objects:
+            sdo_dict = {}
+            for sdo_idx, stix_object in enumerate(stix_objects):
                 object_function = self.object_map.get(stix_object)
                 if object_function is None:
                     continue
-                object_row[str(object_count)] = object_function()
-                object_count += 1
-            observed_data = self.create_observed_data(object_row)
+                if row in self.custom_data.keys():
+                    if stix_object in self.custom_data[row].keys():
+                        sdo_dict[str(sdo_idx)] = object_function(self.custom_data[row][stix_object])
+                else:
+                    sdo_dict[str(sdo_idx)] = object_function()
+            observed_data = self.create_observed_data(sdo_dict)
             self.objects.append(observed_data)
 
     def check_max_row_num(self, number_of_rows):
         if number_of_rows > 5000:
             number_of_rows = 5000
         return number_of_rows
+
+
+    def parse_custom(self):
+        customized = {}
+        for custom_observed in self.data["custom"]:
+            customized[custom_observed["meta"]["row"]] = custom_observed
+            del customized[custom_observed["meta"]["row"]]["meta"]
+        return customized
+
 
     def parse_data(self):
         # create the initial identity object and

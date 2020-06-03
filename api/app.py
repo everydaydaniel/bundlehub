@@ -10,21 +10,13 @@ import json
 import pandas as pd
 import storage
 import logging
-import stix_generators.bundle_from_random as randombundle
-import stix_generators.bundle_from_file as generator
 from stix_generators.bundle_generator import BundleGenerate
 from stix_generators.bundle_base import BundleBase
-from stix_generators import randomsdo
 from stix_generators.get_Industries import all_Industries
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
-
-
-@app.route("/")
-def homepage():
-	return "hello"
 
 
 ##		Tag and transform bundle for storage		##
@@ -51,7 +43,6 @@ def create_bundle():
 	#         "rowContents": ["IPv4Address"]
 	#         }
 	data = request.get_json()
-	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label='poopee')
@@ -62,32 +53,6 @@ def create_bundle():
 	}
 	
 	return json.dumps(response)
-
-
-##		Generates bundle from CSV or JSON database		##
-@app.route("/gen_from_url", methods=["GET", "POST"])
-def gen_from_url():
-	url = request.args.get("url")
-	label = request.args.get("label")
-
-	if url.split(".")[-1] == "csv":
-		bundle = generator.gen_from_csv(url)
-	elif url.split(".")[-1] == "json":
-		bundle = generator.gen_from_json(url)
-	else:
-		return "INVALID URL"
-
-	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label)
-	return mongo_bundle_url
-
-
-##		Generates randomly populated bundle 		##
-@app.route("/gen_random_bundle", methods=["GET"])
-def gen_random_bundle():
-	label = request.args.get("label") or randomsdo.randomIndustry() 
-	bundle = randombundle.gen_random_bundle()
-	mongo_bundle_url = storage.store_stix_bundle(bundle, label)
-	return mongo_bundle_url
 
 
 ##		Returns raw bundle by bson.ObjectID 		##
