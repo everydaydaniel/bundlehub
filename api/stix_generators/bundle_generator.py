@@ -41,13 +41,12 @@ class BundleGenerate(BundleBase):
             last_observed=datetime.datetime.now(),
             objects=objects
             )
-        print(f"[STIX2 GEN] BUILD SDO " + str(len(objects.keys()) + 1))
         return observed_data
 
 
     def return_bundle(self):
         bundle = self.create_bundle(self.objects)
-        print(f"[STIX2 GEN] BUILD BUNDLE COMPLETE " + str(len(objects.keys()) + 1))
+        print(f"[STIX2 GEN] BUILD BUNDLE COMPLETE ")
         return bundle
 
 
