@@ -57,9 +57,10 @@ class BundleGenerate(BundleBase):
                 object_function = self.object_map.get(stix_object)
                 if object_function is None:
                     continue
-                if row in self.custom_data.keys():
-                    if stix_object in self.custom_data[row].keys():
-                        sdo_dict[str(sdo_idx)] = object_function(self.custom_data[row][stix_object])
+                if self.custom_data:
+                    if row in self.custom_data.keys():
+                        if stix_object in self.custom_data[row].keys():
+                            sdo_dict[str(sdo_idx)] = object_function(self.custom_data[row][stix_object])
                 else:
                     sdo_dict[str(sdo_idx)] = object_function()
             observed_data = self.create_observed_data(sdo_dict)
@@ -72,6 +73,9 @@ class BundleGenerate(BundleBase):
 
 
     def parse_custom(self):
+        print("data wawa:", self.data, [i for i in self.data])
+        if len(self.data["custom"]) == 0:
+            return
         customized = {}
         for custom_observed in self.data["custom"]:
             random_index = None
