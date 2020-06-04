@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: stix-gen-mongo
-    image: andrewcampagna/stix-builder-api:beta-1.0.7
+    image: andrewcampagna/stix-builder-api:beta-2.0.0
     ports:
     - containerPort: 5000
       name: stixgen
