@@ -27,7 +27,7 @@ print("""
 	  ██ ██████  ██      ██ 
                       
 
-    STIX-GEN BETA-2.0.0 API CONTAINER
+    STIX-GEN BETA-2.0.1 API CONTAINER
 
 [STIX2 GEN] API ENDPOINT AT http://stix-gen-route-stix-gen.""" + os.environ["OCP_CLUSTER"] + """
 [STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + os.environ["MONGO_HOST"] + """\n""")
