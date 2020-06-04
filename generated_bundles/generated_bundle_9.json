@@ -1,0 +1,53 @@
+{
+    "id": "bundle--c755fb84-01e6-4165-bf4d-d15eecca4f0d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "testing",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--8a5b10d5-2857-4cd4-813d-9a0fa6344aab",
+            "created": "2020-06-04T18:21:47.754Z",
+            "modified": "2020-06-04T18:21:47.754Z"
+        },
+        {
+            "id": "observed-data--8a070099-4205-4943-bcf9-02b30c2a070d",
+            "number_observed": 3,
+            "first_observed": "2020-06-04T13:21:47.754633Z",
+            "last_observed": "2020-06-04T13:21:47.754636Z",
+            "objects": {
+                "0": {
+                    "value": "130.12.98.255",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "qktpq.edu",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-04T18:21:47.754Z",
+            "modified": "2020-06-04T18:21:47.754Z"
+        },
+        {
+            "id": "observed-data--0511f82f-6140-49e1-82a1-5a0f535cbb6f",
+            "number_observed": 3,
+            "first_observed": "2020-06-04T13:21:47.755453Z",
+            "last_observed": "2020-06-04T13:21:47.755455Z",
+            "objects": {
+                "0": {
+                    "value": "106.136.152.106",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "fkegotnqhbmdyxhxzj.net",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-04T18:21:47.755Z",
+            "modified": "2020-06-04T18:21:47.755Z"
+        }
+    ],
+    "type": "bundle"
+}
