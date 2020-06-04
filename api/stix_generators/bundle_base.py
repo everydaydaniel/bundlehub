@@ -18,7 +18,7 @@ class BundleBase():
     Once an object creation function has been created add a key with the
     front end name and refrence to the function as the value.
     The UI will ping an enpoint that calls object_map_json so that users will
-    know what obejctsare avilible. 
+    know what obejctsare avilible.
     """
     # use this object to put all cyber observable
     # creation objects
@@ -94,8 +94,8 @@ class BundleBase():
         base = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
         base += tld[random.randint(0,len(tld)-1)] + "/"
         ext = uuid4().hex + ".html"
-        url = proto + base + ext
-      return URL(value=url)
+        value = proto + base + ext
+      return URL(value=value)
 
     def create_user_account_object(self, user_id=None):
       if user_id == None:
