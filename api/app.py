@@ -10,6 +10,7 @@ import json
 import pandas as pd
 import storage
 import logging
+import os
 from stix_generators.bundle_generator import BundleGenerate
 from stix_generators.bundle_base import BundleBase
 from stix_generators.get_Industries import all_Industries
@@ -17,6 +18,19 @@ from stix_generators.get_Industries import all_Industries
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
+print("""
+
+	  ██ ██████  ███    ███ 
+	  ██ ██   ██ ████  ████ 
+	  ██ ██████  ██ ████ ██ 
+	  ██ ██   ██ ██  ██  ██ 
+	  ██ ██████  ██      ██ 
+                      
+
+    STIX-GEN BETA-2.0.0 API CONTAINER
+
+[STIX2 GEN] API ENDPOINT AT http://stix-gen-route-stix-gen.""" + os.environ["OCP_CLUSTER"] + """
+[STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + os.environ["MONGO_HOST"] + """\n""")
 
 
 ##		Tag and transform bundle for storage		##
