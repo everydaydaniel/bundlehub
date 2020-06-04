@@ -57,14 +57,15 @@ class BundleGenerate(BundleBase):
                 object_function = self.object_map.get(stix_object)
                 if object_function is None:
                     continue
-                if self.custom_data:
-                    if row in self.custom_data.keys():
-                        if stix_object in self.custom_data[row].keys():
-                            sdo_dict[str(sdo_idx)] = object_function(self.custom_data[row][stix_object])
+                if row in self.custom_data.keys():
+                    print("CUSTOM")
+                    if stix_object in self.custom_data[row].keys():
+                        sdo_dict[str(sdo_idx)] = object_function(self.custom_data[row][stix_object])
                 else:
                     sdo_dict[str(sdo_idx)] = object_function()
             observed_data = self.create_observed_data(sdo_dict)
             self.objects.append(observed_data)
+
 
     def check_max_row_num(self, number_of_rows):
         if number_of_rows > 5000:
@@ -73,8 +74,6 @@ class BundleGenerate(BundleBase):
 
 
     def parse_custom(self):
-        if len(self.data["custom"]) == 0:
-            return
         customized = {}
         for custom_observed in self.data["custom"]:
             random_index = None

@@ -62,7 +62,9 @@ class BundleBase():
         return File(name=file_name, hashes={encoding:hashes})
 
     def create_domain_name_object(self, domain_name=None):
+        print(domain_name)
         if domain_name == None:
+            print("RANDOM")
             tld = [".com",".org",".gov",".edu",".net",".io"]
             domain_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
             domain_name += tld[random.randint(0,len(tld)-1)]
