@@ -29,7 +29,8 @@ class BundleBase():
             "Domain Name": self.create_domain_name_object,
             "MAC Address": self.create_mac_address_object,
             "URL": self.create_url_object,
-            "User Account": self.create_user_account_object
+            "User Account": self.create_user_account_object,
+            "File": self.create_file_object
         }
 
     def object_map_json(self):
@@ -44,6 +45,21 @@ class BundleBase():
             )
 
         return bundle
+
+    def create_file_object(self, file_data=None):
+        if file_data == None:
+            file_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30))) + ".exe"
+            encoding = "MD5"
+            hashes = "00000000000000000000000000000000"
+        else:
+            file_name = file_data["name"]
+            if "encoding" in file_data.keys():
+                encoding = file_data["encoding"]
+                hashes = file_data["hashes"]
+            else:
+                encoding = "MD5"
+                hashes = "00000000000000000000000000000000"
+        return File(name=file_name, hashes={encoding:hashes})
 
     def create_domain_name_object(self, domain_name=None):
         if domain_name == None:
