@@ -73,7 +73,6 @@ class BundleGenerate(BundleBase):
 
 
     def parse_custom(self):
-        print("data wawa:", self.data, [i for i in self.data])
         if len(self.data["custom"]) == 0:
             return
         customized = {}
