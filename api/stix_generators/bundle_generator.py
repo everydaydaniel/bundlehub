@@ -74,8 +74,10 @@ class BundleGenerate(BundleBase):
     def parse_custom(self):
         customized = {}
         for custom_observed in self.data["custom"]:
-            customized[custom_observed["meta"]["row"]] = custom_observed
-            del customized[custom_observed["meta"]["row"]]["meta"]
+            random_index = None
+            while(random_index is None and random_index not in customized.keys()):
+                random_index = random.randint(0,self.data["numberOfRows"])
+            customized[random_index] = custom_observed
         return customized
 
 
