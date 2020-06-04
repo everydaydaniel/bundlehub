@@ -1,0 +1,91 @@
+{
+    "id": "bundle--90c3c429-cd9f-440d-a37c-8ec2abd85197",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--d339b993-9a6b-4775-af76-534ba8591955",
+            "created": "2020-06-04T19:43:46.554Z",
+            "modified": "2020-06-04T19:43:46.554Z"
+        },
+        {
+            "id": "observed-data--af7a8614-cf54-4d2b-85bb-f7e8d185dbc1",
+            "number_observed": 3,
+            "first_observed": "2020-06-04T14:43:46.556062Z",
+            "last_observed": "2020-06-04T14:43:46.556066Z",
+            "objects": {
+                "0": {
+                    "value": "165.10.239.215",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "eyknukhzqfpla.edu",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-04T19:43:46.556Z",
+            "modified": "2020-06-04T19:43:46.556Z"
+        },
+        {
+            "id": "observed-data--80173f09-8b43-4374-9ee2-48353b858508",
+            "number_observed": 3,
+            "first_observed": "2020-06-04T14:43:46.557247Z",
+            "last_observed": "2020-06-04T14:43:46.55725Z",
+            "objects": {
+                "0": {
+                    "value": "122.124.44.73",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ejwicrn.net",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-04T19:43:46.557Z",
+            "modified": "2020-06-04T19:43:46.557Z"
+        },
+        {
+            "id": "observed-data--80c32477-f114-4b45-a449-c6f0d1eda8c3",
+            "number_observed": 3,
+            "first_observed": "2020-06-04T14:43:46.557972Z",
+            "last_observed": "2020-06-04T14:43:46.557974Z",
+            "objects": {
+                "0": {
+                    "value": "242.238.212.116",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "reotvmkwqhevpxqdgvuvmayeqybky.net",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-04T19:43:46.557Z",
+            "modified": "2020-06-04T19:43:46.557Z"
+        },
+        {
+            "id": "observed-data--a8fc29c9-334e-4396-89dd-3ccf313b694e",
+            "number_observed": 3,
+            "first_observed": "2020-06-04T14:43:46.558757Z",
+            "last_observed": "2020-06-04T14:43:46.55876Z",
+            "objects": {
+                "0": {
+                    "value": "20.95.60.104",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "nxywkgcrtcsvnxuwidrwqxopttlx.org",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-04T19:43:46.558Z",
+            "modified": "2020-06-04T19:43:46.558Z"
+        }
+    ],
+    "type": "bundle"
+}
