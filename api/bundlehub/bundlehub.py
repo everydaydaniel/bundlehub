@@ -54,4 +54,4 @@ def bundhub_main(bundle):
     commit_message, file_created = create_bundle_json(bundle)
     commit_and_push(commit_message)
     link = create_link(file_created)
-    print("link", link)
+    return link
