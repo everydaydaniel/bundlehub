@@ -1,3 +1,9 @@
+"""
+
+STIX2 Bundle Generator
+
+"""
+
 import datetime
 import json
 import time
@@ -8,6 +14,7 @@ from .bundle_base import BundleBase
 from collections import OrderedDict
 from stix2 import Bundle, IPv4Address, Identity, ObservedData
 from uuid import uuid4
+
 
 class BundleGenerate(BundleBase):
     def __init__(self, data=None):
@@ -34,12 +41,13 @@ class BundleGenerate(BundleBase):
             last_observed=datetime.datetime.now(),
             objects=objects
             )
-        print(observed_data)
+        print(f"[STIX2 GEN] BUILD SDO " + str(len(objects.keys()) + 1))
         return observed_data
 
 
     def return_bundle(self):
         bundle = self.create_bundle(self.objects)
+        print(f"[STIX2 GEN] BUILD BUNDLE COMPLETE " + str(len(objects.keys()) + 1))
         return bundle
 
 
