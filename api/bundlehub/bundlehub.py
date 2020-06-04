@@ -1,13 +1,14 @@
 import os
 
 ROOT_DIR = os.getcwd()
-BUNDLEHUB_DIR = ROOT_DIR + "/api/bundlehub"
+BUNDLEHUB_DIR = ROOT_DIR + "/bundlehub"
 BUNDLEHUB_REPO = BUNDLEHUB_DIR + "/bundlehub"
 BUNDLEHUB_REPO_FILES_DIRECTORY = BUNDLEHUB_REPO + "/generated_bundles"
 
 
 # Clone the repo from github
 def clone_repo():
+    print('CLONE_REPO\n\n', BUNDLEHUB_DIR)
     os.chdir(BUNDLEHUB_DIR)
     os.system("git clone https://github.com/everydaydaniel/bundlehub.git")
 
@@ -22,6 +23,7 @@ def check_repo_exists():
         pull_repo()
     except FileNotFoundError as e:
         clone_repo()
+        print('here we ARE')
 
 def create_bundle_json(bundle):
     number_of_files = len([f for f in os.listdir(BUNDLEHUB_REPO_FILES_DIRECTORY)])
