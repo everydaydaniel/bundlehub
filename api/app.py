@@ -58,6 +58,7 @@ def create_bundle():
 	#         "rowContents": ["IPv4Address"]
 	#         }
 	data = request.get_json()
+	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label='poopee')
