@@ -62,11 +62,11 @@ def create_bundle():
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label='poopee')
-#	bundlehub_link = bundlehub.bundhub_main(bundle)
+	bundlehub_link = bundlehub.bundhub_main(bundle)
 	response = {
 		"url": mongo_bundle_url,
 		"bundle_data": bundle.serialize(),
-#		"bundlehub_link": bundlehub_link
+		"bundlehub_link": bundlehub_link
 	}
 
 	return json.dumps(response)
