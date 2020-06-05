@@ -36,7 +36,7 @@ class BundleGenerate(BundleBase):
     def create_observed_data(self, objects):
         observed_data = ObservedData(
             id="observed-data--{}".format(uuid4()),
-            number_observed=len(objects.keys()) + 1,
+            number_observed=1,
             first_observed=datetime.datetime.now(),
             last_observed=datetime.datetime.now(),
             objects=objects
