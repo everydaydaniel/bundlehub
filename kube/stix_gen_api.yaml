@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: stix-gen
+  name: stix-gen-api
   namespace: stix-gen
   labels:
-    app: stix-gen
+    app: stix-gen-api
 spec:
   containers:
-  - name: stix-gen-mongo
-    image: andrewcampagna/stix-builder-api:beta-2.0.4
+  - name: stix-gen-api
+    image: andrewcampagna/stix-builder-api:beta-2.0.3
     ports:
     - containerPort: 5000
       name: stixgen

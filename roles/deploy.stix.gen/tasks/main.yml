@@ -9,11 +9,11 @@
 
 - name: Editing stix-gen ConfigMap...
   shell: |
-    sed -i '' "s/CLUSTER_IP/$(oc describe svc stix-gen-mongo-svc -n stix-gen |grep IP: |awk '{print $2}')/g" kube/mongo_config.yaml
-    sed -i '' 's/CLUSTER_URL/{{ ocp_cluster }}/g' kube/mongo_config.yaml
+    sed -i '' "s/CLUSTER_IP/$(oc describe svc stix-gen-mongo-svc -n stix-gen |grep IP: |awk '{print $2}')/g" kube/stix_gen_config.yaml
+    sed -i '' 's/CLUSTER_URL/{{ ocp_cluster }}/g' kube/stix_gen_config.yaml
 
 - name: Deploying STIX2 Generator ConfigMap...
-  shell: oc create -f kube/mongo_config.yaml
+  shell: oc create -f kube/stix_gen_config.yaml
 
 - name: Deploying STIX2 Generator API...
   shell: |
@@ -21,7 +21,13 @@
     oc create -f kube/stix_gen_svc.yaml
     oc create -f kube/stix_gen_route.yaml
 
+- name: Deploying STIX2 Generator UI...
+  shell: |
+    oc create -f kube/stix_gen_ui.yaml
+    oc create -f kube/stix_gen_ui_svc.yaml
+    oc create -f kube/stix_gen_ui_route.yaml
+
 - name: Cleaning up...
   shell: |
-    sed -i '' "s/$(oc describe svc stix-gen-mongo-svc -n stix-gen |grep IP: |awk '{print $2}')/CLUSTER_IP/g" kube/mongo_config.yaml
-    sed -i '' 's/{{ ocp_cluster }}/CLUSTER_URL/g' kube/mongo_config.yaml
+    sed -i '' "s/$(oc describe svc stix-gen-mongo-svc -n stix-gen |grep IP: |awk '{print $2}')/CLUSTER_IP/g" kube/stix_gen_config.yaml
+    sed -i '' 's/{{ ocp_cluster }}/CLUSTER_URL/g' kube/stix_gen_config.yaml

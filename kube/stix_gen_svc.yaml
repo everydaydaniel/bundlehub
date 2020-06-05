@@ -5,7 +5,7 @@ metadata:
   namespace: stix-gen
 spec:
   selector:
-    app: stix-gen
+    app: stix-gen-api
   ports:
     - protocol: TCP
       port: 5000

@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stix-gen-ui
+  namespace: stix-gen
+  labels:
+    app: stix-gen-ui
+spec:
+  containers:
+  - name: stix-gen-ui
+    image: cnebs/bundlegenerator:2.0.1
+    ports:
+    - containerPort: 3000
+      name: stixgen
+    env:
+    - name: API
+      valueFrom:
+        configMapKeyRef:
+          name: stix-gen-cm
+          key: api_url
