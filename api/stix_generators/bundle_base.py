@@ -35,14 +35,14 @@ class BundleBase():
 
     def object_map_json(self):
         object_array = {
-            "IPv4 Address": ["value"],
-            "Domain Name": ["value"],
-            "MAC Address": ["value"],
-            "URL": ["value"],
-            "User Account": ["value"],
-            "File": ["name", "encoding", "hashes"]
+            "IPv4 Address": ["IPv4 Address"],
+            "Domain Name": ["Domain Name"],
+            "MAC Address": ["MAC Address"],
+            "URL": ["URL"],
+            "User Account": ["User Account"],
+            "File": ["File name", "File encoding", "File hashes"]
         }
-        return json.dumps(object_array)
+        return json.dumps(list(object_array.keys()))
 
     def create_bundle(self, objects):
         bundle = Bundle(
@@ -71,7 +71,6 @@ class BundleBase():
     def create_domain_name_object(self, domain_name=None):
         print(domain_name)
         if domain_name == None:
-            print("RANDOM")
             tld = [".com",".org",".gov",".edu",".net",".io"]
             domain_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
             domain_name += tld[random.randint(0,len(tld)-1)]

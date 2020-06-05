@@ -58,7 +58,6 @@ class BundleGenerate(BundleBase):
                 if object_function is None:
                     continue
                 if row in self.custom_data.keys():
-                    print("CUSTOM")
                     if stix_object in self.custom_data[row].keys():
                         sdo_dict[str(sdo_idx)] = object_function(self.custom_data[row][stix_object])
                 else:

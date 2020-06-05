@@ -43,11 +43,8 @@ def search(label):
 	client, db, collection = mongo_connection()
 	results = []
 	for stix_obj in collection.find():
-		hasKey = 'label' in stix_obj.keys()
-		if(hasKey and stix_obj['label'] == label):
-			del stix_obj['_id']
-			del stix_obj['label']
-
-			results.append(stix_obj)
+		has_key = 'label' in stix_obj.keys()
+		if(has_key and stix_obj['label'] == label):
+			results.append("http://stix-gen-route-stix-gen." + os.environ["OCP_CLUSTER"] + "/grab_bundle?id=" + str(stix_obj["_id"]))
 	print(f"[STIX2 SEARCH] Mongo found {len(results)} stix bundles for {label}")
 	return results

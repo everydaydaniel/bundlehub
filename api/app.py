@@ -62,7 +62,7 @@ def create_bundle():
 	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
-	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label='poopee')
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label=data["label"])
 #	bundlehub_link = bundlehub.bundhub_main(bundle)
 	response = {
 		"url": mongo_bundle_url,
@@ -97,8 +97,8 @@ def grab_bundle_pretty():
 @app.route("/search_bundles", methods=["GET", "POST"])
 def search_bundles():
 	label = request.args.get("label")
-	result = storage.search(label)
-	return json.dumps(result)
+	results = storage.search(label)
+	return jsonify(dict(search_results=results))
 
 ##		Get all industries	##
 @app.route("/allIndustries", methods=["GET"])
