@@ -45,6 +45,7 @@ def transform_bundle(bundle):
 @app.route("/get_object_map", methods=["GET","POST"])
 def get_object_map():
 	bundle_object = BundleGenerate()
+	print(bundle_object.object_map_json())
 	return bundle_object.object_map_json()
 
 

@@ -34,7 +34,14 @@ class BundleBase():
         }
 
     def object_map_json(self):
-        object_array = [key for key in self.object_map if key is not "Identity"]
+        object_array = {
+            "IPv4 Address": ["value"],
+            "Domain Name": ["value"],
+            "MAC Address": ["value"],
+            "URL": ["value"],
+            "User Account": ["value"],
+            "File": ["name", "encoding", "hashes"]
+        }
         return json.dumps(object_array)
 
     def create_bundle(self, objects):
