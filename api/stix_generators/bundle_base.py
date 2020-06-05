@@ -42,7 +42,7 @@ class BundleBase():
             "User Account": ["User Account"],
             "File": ["File name", "File encoding", "File hashes"]
         }
-        return json.dumps(list(object_array.keys()))
+        return json.dumps(object_array)
 
     def create_bundle(self, objects):
         bundle = Bundle(
