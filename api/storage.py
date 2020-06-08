@@ -12,7 +12,7 @@ import os
 if os.environ["DEV"] == "TRUE":
 	MONGO_HOST = "127.0.0.1"
 	OCP_CLUSTER = "127.0.0.1:5000"
-	ROUTE = "https://"
+	ROUTE = ""
 else:
 	MONGO_HOST = os.environ["MONGO_HOST"]
 	OCP_CLUSTER = os.environ["OCP_CLUSTER"]
