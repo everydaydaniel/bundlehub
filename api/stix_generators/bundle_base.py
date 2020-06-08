@@ -105,7 +105,7 @@ class BundleBase():
         value = proto + base + ext
       return URL(value=value)
 
-    def create_user_account_object(self, id=None):
-      if id == None:
-        id = uuid4().hex
-      return UserAccount(user_id=id)
+    def create_user_account_object(self, user_id=None):
+      if user_id == None:
+        user_id = uuid4().hex
+      return UserAccount(user_id=user_id)
