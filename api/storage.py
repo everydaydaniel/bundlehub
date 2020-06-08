@@ -14,7 +14,7 @@ if os.environ["DEV"] == "TRUE":
 	OCP_CLUSTER = "127.0.0.1:5000"
 	ROUTE = ""
 	GRAB = "/grab_bundle_pretty?id="
-else:
+elif os.environ["DEV"] == "FALSE":
 	MONGO_HOST = os.environ["MONGO_HOST"]
 	OCP_CLUSTER = os.environ["OCP_CLUSTER"]
 	ROUTE = "http://stix-gen-route-stix-gen."
