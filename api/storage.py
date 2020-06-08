@@ -23,19 +23,8 @@ else:
 
 ##		Prints database and route info 		##
 def get_info():
-	print("""
 
-	  ██ ██████  ███    ███ 
-	  ██ ██   ██ ████  ████ 
-	  ██ ██████  ██ ████ ██ 
-	  ██ ██   ██ ██  ██  ██ 
-	  ██ ██████  ██      ██ 
-                      
-
-    STIX-GEN BETA-2.0.1 API CONTAINER
-
-[STIX2 GEN] """ + ROUTE + OCP_CLUSTER + """
-[STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + MONGO_HOST + """\n""")
+	return """[STIX2 GEN] """ + ROUTE + OCP_CLUSTER + """\n[STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + MONGO_HOST + """\n"""
 
 ##		Mongo Connection		##
 def mongo_connection():

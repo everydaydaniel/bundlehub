@@ -19,6 +19,18 @@ from stix_generators.get_Industries import all_Industries
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
+
+	print("""
+
+	  ██ ██████  ███    ███ 
+	  ██ ██   ██ ████  ████ 
+	  ██ ██████  ██ ████ ██ 
+	  ██ ██   ██ ██  ██  ██ 
+	  ██ ██████  ██      ██ 
+                      
+
+    STIX-GEN BETA-2.0.1 API CONTAINER"""
+    
 storage.get_info()
 
 
