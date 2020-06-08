@@ -23,3 +23,8 @@ spec:
         configMapKeyRef:
           name: stix-gen-cm
           key: ocp_url
+    - name: DEV
+      valueFrom:
+        configMapKeyRef:
+          name: stix-gen-cm
+          key: dev_mode
