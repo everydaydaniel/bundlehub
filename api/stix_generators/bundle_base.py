@@ -54,7 +54,7 @@ class BundleBase():
         return bundle
 
     def create_file_object(self, file_data=None):
-        if file_data == None:
+        if file_data == None or file_data == {}:
             file_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30))) + ".exe"
             encoding = "MD5"
             hashes = "00000000000000000000000000000000"
@@ -69,7 +69,7 @@ class BundleBase():
         return File(name=file_name, hashes={encoding:hashes})
 
     def create_domain_name_object(self, domain_name=None):
-        if domain_name == None:
+        if domain_name == None or domain_name == {}:
             tld = [".com",".org",".gov",".edu",".net",".io"]
             domain_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
             domain_name += tld[random.randint(0,len(tld)-1)]
@@ -82,7 +82,7 @@ class BundleBase():
         return id
 
     def create_ipv4_object(self, value=None):
-        if value == None:
+        if value == None or value == {}:
             addr = socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
             return IPv4Address(value=addr)
         else:
@@ -90,7 +90,7 @@ class BundleBase():
         return IPv4Address(value=value)
 
     def create_mac_address_object(self, mac_address=None):
-        if mac_address == None:
+        if mac_address == None or mac_address == {}:
             mac = [ 0x00, 0x16, 0x3e,
                 random.randint(0x00, 0x7f),
                 random.randint(0x00, 0xff),
@@ -101,7 +101,7 @@ class BundleBase():
         return MACAddress(value=mac_address)
 
     def create_url_object(self, value=None):
-        if value == None:
+        if value == None or value == {}:
             tld = [".com",".org",".gov",".edu",".net",".io"]
             proto = "https://"
             base = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
@@ -114,7 +114,7 @@ class BundleBase():
         return URL(value=value)
 
     def create_user_account_object(self, user_id=None):
-        if user_id == None:
+        if user_id == None or user_id == {}:
             user_id = uuid4().hex
         else:
             user_id = user_id["value"]
