@@ -35,12 +35,12 @@ class BundleBase():
 
     def object_map_json(self):
         object_array = {
-            "IPv4 Address": ["value"],
-            "Domain Name": ["value"],
-            "MAC Address": ["value"],
-            "URL": ["value"],
-            "User Account": ["value"],
-            "File": ["name", "encoding", "hashes"]
+            "IPv4 Address": ["IPv4 Address"],
+            "Domain Name": ["Domain Name"],
+            "MAC Address": ["MAC Address"],
+            "URL": ["URL"],
+            "User Account": ["User Account"],
+            "File": ["File name", "File encoding", "File hashes"]
         }
         return json.dumps(object_array)
 
@@ -69,11 +69,12 @@ class BundleBase():
         return File(name=file_name, hashes={encoding:hashes})
 
     def create_domain_name_object(self, domain_name=None):
-        print(domain_name)
         if domain_name == None:
             tld = [".com",".org",".gov",".edu",".net",".io"]
             domain_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
             domain_name += tld[random.randint(0,len(tld)-1)]
+        else:
+            domain_name = domain_name["value"]
         return DomainName(value=domain_name)
 
     def create_identity_object(self, name):
@@ -84,6 +85,8 @@ class BundleBase():
         if value == None:
             addr = socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
             return IPv4Address(value=addr)
+        else:
+            value = value["value"]
         return IPv4Address(value=value)
 
     def create_mac_address_object(self, mac_address=None):
@@ -93,19 +96,27 @@ class BundleBase():
                 random.randint(0x00, 0xff),
                 random.randint(0x00, 0xff) ]
             mac_address = ':'.join(map(lambda x: "%02x" % x, mac))
+        else:
+            mac_address = mac_address["value"]
         return MACAddress(value=mac_address)
 
     def create_url_object(self, value=None):
-      if value == None:
-        tld = [".com",".org",".gov",".edu",".net",".io"]
-        proto = "https://"
-        base = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
-        base += tld[random.randint(0,len(tld)-1)] + "/"
-        ext = uuid4().hex + ".html"
-        value = proto + base + ext
-      return URL(value=value)
+        if value == None:
+            tld = [".com",".org",".gov",".edu",".net",".io"]
+            proto = "https://"
+            base = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
+            base += tld[random.randint(0,len(tld)-1)] + "/"
+            ext = uuid4().hex + ".html"
+            value = proto + base + ext
+        else:
+            value = value["value"]
+
+        return URL(value=value)
 
     def create_user_account_object(self, user_id=None):
-      if user_id == None:
-        user_id = uuid4().hex
-      return UserAccount(user_id=user_id)
+        if user_id == None:
+            user_id = uuid4().hex
+        else:
+            user_id = user_id["value"]
+
+        return UserAccount(user_id=user_id)
