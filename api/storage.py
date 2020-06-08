@@ -13,10 +13,12 @@ if os.environ["DEV"] == "TRUE":
 	MONGO_HOST = "127.0.0.1"
 	OCP_CLUSTER = "127.0.0.1:5000"
 	ROUTE = ""
+	GRAB = "/grab_bundle_pretty?id="
 else:
 	MONGO_HOST = os.environ["MONGO_HOST"]
 	OCP_CLUSTER = os.environ["OCP_CLUSTER"]
 	ROUTE = "http://stix-gen-route-stix-gen."
+	GRAB = "/grab_bundle?id="
 
 
 ##		Prints database and route info 		##
@@ -51,7 +53,7 @@ def store_stix_bundle(bundle, label):
 	bundle["label"] = label
 	bundle_row_id = collection.insert_one(bundle).inserted_id
 	print(f"[STIX2 GEN] Mongo job finished inserting {bundle_row_id}")
-	return ROUTE + OCP_CLUSTER + "/grab_bundle?id=" + str(bundle_row_id)
+	return ROUTE + OCP_CLUSTER + GRAB + str(bundle_row_id)
 
 
 ##		Grabs bundle using string representing bson.ObjectId 		##
