@@ -29,7 +29,7 @@ print("""
 	  ██ ██████  ██      ██ 
                       
 
-    STIX-GEN BETA-2.0.1 API CONTAINER"""
+    STIX-GEN BETA-2.0.1 API CONTAINER""")
 
 print(storage.get_info())
 

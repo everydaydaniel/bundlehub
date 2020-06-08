@@ -24,7 +24,9 @@ else:
 ##		Prints database and route info 		##
 def get_info():
 
-	return """[STIX2 GEN] """ + ROUTE + OCP_CLUSTER + """\n[STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + MONGO_HOST + """\n"""
+	return ("""
+[STIX2 GEN] """ + ROUTE + OCP_CLUSTER + """
+[STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + MONGO_HOST + """\n""")
 
 ##		Mongo Connection		##
 def mongo_connection():
