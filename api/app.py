@@ -19,19 +19,7 @@ from stix_generators.get_Industries import all_Industries
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.debug = True
-print("""
-
-	  ██ ██████  ███    ███ 
-	  ██ ██   ██ ████  ████ 
-	  ██ ██████  ██ ████ ██ 
-	  ██ ██   ██ ██  ██  ██ 
-	  ██ ██████  ██      ██ 
-                      
-
-    STIX-GEN BETA-2.0.1 API CONTAINER
-
-[STIX2 GEN] API ENDPOINT AT http://stix-gen-route-stix-gen.""" + os.environ["OCP_CLUSTER"] + """
-[STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + os.environ["MONGO_HOST"] + """\n""")
+storage.get_info()
 
 
 ##		Tag and transform bundle for storage		##
