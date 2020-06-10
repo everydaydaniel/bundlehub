@@ -1,10 +1,3 @@
-if docker ps |grep -q "cnebs/bundlegenerator:"; then
-	echo "UI is running!"
-else
-	echo "Starting UI"
-	docker run -e API=$API -p 8000:3000 -d cnebs/bundlegenerator:2.1.2
-fi
-
 if docker ps |grep -q "mongo"; then
 	echo "MongoDB is running!"
 else
