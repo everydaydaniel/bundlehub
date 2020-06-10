@@ -22,7 +22,7 @@ class BundleValidate():
             "IPv4 Address": self.validate_ipv4,
             "Domain Name": self.validate_domain_name,
             "MAC Address": self.validate_mac,
-            "URL": self.validate_mac,
+            "URL": self.validate_url,
             "File": self.validate_file
 		}
 
