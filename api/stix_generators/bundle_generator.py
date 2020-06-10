@@ -17,14 +17,13 @@ from uuid import uuid4
 
 
 class BundleGenerate(BundleBase):
+    """
+    BundleGenerate manages complete generation
+    of random and custom bundle content...
+    """
+
     def __init__(self, data=None):
         super().__init__(BundleBase)
-        # data schema
-        #  {
-        #   dataSourceName: "String",
-        #   numberOfRows: "Integer",
-        #   rowContents: [array, with, selected, objects],
-        # }
         self.data = data
         print("data in BundleGenerate:", data)
         self.objects = []
@@ -83,8 +82,6 @@ class BundleGenerate(BundleBase):
 
 
     def parse_data(self):
-        # create the initial identity object and
-        # add it into the objects
         name = self.data["dataSourceName"]
         identity = self.create_identity_object(name)
         self.objects.append(identity)

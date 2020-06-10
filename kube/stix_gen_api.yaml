@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: stix-gen-api
-    image: andrewcampagna/stix-builder-api:beta-2.0.6
+    image: andrewcampagna/stix-builder-api:beta-2.0.10
     ports:
     - containerPort: 5000
       name: stixgen
@@ -23,8 +23,13 @@ spec:
         configMapKeyRef:
           name: stix-gen-cm
           key: ocp_url
-    - name: DEV
+    - name: ROUTE
       valueFrom:
         configMapKeyRef:
           name: stix-gen-cm
-          key: dev_mode
+          key: api_route
+    - name: GRAB
+      valueFrom:
+        configMapKeyRef:
+          name: stix-gen-cm
+          key: grab_route

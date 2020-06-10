@@ -9,16 +9,11 @@ from bson.objectid import ObjectId
 import json
 import os
 
-if os.environ["DEV"] == "TRUE":
-	MONGO_HOST = "127.0.0.1"
-	OCP_CLUSTER = "127.0.0.1:5000"
-	ROUTE = ""
-	GRAB = "/grab_bundle_pretty?id="
-elif os.environ["DEV"] == "FALSE":
-	MONGO_HOST = os.environ["MONGO_HOST"]
-	OCP_CLUSTER = os.environ["OCP_CLUSTER"]
-	ROUTE = "http://stix-gen-route-stix-gen."
-	GRAB = "/grab_bundle?id="
+
+MONGO_HOST = os.environ["MONGO_HOST"]
+OCP_CLUSTER = os.environ["OCP_CLUSTER"]
+ROUTE = os.environ["ROUTE"]
+GRAB = os.environ["GRAB"]
 
 
 ##		Prints database and route info 		##
@@ -26,7 +21,7 @@ def get_info():
 
 	return ("""
 [STIX2 GEN] """ + ROUTE + OCP_CLUSTER + """
-[STIX2 GEN] MONGO SERVICE CLUSTER IP AT""" + MONGO_HOST + """\n""")
+[STIX2 GEN] MONGO SERVICE CLUSTER IP AT """ + MONGO_HOST + """\n""")
 
 ##		Mongo Connection		##
 def mongo_connection():

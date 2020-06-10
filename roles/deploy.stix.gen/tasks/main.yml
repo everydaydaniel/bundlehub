@@ -11,6 +11,8 @@
   shell: |
     sed -i '' "s/CLUSTER_IP/$(oc describe svc stix-gen-mongo-svc -n stix-gen |grep IP: |awk '{print $2}')/g" kube/stix_gen_config.yaml
     sed -i '' 's/CLUSTER_URL/{{ ocp_cluster }}/g' kube/stix_gen_config.yaml
+    sed -i '' 's/CLUSTER_ROUTE/http:\/\/stix-gen-route-stix-gen/g' kube/stix_gen_config.yaml
+    sed -i '' 's/CLUSTER_GRAB_ROUTE/\/grab_bundle?id=/g' kube/stix_gen_config.yaml
 
 - name: Deploying STIX2 Generator ConfigMap...
   shell: oc create -f kube/stix_gen_config.yaml
@@ -31,3 +33,5 @@
   shell: |
     sed -i '' "s/$(oc describe svc stix-gen-mongo-svc -n stix-gen |grep IP: |awk '{print $2}')/CLUSTER_IP/g" kube/stix_gen_config.yaml
     sed -i '' 's/{{ ocp_cluster }}/CLUSTER_URL/g' kube/stix_gen_config.yaml
+    sed -i '' 's/http:\/\/stix-gen-route-stix-gen/CLUSTER_ROUTE/g' kube/stix_gen_config.yaml
+    sed -i '' 's/\/grab_bundle?id=/CLUSTER_GRAB_ROUTE/g' kube/stix_gen_config.yaml

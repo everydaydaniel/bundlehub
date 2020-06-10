@@ -13,6 +13,7 @@ import os
 from bundlehub import bundlehub
 from stix_generators.bundle_generator import BundleGenerate
 from stix_generators.bundle_base import BundleBase
+from stix_generators.bundle_validate import BundleValidate
 from stix_generators.get_Industries import all_Industries
 
 app = Flask(__name__)
@@ -28,7 +29,7 @@ print("""
 	  ██ ██████  ██      ██ 
                       
 
-    STIX-GEN BETA-2.0.1 API CONTAINER""")
+    STIX-GEN BETA-2.1.0 API CONTAINER""")
 
 print(storage.get_info())
 
@@ -51,24 +52,26 @@ def get_object_map():
 ##		Used with UI to pass in data and create a bundle 		##
 @app.route("/create_bundle", methods=["GET","POST"])
 def create_bundle():
-	# expected input
-	# data = {
-	#         "dataSourceName": "testBundle",
-	#         "numberOfRows": 10,
-	#         "rowContents": ["IPv4Address"]
-	#         }
 	data = request.get_json()
 	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label=data["label"])
-#	bundlehub_link = bundlehub.bundhub_main(bundle)
+
 	response = {
 		"url": mongo_bundle_url,
 		"bundle_data": bundle.serialize(),
-#		"bundlehub_link": bundlehub_link
 	}
 
+	return json.dumps(response)
+
+
+##		Validate custom bundle bundle 		##
+@app.route("/validate", methods=["GET", "POST"])
+def validate():
+	data = request.get_json()
+	bundle_validation = BundleValidate(data)
+	response = bundle_validation.get_response()
 	return json.dumps(response)
 
 
@@ -98,6 +101,7 @@ def search_bundles():
 	label = request.args.get("label")
 	results = storage.search(label)
 	return jsonify(dict(search_results=results))
+
 
 ##		Get all industries	##
 @app.route("/allIndustries", methods=["GET"])

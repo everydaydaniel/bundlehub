@@ -1,3 +1,9 @@
+"""
+
+STIX2 Bundle Generator
+
+"""
+
 import datetime
 import json
 import time
@@ -7,9 +13,9 @@ import struct
 from stix2 import *
 from uuid import uuid4
 
+
 class BundleBase():
     """
-    docstring for BundleBase.
     Bundle base holds all the functions that
     create STIX cyber observable obejcts. The current implementation
     will generate a desired object with random information.
@@ -20,8 +26,7 @@ class BundleBase():
     The UI will ping an enpoint that calls object_map_json so that users will
     know what obejctsare avilible.
     """
-    # use this object to put all cyber observable
-    # creation objects
+
     def __init__(self, arg):
         self.object_map = {
             "Identity": self.create_identity_object,
@@ -32,6 +37,7 @@ class BundleBase():
             "User Account": self.create_user_account_object,
             "File": self.create_file_object
         }
+
 
     def object_map_json(self):
         object_array = {
@@ -44,6 +50,7 @@ class BundleBase():
         }
         return json.dumps(object_array)
 
+
     def create_bundle(self, objects):
         bundle = Bundle(
             id="bundle--{}".format(uuid4()),
@@ -52,6 +59,7 @@ class BundleBase():
             )
 
         return bundle
+
 
     def create_file_object(self, file_data=None):
         if file_data == None or file_data == {}:
@@ -68,6 +76,7 @@ class BundleBase():
                 hashes = "00000000000000000000000000000000"
         return File(name=file_name, hashes={encoding:hashes})
 
+
     def create_domain_name_object(self, domain_name=None):
         if domain_name == None or domain_name == {}:
             tld = [".com",".org",".gov",".edu",".net",".io"]
@@ -77,9 +86,11 @@ class BundleBase():
             domain_name = domain_name["value"]
         return DomainName(value=domain_name)
 
+
     def create_identity_object(self, name):
         id = Identity(name=name, identity_class="events")
         return id
+
 
     def create_ipv4_object(self, value=None):
         if value == None or value == {}:
@@ -88,6 +99,7 @@ class BundleBase():
         else:
             value = value["value"]
         return IPv4Address(value=value)
+
 
     def create_mac_address_object(self, mac_address=None):
         if mac_address == None or mac_address == {}:
@@ -99,6 +111,7 @@ class BundleBase():
         else:
             mac_address = mac_address["value"]
         return MACAddress(value=mac_address)
+
 
     def create_url_object(self, value=None):
         if value == None or value == {}:
@@ -112,6 +125,7 @@ class BundleBase():
             value = value["value"]
 
         return URL(value=value)
+
 
     def create_user_account_object(self, user_id=None):
         if user_id == None or user_id == {}:
