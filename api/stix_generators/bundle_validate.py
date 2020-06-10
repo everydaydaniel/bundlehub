@@ -16,7 +16,7 @@ class BundleValidate():
 
 	def __init__(self, data=None):
 		self.data = data
-		self.response = {}
+		self.response = {"valid":True}
 
 		self.validation_map = {
             "IPv4 Address": self.validate_ipv4,
@@ -41,7 +41,9 @@ class BundleValidate():
 			if sdo_key in self.validation_map.keys():
 				validation_function = self.validation_map.get(sdo_key)
 				is_valid, response = validation_function(custom_dso[sdo_key])
-				self.response[sdo_key] = {"valid":is_valid, "msg":response}
+				if not is_valid:
+					self.response["valid"] = False
+					self.response[sdo_key] = {"msg":response}
 
 		print(f"[STIX2 VALIDATE] VALIDATION COMPLETE")
 
