@@ -36,14 +36,17 @@ class BundleValidate():
 
 
 	def validate(self):
-		for custom_dso in self.data:
-			sdo_key = list(custom_dso.keys())[0]
+		for custom_sdo in self.data:
+			sdo_key = list(custom_sdo.keys())[0]
 			if sdo_key in self.validation_map.keys():
-				validation_function = self.validation_map.get(sdo_key)
-				is_valid, response = validation_function(custom_dso[sdo_key])
-				if not is_valid:
-					self.response["valid"] = False
-					self.response[sdo_key] = {"msg":response}
+				if custom_sdo[sdo_key] == {}:
+					pass
+				else:
+					validation_function = self.validation_map.get(sdo_key)
+					is_valid, response = validation_function(custom_sdo[sdo_key])
+					if not is_valid:
+						self.response["valid"] = False
+						self.response[sdo_key] = {"msg":response}
 
 		print(f"[STIX2 VALIDATE] VALIDATION COMPLETE")
 
