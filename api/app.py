@@ -70,6 +70,7 @@ def create_bundle():
 @app.route("/validate", methods=["GET", "POST"])
 def validate():
 	data = request.get_json()
+	data = data["input"]
 	bundle_validation = BundleValidate(data)
 	response = bundle_validation.get_response()
 	return json.dumps(response)
