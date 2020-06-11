@@ -57,6 +57,15 @@ class BundleValidate():
 		else:
 			return False, "Invalid IPv4 format"
 
+	def sift_dictionary(self, data):
+
+		for key, value in data.items():
+			placeHolder = data[key]
+			print(current)
+			if type(value) is dict:
+				get_all_values(data)
+			else:
+				print(key, ":", value)
 
 	def validate_domain_name(self, value):
 		if validators.domain(value["value"]):
@@ -79,14 +88,14 @@ class BundleValidate():
 
 
 	def validate_file(self, value):
-
+		self.sift_dictionary(value)
 		if "encoding" in value.keys():
 			if value["encoding"] in ["SHA-1", "SHA-256", "MD5"]:
 				try:
 					File(name=value["name"], hashes={value["encoding"]:value["hashes"]})
 					return True, ""
 				except Exception as e:
-					print(e)
+					print("HEHRERHEHRH")
 					return False, e
 			else:
 				return False, "Invalid encoding choice please choose from SHA-1, SHA-256, or MD5"
