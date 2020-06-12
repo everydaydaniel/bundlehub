@@ -6,6 +6,7 @@ STIX2 Bundle Generator
 
 import validators
 from stix2 import File
+from .stix_utils.utils import sift_dictionary
 
 
 class BundleValidate():
@@ -15,7 +16,7 @@ class BundleValidate():
 	"""
 
 	def __init__(self, data=None):
-		self.data = [self.sift_dictionary(obj) for obj in data]
+		self.data = [sift_dictionary(obj) for obj in data]
 		self.response = {"valid":True}
 		self.validation_map = {
             "IPv4 Address": self.validate_ipv4,
@@ -60,18 +61,6 @@ class BundleValidate():
 			return False, "Invalid IPv4 format"
 
 
-	def sift_dictionary(self, data):
-		return_dict = {}
-		for key, value in data.items():
-			if type(value) is dict:
-				return_dict[key] = self.sift_dictionary(value)
-			else:
-				if value == "":
-					continue
-				return_dict[key] = value
-		return return_dict
-
-
 	def validate_domain_name(self, value):
 		if validators.domain(value["value"]):
 			return True, ""
@@ -96,7 +85,7 @@ class BundleValidate():
 	def validate_file(self, value):
 		keys = list(value.keys())
 		valid_encodings = ["MD5", "SHA-1", "SHA-256"]
-		
+
 		if "encoding" not in keys and "hashes" not in keys:
 			return True, ""
 
@@ -110,6 +99,3 @@ class BundleValidate():
 			except Exception as e:
 				print(e)
 				return False, str(e)
-
-
-
