@@ -17,7 +17,6 @@ class BundleValidate():
 	def __init__(self, data=None):
 		self.data = [self.sift_dictionary(obj) for obj in data]
 		self.response = {"valid":True}
-
 		self.validation_map = {
             "IPv4 Address": self.validate_ipv4,
             "Domain Name": self.validate_domain_name,
@@ -57,9 +56,8 @@ class BundleValidate():
 		else:
 			return False, "Invalid IPv4 format"
 
+
 	def sift_dictionary(self, data):
-		# This function recursivley goes through nested files and
-		# makes sure empty data is cleared
 		return_dict = {}
 		for key, value in data.items():
 			if type(value) is dict:
@@ -71,13 +69,12 @@ class BundleValidate():
 		return return_dict
 
 
-
-
 	def validate_domain_name(self, value):
 		if validators.domain(value["value"]):
 			return True, ""
 		else:
 			return False, "Invalid domain name format"
+
 
 	def validate_url(self, value):
 		if validators.url(value["value"]):
@@ -94,12 +91,18 @@ class BundleValidate():
 
 
 	def validate_file(self, value):
-		if "encoding" in value.keys():
-			if value["encoding"] in ["SHA-1", "SHA-256", "MD5"]:
-				try:
-					File(name=value["name"], hashes={value["encoding"]:value["hashes"]})
-					return True, ""
-				except Exception as e:
-					return False, e
-			else:
-				return False, "Invalid encoding choice please choose from SHA-1, SHA-256, or MD5"
+		keys = list(value.keys())
+		if "encoding" not in keys and "hashes" not in keys:
+			return True, ""
+		elif "encoding" in keys:
+			if value["encoding"] not in ["MD5", "SHA-1", "SHA-256"] or ("encoding" not in keys and "hashes" not in keys):
+				return False, "Invalid hash encoding selection... Please choose MD5, SHA-1, or SHA-256"
+		elif "hashes" in keys and "encoding" in keys:
+			try:
+				File(name=value["name", hashes={value["encoding"]:value["hashes"]}])
+			except Exception as e:
+				return False, e
+
+
+
+
