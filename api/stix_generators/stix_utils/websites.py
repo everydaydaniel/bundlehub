@@ -15,6 +15,8 @@ with open("resources/topleveldomains.text", "r") as tld_file:
 	tld_list = tld_file.readlines()
 	tld_file.close()
 
+RANDOM_ASCII_RANGES = [[48,57], [65, 90], [97,122]]
+
 
 def random_word():
 	"""Generates random
@@ -32,7 +34,12 @@ def random_string():
 	of un-specified length...
 	"""
 
-	return 
+	length = randint(1,20)
+	word = ""
+	for i in range(length):
+		ascii_select = randint(0,len(RANDOM_ASCII_RANGES) - 1)
+		word += chr(randint(RANDOM_ASCII_RANGES[ascii_select][0], RANDOM_ASCII_RANGES[ascii_select][1]))
+	return word
 
 
 def random_top_level_domain():
@@ -52,3 +59,6 @@ def random_domain():
 	"""
 
 	return random_word() + "." + random_top_level_domain()
+
+
+print(random_string())
