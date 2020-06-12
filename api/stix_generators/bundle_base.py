@@ -12,6 +12,7 @@ import socket
 import struct
 from stix2 import *
 from uuid import uuid4
+from .stix_utils import network
 
 
 class BundleBase():
@@ -94,7 +95,7 @@ class BundleBase():
 
     def create_ipv4_object(self, value=None):
         if value == None or value == {}:
-            addr = socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
+            addr = network.random_ipv4()
             return IPv4Address(value=addr)
         else:
             value = value["value"]
@@ -103,11 +104,7 @@ class BundleBase():
 
     def create_mac_address_object(self, mac_address=None):
         if mac_address == None or mac_address == {}:
-            mac = [ 0x00, 0x16, 0x3e,
-                random.randint(0x00, 0x7f),
-                random.randint(0x00, 0xff),
-                random.randint(0x00, 0xff) ]
-            mac_address = ':'.join(map(lambda x: "%02x" % x, mac))
+            mac_address = network.random_mac_address()
         else:
             mac_address = mac_address["value"]
         return MACAddress(value=mac_address)
