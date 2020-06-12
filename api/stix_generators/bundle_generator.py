@@ -81,12 +81,11 @@ class BundleGenerate(BundleBase):
         for custom_observed in self.data["custom"]:
             random_index = None
             while(True):
-                random_index = random.randint(0,self.data["numberOfRows"])
+                random_index = random.randint(0,self.data["numberOfRows"] - 1)
                 if random_index not in customized.keys():
                     break
 
             customized[random_index] = custom_observed
-        print("customized", customized)
         return customized
 
 
