@@ -38,6 +38,8 @@ class BundleValidate():
 		for custom_sdo in self.data:
 			sdo_key = list(custom_sdo.keys())[0]
 			if sdo_key in self.validation_map.keys():
+				print(custom_sdo)
+				print(custom_sdo[sdo_key])
 				if custom_sdo[sdo_key] == {}:
 					pass
 				else:
@@ -48,6 +50,7 @@ class BundleValidate():
 						self.response[sdo_key] = {"msg":response}
 
 		print(f"[STIX2 VALIDATE] VALIDATION COMPLETE")
+		print(self.response)
 
 
 	def validate_ipv4(self, value):
@@ -92,17 +95,21 @@ class BundleValidate():
 
 	def validate_file(self, value):
 		keys = list(value.keys())
+		valid_encodings = ["MD5", "SHA-1", "SHA-256"]
+		
 		if "encoding" not in keys and "hashes" not in keys:
 			return True, ""
-		elif "encoding" in keys:
-			if value["encoding"] not in ["MD5", "SHA-1", "SHA-256"] or ("encoding" not in keys and "hashes" not in keys):
-				return False, "Invalid hash encoding selection... Please choose MD5, SHA-1, or SHA-256"
-		elif "hashes" in keys and "encoding" in keys:
-			try:
-				File(name=value["name", hashes={value["encoding"]:value["hashes"]}])
-			except Exception as e:
-				return False, e
 
+		if value["encoding"] not in valid_encodings or ("encoding" not in keys and "hashes" in keys):
+			return False, "Invalid encoding selection... Please choose SHA-1, SHA-256, or MD5"
+
+		else:
+			try:
+				File(name="", hashes={value["encoding"]:value["hashes"]})
+				return True, ""
+			except Exception as e:
+				print(e)
+				return False, str(e)
 
 
 
