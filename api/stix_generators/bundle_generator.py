@@ -79,8 +79,11 @@ class BundleGenerate(BundleBase):
         self.data["custom"] = [sift_dictionary(obj) for obj in self.data["custom"]]
         for custom_observed in self.data["custom"]:
             random_index = None
-            while(random_index is None and random_index not in customized.keys()):
-                random_index = random.randint(0,self.data["numberOfRows"])
+            while(True):
+                random_index = random.randint(0,self.data["numberOfRows"] - 1)
+                if random_index not in customized.keys():
+                    break
+
             customized[random_index] = custom_observed
         return customized
 
