@@ -77,7 +77,6 @@ class BundleGenerate(BundleBase):
         if len(self.data["custom"]) == 0:
             return customized
         self.data["custom"] = [sift_dictionary(obj) for obj in self.data["custom"]]
-        print(self.data["custom"])
         for custom_observed in self.data["custom"]:
             random_index = None
             while(True):
