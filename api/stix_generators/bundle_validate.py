@@ -6,7 +6,7 @@ STIX2 Bundle Generator
 
 import validators
 from stix2 import File
-from .stix_utils.utils import sift_dictionary
+from .stix_utils.utils import sift_dictionary, files
 
 
 class BundleValidate():
@@ -84,13 +84,13 @@ class BundleValidate():
 
 	def validate_file(self, value):
 		keys = list(value.keys())
-		valid_encodings = ["MD5", "SHA-1", "SHA-256"]
+		valid_encodings = list(files.HASHES_REGEX.keys())
 
 		if "encoding" not in keys and "hashes" not in keys:
 			return True, ""
 
 		if value["encoding"] not in valid_encodings or ("encoding" not in keys and "hashes" in keys):
-			return False, "Invalid encoding selection... Please choose SHA-1, SHA-256, or MD5"
+			return False, "Invalid encoding selection... Please choose " + ",".join(valid_encodings)
 
 		else:
 			try:

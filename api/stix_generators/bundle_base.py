@@ -12,7 +12,7 @@ import socket
 import struct
 from stix2 import *
 from uuid import uuid4
-from .stix_utils import network
+from .stix_utils import network, websites, files
 
 
 class BundleBase():
@@ -64,25 +64,22 @@ class BundleBase():
 
     def create_file_object(self, file_data=None):
         if file_data == None or file_data == {}:
-            file_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30))) + ".exe"
-            encoding = "MD5"
-            hashes = "00000000000000000000000000000000"
+            file_name = files.random_file()
+            hashes = files.random_file_hashes()
         else:
             file_name = file_data["name"]
             if "encoding" in file_data.keys():
                 encoding = file_data["encoding"]
                 hashes = file_data["hashes"]
             else:
-                encoding = "MD5"
-                hashes = "00000000000000000000000000000000"
+                file_name = files.random_file()
+                hashes = files.random_file_hashes()
         return File(name=file_name, hashes={encoding:hashes})
 
 
     def create_domain_name_object(self, domain_name=None):
         if domain_name == None or domain_name == {}:
-            tld = [".com",".org",".gov",".edu",".net",".io"]
-            domain_name = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
-            domain_name += tld[random.randint(0,len(tld)-1)]
+            domain_name = website.random_domain()
         else:
             domain_name = domain_name["value"]
         return DomainName(value=domain_name)
@@ -95,8 +92,7 @@ class BundleBase():
 
     def create_ipv4_object(self, value=None):
         if value == None or value == {}:
-            addr = network.random_ipv4()
-            return IPv4Address(value=addr)
+            value = network.random_ipv4()
         else:
             value = value["value"]
         return IPv4Address(value=value)
@@ -112,12 +108,7 @@ class BundleBase():
 
     def create_url_object(self, value=None):
         if value == None or value == {}:
-            tld = [".com",".org",".gov",".edu",".net",".io"]
-            proto = "https://"
-            base = "".join(chr(random.randint(97,122)) for i in range(random.randint(1,30)))
-            base += tld[random.randint(0,len(tld)-1)] + "/"
-            ext = uuid4().hex + ".html"
-            value = proto + base + ext
+            value = website.random_url()
         else:
             value = value["value"]
 
