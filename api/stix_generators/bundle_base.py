@@ -12,7 +12,7 @@ import socket
 import struct
 from stix2 import *
 from uuid import uuid4
-from .stix_utils import network, websites, files
+from .stix_utils import network, websites, files, utils
 
 
 class BundleBase():
@@ -21,7 +21,6 @@ class BundleBase():
     create STIX cyber observable obejcts. The current implementation
     will generate a desired object with random information.
     Current pattern is create_stix_object_name(<variables>)
-
     Once an object creation function has been created add a key with the
     front end name and refrence to the function as the value.
     The UI will ping an enpoint that calls object_map_json so that users will
@@ -52,20 +51,21 @@ class BundleBase():
             "MAC Address": ["value"],
             "URL": ["value"],
             "User Account": ["value"],
-            "File": ["name", "encoding", "hashes"]
+        "File": ["name", "encoding", "hashes"]
         }
+    
         return json.dumps(object_array)
 
 
     def create_bundle(self, objects):
         """Packages all SDO into a bundle...
         """
-        
+
         bundle = Bundle(
             id="bundle--{}".format(uuid4()),
             spec_version="2.0",
             objects=objects
-            )
+        )
 
         return bundle
 
@@ -78,16 +78,17 @@ class BundleBase():
 
         if file_data == None or file_data == {}:
             file_name = files.random_file()
-            hashes = files.random_file_hashes()
+            hash_data = files.random_file_hashes()
         else:
             file_name = file_data["name"]
+
             if "encoding" in file_data.keys():
-                encoding = file_data["encoding"]
-                hashes = file_data["hashes"]
+                 hash_data = {file_data["encoding"]:file_data["hashes"]}
             else:
                 file_name = files.random_file()
-                hashes = files.random_file_hashes()
-        return File(name=file_name, hashes={encoding:hashes})
+                hash_data = files.random_file_hashes()
+
+        return File(name=file_name, hashes=hash_data)
 
 
     def create_domain_name_object(self, domain_name=None):
@@ -97,9 +98,10 @@ class BundleBase():
         """
 
         if domain_name == None or domain_name == {}:
-            domain_name = website.random_domain()
+            domain_name = websites.random_domain()
         else:
             domain_name = domain_name["value"]
+
         return DomainName(value=domain_name)
 
 
@@ -122,6 +124,7 @@ class BundleBase():
             value = network.random_ipv4()
         else:
             value = value["value"]
+
         return IPv4Address(value=value)
 
 
@@ -135,22 +138,22 @@ class BundleBase():
             mac_address = network.random_mac_address()
         else:
             mac_address = mac_address["value"]
+
         return MACAddress(value=mac_address)
 
 
     def create_url_object(self, value=None):
-         """Generates a new URL SDO
+        """Generates a new URL SDO
         either with custom data or
         from random utils...
         """
 
         if value == None or value == {}:
-            value = website.random_url()
+            value = websites.random_url()
         else:
             value = value["value"]
 
         return URL(value=value)
-
 
     def create_user_account_object(self, user_id=None):
         """Generates a new User Account

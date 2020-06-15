@@ -6,7 +6,7 @@ STIX2 Bundle Generator
 
 import validators
 from stix2 import File
-from .stix_utils.utils import sift_dictionary, files
+from .stix_utils import utils, files
 
 
 class BundleValidate():
@@ -103,7 +103,7 @@ class BundleValidate():
 		"""Validates File SDO
 		with and without encodings...
 		"""
-		
+
 		keys = list(value.keys())
 		valid_encodings = list(files.HASHES_REGEX.keys())
 

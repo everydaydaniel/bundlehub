@@ -5,7 +5,7 @@ STIX2 RANDOM UTILS
 """
 
 from random import randint
-import utils
+from . import utils
 
 with open("resources/topleveldomains.text", "r") as tld_file:
 	tld_list = tld_file.readlines()

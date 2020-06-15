@@ -13,7 +13,7 @@ import struct
 from .bundle_base import BundleBase
 from collections import OrderedDict
 from stix2 import Bundle, IPv4Address, Identity, ObservedData
-from .stix_utils.utils import sift_dictionary
+from .stix_utils import utils
 from uuid import uuid4
 
 
@@ -84,7 +84,7 @@ class BundleGenerate(BundleBase):
         customized = {}
         if len(self.data["custom"]) == 0:
             return customized
-        self.data["custom"] = [sift_dictionary(obj) for obj in self.data["custom"]]
+        self.data["custom"] = [utils.sift_dictionary(obj) for obj in self.data["custom"]]
         for custom_observed in self.data["custom"]:
             random_index = None
             while(True):
@@ -94,7 +94,7 @@ class BundleGenerate(BundleBase):
 
             customized[random_index] = custom_observed
         return customized
-        
+
     def parse_data(self):
         """Parses incoming bundle
         generation request data...

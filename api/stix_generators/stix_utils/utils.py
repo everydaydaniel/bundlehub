@@ -5,12 +5,15 @@ STIX2 RANDOM UTILS
 """
 
 from random import randint
+import os
 
-with open("resources/wordlist.text", "r") as word_file:
+wd = os.popen("pwd").read().replace("\n", "")
+
+with open(wd + "/resources/wordlist.text", "r") as word_file:
 	word_list = word_file.readlines()
 	word_file.close()
 
-with open("resources/fileextensions.text", "r") as ext_file:
+with open(wd + "/resources/fileextensions.text", "r") as ext_file:
 	ext_list = ext_file.readlines()
 	ext_file.close()
 

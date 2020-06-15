@@ -5,7 +5,7 @@ STIX2 RANDOM UTILS
 """
 
 from random import randint
-import utils
+from . import utils
 import re
 import rstr
 
