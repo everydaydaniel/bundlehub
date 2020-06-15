@@ -41,6 +41,11 @@ class BundleBase():
 
 
     def object_map_json(self):
+        """Provides front-end JS
+        a dictionary for custom
+        values input...
+        """
+
         object_array = {
             "IPv4 Address": ["value"],
             "Domain Name": ["value"],
@@ -53,6 +58,9 @@ class BundleBase():
 
 
     def create_bundle(self, objects):
+        """Packages all SDO into a bundle...
+        """
+        
         bundle = Bundle(
             id="bundle--{}".format(uuid4()),
             spec_version="2.0",
@@ -63,6 +71,11 @@ class BundleBase():
 
 
     def create_file_object(self, file_data=None):
+        """Generates a new File SDO
+        either with custom data or
+        from random utils...
+        """
+
         if file_data == None or file_data == {}:
             file_name = files.random_file()
             hashes = files.random_file_hashes()
@@ -78,6 +91,11 @@ class BundleBase():
 
 
     def create_domain_name_object(self, domain_name=None):
+        """Generates a new Domain Name SDO
+        either with custom data or
+        from random utils...
+        """
+
         if domain_name == None or domain_name == {}:
             domain_name = website.random_domain()
         else:
@@ -86,11 +104,20 @@ class BundleBase():
 
 
     def create_identity_object(self, name):
+        """Creates identity for
+        connector validation...
+        """
+
         id = Identity(name=name, identity_class="events")
         return id
 
 
     def create_ipv4_object(self, value=None):
+        """Generates a new IPv4 Address
+        SDO either with custom data or
+        from random utils...
+        """
+
         if value == None or value == {}:
             value = network.random_ipv4()
         else:
@@ -99,6 +126,11 @@ class BundleBase():
 
 
     def create_mac_address_object(self, mac_address=None):
+        """Generates a new MAC Address
+        SDO either with custom data or
+        from random utils...
+        """
+
         if mac_address == None or mac_address == {}:
             mac_address = network.random_mac_address()
         else:
@@ -107,6 +139,11 @@ class BundleBase():
 
 
     def create_url_object(self, value=None):
+         """Generates a new URL SDO
+        either with custom data or
+        from random utils...
+        """
+
         if value == None or value == {}:
             value = website.random_url()
         else:
@@ -116,8 +153,13 @@ class BundleBase():
 
 
     def create_user_account_object(self, user_id=None):
+        """Generates a new User Account
+        SDO either with custom data or
+        from random utils...
+        """
+
         if user_id == None or user_id == {}:
-            user_id = uuid4().hex
+            user_id = utils.random_word()
         else:
             user_id = user_id["value"]
 

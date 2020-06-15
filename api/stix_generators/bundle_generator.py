@@ -32,6 +32,10 @@ class BundleGenerate(BundleBase):
             self.custom_data = self.parse_custom()
             self.parse_data()
 
+    def return_bundle(self):
+        bundle = self.create_bundle(self.objects)
+        print(f"[STIX2 GEN] BUILD BUNDLE COMPLETE ")
+        return bundle
 
     def create_observed_data(self, objects):
         observed_data = ObservedData(
@@ -43,14 +47,11 @@ class BundleGenerate(BundleBase):
             )
         return observed_data
 
-
-    def return_bundle(self):
-        bundle = self.create_bundle(self.objects)
-        print(f"[STIX2 GEN] BUILD BUNDLE COMPLETE ")
-        return bundle
-
-
     def create_objects(self, stix_objects, number_of_rows):
+        """Generates SDO based on
+        data keys...
+        """
+
         for row in range(number_of_rows):
             sdo_dict = {}
             for sdo_idx, stix_object in enumerate(stix_objects):
@@ -65,14 +66,21 @@ class BundleGenerate(BundleBase):
             observed_data = self.create_observed_data(sdo_dict)
             self.objects.append(observed_data)
 
-
     def check_max_row_num(self, number_of_rows):
+        """Constraint on how many
+        observed objects can exist in bundle...
+        """
+
         if number_of_rows > 5000:
             number_of_rows = 5000
         return number_of_rows
 
-
     def parse_custom(self):
+        """Prepares custom row
+        data for injection into
+        the bundle...
+        """
+
         customized = {}
         if len(self.data["custom"]) == 0:
             return customized
@@ -86,9 +94,12 @@ class BundleGenerate(BundleBase):
 
             customized[random_index] = custom_observed
         return customized
-
-
+        
     def parse_data(self):
+        """Parses incoming bundle
+        generation request data...
+        """
+
         name = self.data["dataSourceName"]
         identity = self.create_identity_object(name)
         self.objects.append(identity)

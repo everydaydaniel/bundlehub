@@ -36,6 +36,11 @@ class BundleValidate():
 
 
 	def validate(self):
+		"""Runs validation
+		over all SDO found
+		in custom object...
+		"""
+
 		for custom_sdo in self.data:
 			sdo_key = list(custom_sdo.keys())[0]
 			if sdo_key in self.validation_map.keys():
@@ -55,6 +60,9 @@ class BundleValidate():
 
 
 	def validate_ipv4(self, value):
+		"""Validates IPv4 Address...
+		"""
+
 		if validators.ipv4(value["value"]):
 			return True, ""
 		else:
@@ -62,6 +70,9 @@ class BundleValidate():
 
 
 	def validate_domain_name(self, value):
+		"""Validates Domain name SDO...
+		"""
+
 		if validators.domain(value["value"]):
 			return True, ""
 		else:
@@ -69,6 +80,9 @@ class BundleValidate():
 
 
 	def validate_url(self, value):
+		"""Validates URL SDO...
+		"""
+
 		if validators.url(value["value"]):
 			return True, ""
 		else:
@@ -76,6 +90,9 @@ class BundleValidate():
 
 
 	def validate_mac(self, value):
+		"""Validates MAC Address SDO...
+		"""
+
 		if validators.mac_address(value["value"]):
 			return True, ""
 		else:
@@ -83,6 +100,10 @@ class BundleValidate():
 
 
 	def validate_file(self, value):
+		"""Validates File SDO
+		with and without encodings...
+		"""
+		
 		keys = list(value.keys())
 		valid_encodings = list(files.HASHES_REGEX.keys())
 
