@@ -10,7 +10,7 @@ BUNDLEHUB_REPO_FILES_DIRECTORY = BUNDLEHUB_REPO + "/generated_bundles"
 def clone_repo():
     print('CLONE_REPO\n\n', BUNDLEHUB_DIR)
     os.chdir(BUNDLEHUB_DIR)
-    os.system("git clone git@github.com:everydaydaniel/bundlehub.git")
+    os.system("git clone git@github.com:everydaydaniel/bundlehub.git -q")
 
 def pull_repo():
     os.chdir(BUNDLEHUB_REPO)
