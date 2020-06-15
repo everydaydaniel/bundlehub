@@ -53,7 +53,7 @@ class BundleBase():
             "User Account": ["value"],
         "File": ["name", "encoding", "hashes"]
         }
-    
+
         return json.dumps(object_array)
 
 
@@ -80,12 +80,11 @@ class BundleBase():
             file_name = files.random_file()
             hash_data = files.random_file_hashes()
         else:
-            file_name = file_data["name"]
+            file_name = file_data.get("name")
 
             if "encoding" in file_data.keys():
-                 hash_data = {file_data["encoding"]:file_data["hashes"]}
+                hash_data = {file_data["encoding"]:file_data["hashes"]}
             else:
-                file_name = files.random_file()
                 hash_data = files.random_file_hashes()
 
         return File(name=file_name, hashes=hash_data)
