@@ -30,7 +30,7 @@ def random_domain():
 	and random word generation...
 	"""
 
-	return utils.random_word() + "." + random_top_level_domain()
+	return utils.random_word() + "." + random_top_level_domain().replace("\n", "")
 
 
 def random_url():
