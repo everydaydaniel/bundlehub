@@ -16,7 +16,7 @@ class BundleValidate():
 	"""
 
 	def __init__(self, data=None):
-		self.data = [sift_dictionary(obj) for obj in data]
+		self.data = [utils.sift_dictionary(obj) for obj in data]
 		self.response = {"valid":True}
 		self.validation_map = {
             "IPv4 Address": self.validate_ipv4,
@@ -86,7 +86,7 @@ class BundleValidate():
 		if validators.url(value["value"]):
 			return True, ""
 		else:
-			return False, "Invalid URL format"
+			return False, "Invalid URL format: http(s)://{url}.{tld}"
 
 
 	def validate_mac(self, value):
