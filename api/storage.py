@@ -60,7 +60,7 @@ def search(label):
 	for stix_obj in collection.find():
 		has_key = 'label' in stix_obj.keys()
 		if(has_key and stix_obj['label'] == label):
-			print('HERERERERERERER:', stix_obj)
+			
 			results.append({"bundleUrl": "http://stix-gen-route-stix-gen." + os.environ["OCP_CLUSTER"] + "/grab_bundle?id=" + str(stix_obj["_id"]),
 			"industry": stix_obj["industry"], 'dataSourceName': stix_obj["dataSourceName"]
 			})
