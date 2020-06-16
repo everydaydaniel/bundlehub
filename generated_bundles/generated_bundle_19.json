@@ -1,0 +1,33 @@
+{
+    "id": "bundle--14ad5299-f418-48a9-aa5a-797bc13ab632",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--573b1a18-5a31-455b-87e7-8317215ba6db",
+            "created": "2020-06-16T19:30:31.275Z",
+            "modified": "2020-06-16T19:30:31.275Z"
+        },
+        {
+            "id": "observed-data--81f5173a-7bec-459d-86f5-707263631773",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:30:31.277919Z",
+            "last_observed": "2020-06-16T19:30:31.277935Z",
+            "objects": {
+                "0": {
+                    "name": "ibliographie-goalscorer-fannin.qd4",
+                    "hashes": {
+                        "SHA3-384": "2C9C6cd0ADE6bf8036aFcD3fdB53fC989Ed8DE19A9A86Ed74bE9aBdEe9A8f8aA2AbF31EDE33d84ddBE0FEaA93c6495F0"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:30:31.277Z",
+            "modified": "2020-06-16T19:30:31.277Z"
+        }
+    ],
+    "type": "bundle"
+}
