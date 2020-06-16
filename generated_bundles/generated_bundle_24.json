@@ -1,0 +1,33 @@
+{
+    "id": "bundle--24362171-b52f-48d6-b154-cc2c23574b3e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--1fd9a985-b456-4b6e-a3c8-1daf4b768cd0",
+            "created": "2020-06-16T19:32:48.848Z",
+            "modified": "2020-06-16T19:32:48.848Z"
+        },
+        {
+            "id": "observed-data--17eeb14c-425c-47fa-8f25-b203b68884e1",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:32:48.85111Z",
+            "last_observed": "2020-06-16T19:32:48.851119Z",
+            "objects": {
+                "0": {
+                    "name": "alamitie-jaunte.wsd",
+                    "hashes": {
+                        "SHA-256": "4B07480CDabd78Acfc90fBdaB8e1F73Ac08eCf74345E1E96D0AFe5Daf181Da2E"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:32:48.851Z",
+            "modified": "2020-06-16T19:32:48.851Z"
+        }
+    ],
+    "type": "bundle"
+}
