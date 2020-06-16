@@ -1,0 +1,51 @@
+{
+    "id": "bundle--7ed6a11f-4dee-4e03-b7a5-45f426bd4f73",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdfdsaf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--6057938a-62eb-4281-86c9-0bf76ac4c841",
+            "created": "2020-06-16T20:02:43.987Z",
+            "modified": "2020-06-16T20:02:43.987Z"
+        },
+        {
+            "id": "observed-data--8cd05c4c-29ec-4212-9e34-809a2823887b",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T20:02:43.990391Z",
+            "last_observed": "2020-06-16T20:02:43.990402Z",
+            "objects": {
+                "0": {
+                    "name": "1",
+                    "hashes": {
+                        "TLSH": "E94CA2Ff0B609b55bC79e2f22e41D0E8abbFEdcD55BF7eA66DDaefF745787c7bDc5F97"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T20:02:43.990Z",
+            "modified": "2020-06-16T20:02:43.990Z"
+        },
+        {
+            "id": "observed-data--67356a20-20cb-4593-a36b-d2a7678ac2cb",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T20:02:43.993355Z",
+            "last_observed": "2020-06-16T20:02:43.99338Z",
+            "objects": {
+                "0": {
+                    "name": "egligentl-amalga.e3p",
+                    "hashes": {
+                        "SHA-256": "574Eb341C48dBbC61D885CDe97E4Cbb6AA2AB5f7141BFb91aDf4BEe202c5aB6c"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T20:02:43.993Z",
+            "modified": "2020-06-16T20:02:43.993Z"
+        }
+    ],
+    "type": "bundle"
+}
