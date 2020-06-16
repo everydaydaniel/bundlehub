@@ -1,0 +1,33 @@
+{
+    "id": "bundle--b5e0be7e-367e-4157-9dc4-7f3a43eef39c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdfasdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--7478404e-219c-44fe-9f9f-7146c2f1b061",
+            "created": "2020-06-16T19:48:13.593Z",
+            "modified": "2020-06-16T19:48:13.593Z"
+        },
+        {
+            "id": "observed-data--17536bd7-a874-43e2-8af2-672348aaf1db",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:48:13.595744Z",
+            "last_observed": "2020-06-16T19:48:13.595756Z",
+            "objects": {
+                "0": {
+                    "name": "1",
+                    "hashes": {
+                        "ssdeep": "rmFMVVMojUUi8jzMtA:K8gMpIasA7xvfWeVbSET"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:48:13.595Z",
+            "modified": "2020-06-16T19:48:13.595Z"
+        }
+    ],
+    "type": "bundle"
+}
