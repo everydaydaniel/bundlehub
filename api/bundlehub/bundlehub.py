@@ -24,7 +24,6 @@ def check_repo_exists():
     except FileNotFoundError as e:
         set_email()
         clone_repo()
-        print('here we ARE')
 
 def create_bundle_json(bundle):
     number_of_files = len([f for f in os.listdir(BUNDLEHUB_REPO_FILES_DIRECTORY)])
