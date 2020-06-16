@@ -1,6 +1,6 @@
 APP=$(cat kube/stix_gen_api.yaml |grep "image:" |awk '{print $2}')
 UI=$(cat kube/stix_gen_ui.yaml |grep "image:" |awk '{print $2}')
-MONGO_HOST="127.0.0.1"
+MONGO_HOST=$(ifconfig en0 |grep inet |awk '{print $2}')
 OCP_CLUSTER="127.0.0.1:5000"
 ROUTE="http://"
 GRAB="/grab_bundle_pretty?id="
