@@ -1,0 +1,33 @@
+{
+    "id": "bundle--be2e1357-25d4-46ce-8f2f-66973ee13921",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--547bd57a-af78-4d0a-ae3b-957e3dce1218",
+            "created": "2020-06-16T19:31:34.565Z",
+            "modified": "2020-06-16T19:31:34.565Z"
+        },
+        {
+            "id": "observed-data--12f5af49-6bd9-47b0-8270-c39d11836f2f",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:31:34.566832Z",
+            "last_observed": "2020-06-16T19:31:34.566848Z",
+            "objects": {
+                "0": {
+                    "name": "arketplac-cornea-flintlock.mmm",
+                    "hashes": {
+                        "MD5": "BFd4a1CFf4aECD0573cDD2CbBef7Fdfd"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:31:34.566Z",
+            "modified": "2020-06-16T19:31:34.566Z"
+        }
+    ],
+    "type": "bundle"
+}
