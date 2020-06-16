@@ -1,0 +1,33 @@
+{
+    "id": "bundle--bf73767a-1755-4516-85cc-f850a219e4e2",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--0f414205-437b-4901-bf2e-30e7628b3a5d",
+            "created": "2020-06-16T19:32:33.226Z",
+            "modified": "2020-06-16T19:32:33.226Z"
+        },
+        {
+            "id": "observed-data--aa62a098-0301-4db8-878b-49007c2a1be9",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:32:33.228814Z",
+            "last_observed": "2020-06-16T19:32:33.22883Z",
+            "objects": {
+                "0": {
+                    "name": "axie.cda",
+                    "hashes": {
+                        "SHA-384": "3eeA1E0fBaCAfd1c54eF3159498B5C81185f82BA53598D6264DefFEeDeF0De0ee94d647110FbBdd7ebd177d22D543E58"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:32:33.228Z",
+            "modified": "2020-06-16T19:32:33.228Z"
+        }
+    ],
+    "type": "bundle"
+}
