@@ -1,0 +1,33 @@
+{
+    "id": "bundle--04ede8e9-3581-446a-9d03-e9f3bcc0e32b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--761a5429-9556-463b-85f2-19bb40462105",
+            "created": "2020-06-16T19:30:04.211Z",
+            "modified": "2020-06-16T19:30:04.211Z"
+        },
+        {
+            "id": "observed-data--f7d76158-e515-472f-b699-7ba557378f0c",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:30:04.213551Z",
+            "last_observed": "2020-06-16T19:30:04.213566Z",
+            "objects": {
+                "0": {
+                    "name": "griculturalis-emulate.t06",
+                    "hashes": {
+                        "TLSH": "15bC03e6B6EeE4e62E851937Bbbda764eCFd6eC72B692B1cb1dF452Db50cDC2fd5E840"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:30:04.213Z",
+            "modified": "2020-06-16T19:30:04.213Z"
+        }
+    ],
+    "type": "bundle"
+}
