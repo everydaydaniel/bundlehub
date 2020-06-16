@@ -67,7 +67,7 @@ def create_bundle():
 	response = {
 		"url": mongo_bundle_url,
 		"bundle_data": bundle.serialize(),
-		"bundlehub_link" = bundlehub_link
+		"bundlehub_link": bundlehub_link
 	}
 
 	return json.dumps(response)
