@@ -60,7 +60,7 @@ def create_bundle():
 	try:
 		bundlehub_link = bundlehub.bundhub_main(bundle)
 	except Exception as e:
-		bundlehub_link = "ERROR"
+		bundlehub_link = "Sorry, connection to github is unavailible right now."
 
 
 	response = {

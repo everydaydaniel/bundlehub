@@ -1,16 +1,21 @@
 import os
 
+
+
 ROOT_DIR = os.getcwd()
 BUNDLEHUB_DIR = ROOT_DIR + "/bundlehub"
 BUNDLEHUB_REPO = BUNDLEHUB_DIR + "/bundlehub"
 BUNDLEHUB_REPO_FILES_DIRECTORY = BUNDLEHUB_REPO + "/generated_bundles"
+BUNDLEHUB_LINK = "git@github.com:everydaydaniel/bundlehub.git"
+if os.getenv("BUNDLEHUB_REPO_LINK"):
+    BUNDLEHUB_LINK = os.getenv("BUNDLEHUB_REPO_LINK")
 
 
 # Clone the repo from github
 def clone_repo():
     print('CLONE_REPO\n\n', BUNDLEHUB_DIR)
     os.chdir(BUNDLEHUB_DIR)
-    os.system("git clone git@github.com:everydaydaniel/bundlehub.git -q")
+    os.system("git clone {} -q".format(BUNDLEHUB_LINK))
 
 def pull_repo():
     os.chdir(BUNDLEHUB_REPO)
