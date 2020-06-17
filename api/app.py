@@ -56,12 +56,14 @@ def create_bundle():
 	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label=data["label"], industry=data['industry'],
+	dataSourceName=data['dataSourceName'])
 	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label=data["label"])
+
 	try:
 		bundlehub_link = bundlehub.bundhub_main(bundle)
 	except Exception as e:
 		bundlehub_link = "Sorry, connection to github is unavailible right now."
-
 
 	response = {
 		"url": mongo_bundle_url,
@@ -87,6 +89,7 @@ def validate():
 def grab_bundle():
 	bundle_object_id = request.args.get("id")
 	result = storage.grab_stix_bundle(bundle_object_id)
+	print(result)
 	del result["_id"]
 	del result["label"]
 	return json.dumps(result)
