@@ -1,0 +1,75 @@
+{
+    "id": "bundle--f1d4f028-16d3-4478-b534-eb989e050a6f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdfsadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--6059eea9-d231-4845-ac28-733bed22e69d",
+            "created": "2020-06-17T20:47:47.406Z",
+            "modified": "2020-06-17T20:47:47.406Z"
+        },
+        {
+            "id": "observed-data--f97a9d79-8673-428a-af6c-ac1b505d1e00",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T20:47:47.412Z",
+            "last_observed": "2020-06-17T20:47:47.412015Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.246",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "redispositio-feeblenes-moneyles.football",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "http://urning-sigh-repor.mp/HqJ9XzJuebgB8ELw/yK6jdRi6h70/euse-palel.ul",
+                    "type": "url"
+                },
+                "3": {
+                    "name": "test 2",
+                    "hashes": {
+                        "SHA-384": "858B394E4fa198d608ed824Efad427fdDFBEf27ea2BDB025adb949Bf9Bc7fFE6af81cAECc650EE22a783233Af331dBFe"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T20:47:47.412Z",
+            "modified": "2020-06-17T20:47:47.412Z"
+        },
+        {
+            "id": "observed-data--b0bb035d-1c51-4fc7-b010-91268b2f6dd1",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T20:47:47.417876Z",
+            "last_observed": "2020-06-17T20:47:47.417888Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.225",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "njur.bf",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://ecurin-ecclesiasti-talon.delivery/29JQs/Fx/reenis.b5i",
+                    "type": "url"
+                },
+                "3": {
+                    "name": "test",
+                    "hashes": {
+                        "TLSH": "e3D0E099B2dFac71C840A70decE5edCCDd324a29A18b9DF1CaEDfFd2D26f663a29E69E"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T20:47:47.417Z",
+            "modified": "2020-06-17T20:47:47.417Z"
+        }
+    ],
+    "type": "bundle"
+}
