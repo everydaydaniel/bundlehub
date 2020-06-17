@@ -1,0 +1,75 @@
+{
+    "id": "bundle--3e2c9efa-c529-431d-b427-e59d09ccdd4f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdfsadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--d64da3f3-82cc-4d3c-b200-427ef9b0e337",
+            "created": "2020-06-17T20:48:11.524Z",
+            "modified": "2020-06-17T20:48:11.524Z"
+        },
+        {
+            "id": "observed-data--0b164024-7bb5-46fb-b4ae-4bf7bac01f11",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T20:48:11.528492Z",
+            "last_observed": "2020-06-17T20:48:11.528507Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.80",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ivin-pelt-practice.london",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://imeshar-antisymmetri-tarrago.fashion/ei/uA4QnOOp3O7FE/PlR2U9ka/nvasiv-pedestria-scorche.bc!",
+                    "type": "url"
+                },
+                "3": {
+                    "name": "test",
+                    "hashes": {
+                        "MD5": "5a511bE63b9483EcF2c9597A61B9Ed98"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T20:48:11.528Z",
+            "modified": "2020-06-17T20:48:11.528Z"
+        },
+        {
+            "id": "observed-data--50be1042-8636-435b-a211-8b24b11a46c1",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T20:48:11.533011Z",
+            "last_observed": "2020-06-17T20:48:11.533017Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.187",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "nifflin.ceb",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://evian-augur-spur.bingo/lyu0UGzNB100dJ6/V0QS/ZAe1/esoundin.job",
+                    "type": "url"
+                },
+                "3": {
+                    "name": "test 2",
+                    "hashes": {
+                        "TLSH": "33Ca0D1D339332d6DaF2A3DeF11FDAd05edDA8Bcb8c0B4E16f47Be2fbcF56Ec02faedB"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T20:48:11.533Z",
+            "modified": "2020-06-17T20:48:11.533Z"
+        }
+    ],
+    "type": "bundle"
+}
