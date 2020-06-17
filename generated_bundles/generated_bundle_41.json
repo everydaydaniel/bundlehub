@@ -1,0 +1,51 @@
+{
+    "id": "bundle--450380be-bd8d-47f9-af11-3bfb078c7da3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdasd",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--a01f129b-5045-4d6d-9fcb-b21953f1c0b4",
+            "created": "2020-06-17T16:47:12.448Z",
+            "modified": "2020-06-17T16:47:12.448Z"
+        },
+        {
+            "id": "observed-data--1469732c-618b-470c-bd3c-8c9c8b7b2a99",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T16:47:12.451397Z",
+            "last_observed": "2020-06-17T16:47:12.451413Z",
+            "objects": {
+                "0": {
+                    "name": "ninfluence-beauticia.mio",
+                    "hashes": {
+                        "TLSH": "Bb4C89Ea4C492fFEa4cCfcb356beEFB998cceAeFD09A176b71bB7154F471BCCdE747fA"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T16:47:12.451Z",
+            "modified": "2020-06-17T16:47:12.451Z"
+        },
+        {
+            "id": "observed-data--843fb5ba-9b0b-4342-849d-43641f8efcb9",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T16:47:12.455043Z",
+            "last_observed": "2020-06-17T16:47:12.455058Z",
+            "objects": {
+                "0": {
+                    "name": "testing",
+                    "hashes": {
+                        "SHA3-384": "0AabC2FbACC9f2C184C1e9ffDbEd34Bd243aAcEeEac4EabEF6d2EcCcDa1ecA9c333AdA05cc35ded3E06Ffdf7d0FEB0A0"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T16:47:12.455Z",
+            "modified": "2020-06-17T16:47:12.455Z"
+        }
+    ],
+    "type": "bundle"
+}
