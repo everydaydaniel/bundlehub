@@ -56,9 +56,10 @@ def create_bundle():
 	data = data["input"]
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
-	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), label=data["label"], industry=data['industry'], 
-	dataSourceName=data['dataSourceName'])
-	
+	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle), 
+												label=data["label"], 
+												industry=data['industry'],
+												data_source_name=data['dataSourceName'])
 	response = {
 		"url": mongo_bundle_url,
 		"bundle_data": bundle.serialize(),
@@ -85,6 +86,8 @@ def grab_bundle():
 	print(result)
 	del result["_id"]
 	del result["label"]
+	del result["industry"]
+	del result["data_source_name"]
 	return json.dumps(result)
 
 
@@ -95,6 +98,8 @@ def grab_bundle_pretty():
 	result = storage.grab_stix_bundle(bundle_object_id)
 	del result["_id"]
 	del result["label"]
+	del result["industry"]
+	del result["data_source_name"]
 	return jsonify(result)
 
 
