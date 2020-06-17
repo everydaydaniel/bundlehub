@@ -7,15 +7,19 @@ BUNDLEHUB_DIR = ROOT_DIR + "/bundlehub"
 BUNDLEHUB_REPO = BUNDLEHUB_DIR + "/bundlehub"
 BUNDLEHUB_REPO_FILES_DIRECTORY = BUNDLEHUB_REPO + "/generated_bundles"
 BUNDLEHUB_LINK = "git@github.com:everydaydaniel/bundlehub.git"
+
 if os.getenv("BUNDLEHUB_REPO_LINK"):
     BUNDLEHUB_LINK = os.getenv("BUNDLEHUB_REPO_LINK")
+
 
 
 # Clone the repo from github
 def clone_repo():
     print('CLONE_REPO\n\n', BUNDLEHUB_DIR)
     os.chdir(BUNDLEHUB_DIR)
-    os.system("git clone {} -q".format(BUNDLEHUB_LINK))
+    print("cloning from:", BUNDLEHUB_LINK)
+    command = "git clone {} -q".format(BUNDLEHUB_LINK)
+    os.system(command)
 
 def pull_repo():
     os.chdir(BUNDLEHUB_REPO)
@@ -27,7 +31,8 @@ def check_repo_exists():
         os.chdir(BUNDLEHUB_REPO)
         pull_repo()
     except FileNotFoundError as e:
-        set_email()
+        command = "git remote set-url origin {}".format(BUNDLEHUB_LINK)
+        os.system(command)
         clone_repo()
 
 def create_bundle_json(bundle):
@@ -54,9 +59,6 @@ def commit_and_push(commit_message):
 
 def create_link(file_name):
     return "https://raw.githubusercontent.com/everydaydaniel/bundlehub/master/generated_bundles/{}".format(file_name)
-
-def set_email():
-    os.system("git config --global user.email bundlehub@email.com")
 
 def bundhub_main(bundle):
     # check for the repo and perform opperations

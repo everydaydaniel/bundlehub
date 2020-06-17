@@ -11,6 +11,10 @@ RUN echo "$ssh_prv_key" > /root/.ssh/id_rsa && \
 
 RUN echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
 
+RUN git config --global user.email "bundlehub@email.com"; \
+    git config --global user.name "bundlehub"
+    
+
 WORKDIR /project
 ADD . /project
 RUN pip install -r requirements.txt
