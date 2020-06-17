@@ -1,0 +1,51 @@
+{
+    "id": "bundle--d391a32a-de61-4347-a1ce-8bd7c8f68a2a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdasd",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--81a03f0b-e970-43dc-a522-8d8588814faf",
+            "created": "2020-06-17T16:41:33.085Z",
+            "modified": "2020-06-17T16:41:33.085Z"
+        },
+        {
+            "id": "observed-data--33912e68-ef41-45c8-9e6d-da747d26f9e2",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T16:41:33.087115Z",
+            "last_observed": "2020-06-17T16:41:33.087131Z",
+            "objects": {
+                "0": {
+                    "name": "arcase-roundel-ionia.vif",
+                    "hashes": {
+                        "MD5": "d4dA86ceEdb819B0dC269a098409A16E"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T16:41:33.087Z",
+            "modified": "2020-06-17T16:41:33.087Z"
+        },
+        {
+            "id": "observed-data--b3f1329b-d7f5-4ecd-b942-62dd7c634b10",
+            "number_observed": 1,
+            "first_observed": "2020-06-17T16:41:33.089665Z",
+            "last_observed": "2020-06-17T16:41:33.089677Z",
+            "objects": {
+                "0": {
+                    "name": "enc-ovarie.pj",
+                    "hashes": {
+                        "SHA-256": "7a8617c8cdbf0ffE38b556bc8c3eB184eDDB6fC14Fb9CAEEBC1BebcD95BfAf4e"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-17T16:41:33.089Z",
+            "modified": "2020-06-17T16:41:33.089Z"
+        }
+    ],
+    "type": "bundle"
+}
