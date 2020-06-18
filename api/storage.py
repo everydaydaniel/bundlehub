@@ -62,7 +62,7 @@ def search(label):
 		if(has_key and stix_obj['label'] == label):
 			
 			results.append({"bundleUrl": "http://stix-gen-route-stix-gen." + os.environ["OCP_CLUSTER"] + "/grab_bundle?id=" + str(stix_obj["_id"]),
-			"industry": stix_obj["industry"], 'dataSourceName': stix_obj["dataSourceName"]
+			"industry": stix_obj["industry"], 'data_source_name': stix_obj["data_source_name"]
 			})
 	print(f"[STIX2 SEARCH] Mongo found {len(results)} stix bundles for {label}")
 	print('RETURNING: ', results)
