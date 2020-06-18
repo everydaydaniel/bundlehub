@@ -41,7 +41,7 @@ def store_stix_bundle(bundle, label, industry, data_source_name):
 	bundle["data_source_name"] = data_source_name
 	bundle_row_id = collection.insert_one(bundle).inserted_id
 	print(f"[STIX2 GEN] Mongo job finished inserting {bundle_row_id}")
-	return ROUTE + OCP_CLUSTER + GRAB + str(bundle_row_id)
+	return ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id)
 
 
 ##		Grabs bundle using string representing bson.ObjectId 		##
