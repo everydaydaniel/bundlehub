@@ -1,0 +1,51 @@
+{
+    "id": "bundle--ae00b8e4-f872-4c48-9e74-2ee371398654",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asfsadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--d192a3b1-a2cd-44e1-8bef-9fc65b2ff4d0",
+            "created": "2020-06-18T22:02:10.181Z",
+            "modified": "2020-06-18T22:02:10.181Z"
+        },
+        {
+            "id": "observed-data--d33a7196-bf66-45a7-8c54-a6a8e724fda1",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T17:02:10.18394Z",
+            "last_observed": "2020-06-18T17:02:10.183945Z",
+            "objects": {
+                "0": {
+                    "name": "racele.rle",
+                    "hashes": {
+                        "RIPEMD-160": "30BC6858dDA434b4F22bE7349Ed8896f3c966BDC"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T22:02:10.183Z",
+            "modified": "2020-06-18T22:02:10.183Z"
+        },
+        {
+            "id": "observed-data--1e292888-66c3-4019-840c-c6b2b5598052",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T17:02:10.18606Z",
+            "last_observed": "2020-06-18T17:02:10.186063Z",
+            "objects": {
+                "0": {
+                    "name": "ac-consul.bwa",
+                    "hashes": {
+                        "SHA-1": "0E76d17862acEEB5223BA6d4E4C2047e9f309a25"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T22:02:10.186Z",
+            "modified": "2020-06-18T22:02:10.186Z"
+        }
+    ],
+    "type": "bundle"
+}
