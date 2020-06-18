@@ -20,7 +20,7 @@ def random_top_level_domain():
 	top level domain list...
 	"""
 
-	return tld_list[randint(0, len(tld_list))]
+	return tld_list[randint(0, len(tld_list) - 1)]
 
 
 def random_domain():
@@ -46,7 +46,3 @@ def random_url():
 	folders = "/".join([utils.random_string() for i in range(randint(1,3))])
 
 	return protocol + domain + "/" + folders + "/" + word + ext
-
-
-
-
