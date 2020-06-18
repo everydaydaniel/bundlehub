@@ -60,13 +60,13 @@ def create_bundle():
 	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle),
 												label=data["label"],
 												industry=data['industry'],
-												data_source_name=data['dataSourceName'])
+												dataSourceName=data['dataSourceName'])
 
 	try:
 		bundlehub_link = bundlehub.bundhub_main(bundle)
 	except Exception as e:
 		bundlehub_link = "Sorry, connection to github is unavailible right now."
-		
+
 	response = {
 		"url": mongo_bundle_url,
 		"bundle_data": bundle.serialize(),
@@ -95,7 +95,7 @@ def grab_bundle():
 	del result["_id"]
 	del result["label"]
 	del result["industry"]
-	del result["data_source_name"]
+	del result["dataSourceName"]
 	return json.dumps(result)
 
 
@@ -107,7 +107,7 @@ def grab_bundle_pretty():
 	del result["_id"]
 	del result["label"]
 	del result["industry"]
-	del result["data_source_name"]
+	del result["dataSourceName"]
 	return jsonify(result)
 
 
