@@ -41,7 +41,7 @@ def random_word():
 	"""
 
 	length = randint(1, 3)
-	word = "-".join([word_list[randint(0, len(word_list))][:-2] for i in range(length)])
+	word = "-".join([word_list[randint(0, len(word_list) - 1)][:-2] for i in range(length)])
 	return word[1:]
 
 
@@ -64,9 +64,3 @@ def random_file_extension():
 	"""
 
 	return ext_list[randint(0, len(ext_list) - 1)]
-
-
-
-
-
-
