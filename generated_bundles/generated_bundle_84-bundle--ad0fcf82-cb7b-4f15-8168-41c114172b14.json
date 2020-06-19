@@ -1,0 +1,30 @@
+{
+    "id": "bundle--ad0fcf82-cb7b-4f15-8168-41c114172b14",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadfs",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--92599cfa-0a24-46a3-b714-7dc882311424",
+            "created": "2020-06-19T19:17:41.046Z",
+            "modified": "2020-06-19T19:17:41.046Z"
+        },
+        {
+            "id": "observed-data--21ce173c-2d0f-4b2e-97d3-62fd1ab3946c",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T14:17:41.047087Z",
+            "last_observed": "2020-06-19T14:17:41.04709Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.210",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T19:17:41.047Z",
+            "modified": "2020-06-19T19:17:41.047Z"
+        }
+    ],
+    "type": "bundle"
+}
