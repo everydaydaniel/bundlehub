@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "id": "bundle--50d17935-4aed-4623-bd0f-10d97c29118e",
     "spec_version": "2.0",
     "objects": [
@@ -85,6 +86,109 @@
             "type": "observed-data",
             "created": "2020-06-04T19:42:15.997Z",
             "modified": "2020-06-04T19:42:15.997Z"
+=======
+    "id": "bundle--f612c019-e672-451d-bce8-97065bfc3e41",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "AWS CloudWatch",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--e6a8327e-2513-4253-89e1-d3a7ee131539",
+            "created": "2020-06-08T16:17:48.170Z",
+            "modified": "2020-06-08T16:17:48.170Z"
+        },
+        {
+            "id": "observed-data--b3acb333-7a47-414f-bd94-5240598177a7",
+            "number_observed": 1,
+            "first_observed": "2020-06-08T11:17:48.170783Z",
+            "last_observed": "2020-06-08T11:17:48.170787Z",
+            "objects": {
+                "0": {
+                    "value": "255.192.29.179",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "00:16:3e:3e:1b:7e",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-08T16:17:48.170Z",
+            "modified": "2020-06-08T16:17:48.170Z"
+        },
+        {
+            "id": "observed-data--18805d5e-2783-4a5c-b306-d6e9b8779d7a",
+            "number_observed": 1,
+            "first_observed": "2020-06-08T11:17:48.171409Z",
+            "last_observed": "2020-06-08T11:17:48.171411Z",
+            "objects": {
+                "0": {
+                    "value": "127.0.0.1",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-08T16:17:48.171Z",
+            "modified": "2020-06-08T16:17:48.171Z"
+        },
+        {
+            "id": "observed-data--125bc067-e4f0-440e-86f8-e5f6ee6adba2",
+            "number_observed": 1,
+            "first_observed": "2020-06-08T11:17:48.171842Z",
+            "last_observed": "2020-06-08T11:17:48.171844Z",
+            "objects": {
+                "0": {
+                    "value": "143.141.11.193",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "00:16:3e:51:e0:87",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-08T16:17:48.171Z",
+            "modified": "2020-06-08T16:17:48.171Z"
+        },
+        {
+            "id": "observed-data--28778c08-bb47-4052-951e-8465aca0e38c",
+            "number_observed": 1,
+            "first_observed": "2020-06-08T11:17:48.172498Z",
+            "last_observed": "2020-06-08T11:17:48.1725Z",
+            "objects": {
+                "0": {
+                    "value": "62.98.24.36",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "00:16:3e:1e:6f:86",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-08T16:17:48.172Z",
+            "modified": "2020-06-08T16:17:48.172Z"
+        },
+        {
+            "id": "observed-data--7b7e4d0c-4746-4a17-9527-87fde6bd4a7e",
+            "number_observed": 1,
+            "first_observed": "2020-06-08T11:17:48.173122Z",
+            "last_observed": "2020-06-08T11:17:48.173125Z",
+            "objects": {
+                "0": {
+                    "value": "97.242.74.79",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "00:16:3e:39:42:11",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-08T16:17:48.173Z",
+            "modified": "2020-06-08T16:17:48.173Z"
+>>>>>>> ea8b9ca02d0ce5b14d94707e5e7ca2f99e526b40
         }
     ],
     "type": "bundle"

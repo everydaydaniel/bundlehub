@@ -1,0 +1,110 @@
+{
+    "id": "bundle--f48d063b-f041-4d53-bf40-cc87a7511a28",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "source",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--a8043361-4c32-4ab1-8a8d-a6cd65995e74",
+            "created": "2020-06-19T01:45:40.256Z",
+            "modified": "2020-06-19T01:45:40.256Z"
+        },
+        {
+            "id": "observed-data--5709f58c-f5d3-40bf-b15f-4e8b0e167845",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:45:40.257609Z",
+            "last_observed": "2020-06-18T20:45:40.257613Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.194",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "otoris-ballroom-coil.swiss",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T01:45:40.257Z",
+            "modified": "2020-06-19T01:45:40.257Z"
+        },
+        {
+            "id": "observed-data--8719f15f-9ab5-4a2f-98af-0e6229a444c2",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:45:40.25829Z",
+            "last_observed": "2020-06-18T20:45:40.258292Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.98",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "eli.earth",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T01:45:40.258Z",
+            "modified": "2020-06-19T01:45:40.258Z"
+        },
+        {
+            "id": "observed-data--8b5b7010-a061-4ae9-b8c2-fd25f2f373b7",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:45:40.259484Z",
+            "last_observed": "2020-06-18T20:45:40.259488Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.172",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "izza-in-jog.discover",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T01:45:40.259Z",
+            "modified": "2020-06-19T01:45:40.259Z"
+        },
+        {
+            "id": "observed-data--a5a2a0f1-e4e8-4ce2-985a-ffa36321a42e",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:45:40.260612Z",
+            "last_observed": "2020-06-18T20:45:40.260615Z",
+            "objects": {
+                "0": {
+                    "value": "0.0.0.0",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "eimplementin-staggere-envelope.progressive",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T01:45:40.260Z",
+            "modified": "2020-06-19T01:45:40.260Z"
+        },
+        {
+            "id": "observed-data--d4d55161-124f-497a-9346-9b77d6068e06",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:45:40.261408Z",
+            "last_observed": "2020-06-18T20:45:40.26141Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.10",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ninterrupte-lingeri-curtailmen.tr",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T01:45:40.261Z",
+            "modified": "2020-06-19T01:45:40.261Z"
+        }
+    ],
+    "type": "bundle"
+}

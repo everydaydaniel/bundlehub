@@ -1,0 +1,33 @@
+{
+    "id": "bundle--49c77c7c-6411-4267-b569-df827d938331",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "fasdfads",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--a80b824f-0074-44bf-af68-7485fd7dab60",
+            "created": "2020-06-16T19:50:44.585Z",
+            "modified": "2020-06-16T19:50:44.585Z"
+        },
+        {
+            "id": "observed-data--d7431014-ca04-48e6-8018-95bfacdd5def",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:50:44.588865Z",
+            "last_observed": "2020-06-16T19:50:44.588882Z",
+            "objects": {
+                "0": {
+                    "name": "1",
+                    "hashes": {
+                        "SHA3-384": "EDaDAE92A2Efab6Ff7B7918bCCe95C397EFc2BAeabc5A77F756CfcfAbC462e7D8b6220eca8aaDE1e7f2B6bbA9A7eE5ba"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:50:44.588Z",
+            "modified": "2020-06-16T19:50:44.588Z"
+        }
+    ],
+    "type": "bundle"
+}

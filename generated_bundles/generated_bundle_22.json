@@ -1,0 +1,33 @@
+{
+    "id": "bundle--85ba1d1c-99c0-4641-aee2-41aa2b0f7590",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--472792ab-9d56-449a-b759-8d462d1abbb4",
+            "created": "2020-06-16T19:31:58.714Z",
+            "modified": "2020-06-16T19:31:58.714Z"
+        },
+        {
+            "id": "observed-data--f2c78fcd-f4b6-4a4a-a918-14efab72cdd0",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:31:58.716676Z",
+            "last_observed": "2020-06-16T19:31:58.716691Z",
+            "objects": {
+                "0": {
+                    "name": "w-speechifyin-aperiti.pb",
+                    "hashes": {
+                        "SHA3-224": "bdf1c01aD69DfA5e6fa0bc7Ff8B23B042a2524E02Bc796efD851C11f"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:31:58.716Z",
+            "modified": "2020-06-16T19:31:58.716Z"
+        }
+    ],
+    "type": "bundle"
+}

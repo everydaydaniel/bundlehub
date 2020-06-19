@@ -1,0 +1,33 @@
+{
+    "id": "bundle--75965c10-b2ea-46b0-8127-9d5561b37040",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asd",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--6c7b8590-80a8-4b06-928f-c49b7094d2c2",
+            "created": "2020-06-16T19:34:37.816Z",
+            "modified": "2020-06-16T19:34:37.816Z"
+        },
+        {
+            "id": "observed-data--e70649f7-93d8-4b7e-9b94-4e732bb149a0",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:34:37.818513Z",
+            "last_observed": "2020-06-16T19:34:37.818527Z",
+            "objects": {
+                "0": {
+                    "name": "old.mol",
+                    "hashes": {
+                        "SHA-1": "B901002AB48CA361Fa5F6AF3b781De474A66b209"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:34:37.818Z",
+            "modified": "2020-06-16T19:34:37.818Z"
+        }
+    ],
+    "type": "bundle"
+}

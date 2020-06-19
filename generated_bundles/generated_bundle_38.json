@@ -1,0 +1,34 @@
+{
+    "id": "bundle--b18cca4e-83aa-41ff-b629-060019a43f4f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadfdsa",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--9ec8ddb6-f3bf-4dc9-9950-65c2dbad2b16",
+            "created": "2020-06-16T20:24:40.559Z",
+            "modified": "2020-06-16T20:24:40.559Z"
+        },
+        {
+            "id": "observed-data--38773b07-bf7b-4e64-8c66-aad302bb44b6",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T15:24:40.560386Z",
+            "last_observed": "2020-06-16T15:24:40.560389Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.107",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "revaile-clubbin-quiver.politie",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T20:24:40.560Z",
+            "modified": "2020-06-16T20:24:40.560Z"
+        }
+    ],
+    "type": "bundle"
+}

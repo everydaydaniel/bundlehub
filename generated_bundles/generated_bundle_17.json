@@ -1,0 +1,33 @@
+{
+    "id": "bundle--202d749f-5a83-4b01-aba7-d6ac77edff6e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--123aca1a-03ae-43f8-8ce3-ae03d7cdd4a8",
+            "created": "2020-06-16T19:27:49.929Z",
+            "modified": "2020-06-16T19:27:49.929Z"
+        },
+        {
+            "id": "observed-data--9440c662-91dc-4f74-95b0-72e380b08c43",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:27:49.931005Z",
+            "last_observed": "2020-06-16T19:27:49.93102Z",
+            "objects": {
+                "0": {
+                    "name": "nslave-offe-illuminan.qts",
+                    "hashes": {
+                        "SHA-224": "cCE52d9eABbC4aDfbf3DbB2411A877BeEa3Cb54293FF7fE1EB910361"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:27:49.931Z",
+            "modified": "2020-06-16T19:27:49.931Z"
+        }
+    ],
+    "type": "bundle"
+}

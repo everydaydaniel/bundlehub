@@ -1,0 +1,129 @@
+{
+    "id": "bundle--117a1e70-5653-42dc-b886-f4e95ea2a724",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "test",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--c67b8882-b16e-4cd9-be8d-2fb813a8307f",
+            "created": "2020-06-18T20:17:54.707Z",
+            "modified": "2020-06-18T20:17:54.707Z"
+        },
+        {
+            "id": "observed-data--ef7031fa-091f-4bb5-b68f-fb8c2bc63fb4",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:17:54.712686Z",
+            "last_observed": "2020-06-18T20:17:54.712705Z",
+            "objects": {
+                "0": {
+                    "value": "CC:46:D6:a2:75:81",
+                    "type": "mac-addr"
+                },
+                "1": {
+                    "value": "http://trangel-defraye.unicom/dwvsG6591qU/BpguRvY3gYnmkbwa6h/NqLX7i1/daptiv-rubico-curb.wst",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "acklin-fearin-elegantl",
+                    "type": "user-account"
+                },
+                "3": {
+                    "value": "192.168.1.116",
+                    "type": "ipv4-addr"
+                },
+                "4": {
+                    "value": "mulsifie.investments",
+                    "type": "domain-name"
+                },
+                "5": {
+                    "name": "testfile2",
+                    "hashes": {
+                        "MD5": "8F7cFD81FeA920adD2B60A3c2FFEBF7D"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T20:17:54.712Z",
+            "modified": "2020-06-18T20:17:54.712Z"
+        },
+        {
+            "id": "observed-data--07ea0fdf-81fc-4df0-a253-faf321edba4e",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:17:54.719812Z",
+            "last_observed": "2020-06-18T20:17:54.719835Z",
+            "objects": {
+                "0": {
+                    "value": "CC:46:D6:bf:47:f6",
+                    "type": "mac-addr"
+                },
+                "1": {
+                    "value": "https://alenc-bulimi-dissociate.progressive/850/adomasochis-funnellin-limpin.fo1",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "olme-fermio",
+                    "type": "user-account"
+                },
+                "3": {
+                    "value": "192.168.1.188",
+                    "type": "ipv4-addr"
+                },
+                "4": {
+                    "value": "uprema-initiative-paren.samsclub",
+                    "type": "domain-name"
+                },
+                "5": {
+                    "name": "testfile1",
+                    "hashes": {
+                        "RIPEMD-160": "CeCAAfef7BB020A7026AC07aF5BbeD32CFAcbE9b"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T20:17:54.719Z",
+            "modified": "2020-06-18T20:17:54.719Z"
+        },
+        {
+            "id": "observed-data--f9ab843b-9099-414a-be24-9387b91dde74",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:17:54.726795Z",
+            "last_observed": "2020-06-18T20:17:54.726817Z",
+            "objects": {
+                "0": {
+                    "value": "CC:46:D6:f2:a7:7d",
+                    "type": "mac-addr"
+                },
+                "1": {
+                    "value": "https://leek-bibliograph.crs/GfXIy1hQL7NQ1So9uB7/anal.tef",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "latoon",
+                    "type": "user-account"
+                },
+                "3": {
+                    "value": "192.168.1.86",
+                    "type": "ipv4-addr"
+                },
+                "4": {
+                    "value": "bominabl-monocula.earth",
+                    "type": "domain-name"
+                },
+                "5": {
+                    "name": "testfile4",
+                    "hashes": {
+                        "SHA-256": "5CAf90C674Fd3A85cfc4FaBaDAE434eDcaF4beCf37DDadf276C37a6AaCA79f82"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T20:17:54.726Z",
+            "modified": "2020-06-18T20:17:54.726Z"
+        }
+    ],
+    "type": "bundle"
+}

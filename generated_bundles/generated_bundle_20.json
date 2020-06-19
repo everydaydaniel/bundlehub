@@ -1,0 +1,33 @@
+{
+    "id": "bundle--f929b5f7-6238-4f07-8284-0880fd7a323e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--d41c4e3f-48e7-4dc1-a604-ecc2fd1afcb6",
+            "created": "2020-06-16T19:30:50.452Z",
+            "modified": "2020-06-16T19:30:50.452Z"
+        },
+        {
+            "id": "observed-data--2d4dfb18-61d3-4692-8192-998e216fa996",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:30:50.453396Z",
+            "last_observed": "2020-06-16T19:30:50.453413Z",
+            "objects": {
+                "0": {
+                    "name": "tomicall.kqp",
+                    "hashes": {
+                        "ssdeep": "QH30x"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:30:50.453Z",
+            "modified": "2020-06-16T19:30:50.453Z"
+        }
+    ],
+    "type": "bundle"
+}

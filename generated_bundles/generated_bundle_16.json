@@ -1,0 +1,37 @@
+{
+    "id": "bundle--f9cde89e-bee0-4a6a-9ecc-1aa75686f090",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdfasdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--1541198c-c0ea-4f8a-b8f0-726b7dfa13c3",
+            "created": "2020-06-16T18:43:00.122Z",
+            "modified": "2020-06-16T18:43:00.122Z"
+        },
+        {
+            "id": "observed-data--aa75d778-61af-4517-ac7c-d700991af85d",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T18:43:00.126419Z",
+            "last_observed": "2020-06-16T18:43:00.126436Z",
+            "objects": {
+                "0": {
+                    "name": "test file 2",
+                    "hashes": {
+                        "TLSH": "BBAdBc7e5AAacBce48C1C9Cd1d42eFcc962eceEBd8f94DbDD0dEf89ddAeD061Bf4D7be"
+                    },
+                    "type": "file"
+                },
+                "1": {
+                    "user_id": "rough-dither",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T18:43:00.126Z",
+            "modified": "2020-06-16T18:43:00.126Z"
+        }
+    ],
+    "type": "bundle"
+}

@@ -1,0 +1,33 @@
+{
+    "id": "bundle--dc01b4e3-eb7d-4c3f-92b6-5874b2847945",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdas",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--781d3c71-d233-4f86-bb1a-0b3cacdb76b8",
+            "created": "2020-06-18T20:16:15.188Z",
+            "modified": "2020-06-18T20:16:15.188Z"
+        },
+        {
+            "id": "observed-data--8a4053cb-433e-43a1-bfb1-5a401ea6bc66",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:16:15.194594Z",
+            "last_observed": "2020-06-18T20:16:15.194612Z",
+            "objects": {
+                "0": {
+                    "name": "ussines-ennead-bywa.y",
+                    "hashes": {
+                        "SHA3-256": "feFAB3eCFBDBaD6d00Edcd5eDd362F77BA733Dd622a8f4A311a3bd77EFBFeB0E"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T20:16:15.194Z",
+            "modified": "2020-06-18T20:16:15.194Z"
+        }
+    ],
+    "type": "bundle"
+}

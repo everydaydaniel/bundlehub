@@ -1,0 +1,33 @@
+{
+    "id": "bundle--2857368f-d0f5-4847-8042-9aa2a9caca62",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--1ca80f12-2d45-4572-a47f-79f5c60841db",
+            "created": "2020-06-16T19:45:00.625Z",
+            "modified": "2020-06-16T19:45:00.625Z"
+        },
+        {
+            "id": "observed-data--0ecb409d-c339-4e4f-8c44-dc481da4a06b",
+            "number_observed": 1,
+            "first_observed": "2020-06-16T19:45:00.629084Z",
+            "last_observed": "2020-06-16T19:45:00.629096Z",
+            "objects": {
+                "0": {
+                    "name": "nlocke-coriande.fky",
+                    "hashes": {
+                        "SHA3-256": "0Cb30Fc05feb49112Aa29d08beA2dbfB9037DaFAe0809Deee8366Ec6db4B5059"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-16T19:45:00.629Z",
+            "modified": "2020-06-16T19:45:00.629Z"
+        }
+    ],
+    "type": "bundle"
+}

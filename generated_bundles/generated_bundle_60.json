@@ -1,0 +1,60 @@
+{
+    "id": "bundle--635b7aca-02f4-464e-a53f-5627560421f8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--456d9d75-aec6-40e4-ab2d-c109b1621652",
+            "created": "2020-06-18T20:26:07.643Z",
+            "modified": "2020-06-18T20:26:07.643Z"
+        },
+        {
+            "id": "observed-data--f39912e0-58bb-4057-a354-528d15ec3be9",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:26:07.644175Z",
+            "last_observed": "2020-06-18T20:26:07.644192Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.241",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T20:26:07.644Z",
+            "modified": "2020-06-18T20:26:07.644Z"
+        },
+        {
+            "id": "observed-data--535515fb-1670-46ef-b395-86713ac9ee77",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:26:07.644907Z",
+            "last_observed": "2020-06-18T20:26:07.644912Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.87",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T20:26:07.644Z",
+            "modified": "2020-06-18T20:26:07.644Z"
+        },
+        {
+            "id": "observed-data--a59f1027-f0a4-420b-94de-ce9072fe38dd",
+            "number_observed": 1,
+            "first_observed": "2020-06-18T20:26:07.645828Z",
+            "last_observed": "2020-06-18T20:26:07.645834Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.75",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-18T20:26:07.645Z",
+            "modified": "2020-06-18T20:26:07.645Z"
+        }
+    ],
+    "type": "bundle"
+}
