@@ -1,0 +1,87 @@
+{
+    "id": "bundle--f54087f6-a403-4c95-b414-3dd009f937cc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sadfadsfads",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--4bcd7035-7e47-4432-abf6-dda0d33d95fd",
+            "created": "2020-06-19T19:15:17.468Z",
+            "modified": "2020-06-19T19:15:17.468Z"
+        },
+        {
+            "id": "observed-data--414d8b49-1cc0-422a-8178-c44763dacf29",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T14:15:17.469095Z",
+            "last_observed": "2020-06-19T14:15:17.469099Z",
+            "objects": {
+                "0": {
+                    "name": "ubbing-aromati.nc",
+                    "hashes": {
+                        "MD5": "0aC5CfFAbdAeD0B6982A7A3e87DF96b9"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T19:15:17.469Z",
+            "modified": "2020-06-19T19:15:17.469Z"
+        },
+        {
+            "id": "observed-data--f0646b24-9286-41c4-ba17-f9fef7196fa0",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T14:15:17.471031Z",
+            "last_observed": "2020-06-19T14:15:17.471034Z",
+            "objects": {
+                "0": {
+                    "name": "ithil-involutio-term.xpv",
+                    "hashes": {
+                        "TLSH": "7fBabCE017DFeCf3D59A702D8D7a39BF7fBFCDE0fe94b87aAad8dAf99e0726d1bAe3DF"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T19:15:17.471Z",
+            "modified": "2020-06-19T19:15:17.471Z"
+        },
+        {
+            "id": "observed-data--16485193-9fb9-43fd-8338-125eb05b9f65",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T14:15:17.472487Z",
+            "last_observed": "2020-06-19T14:15:17.47249Z",
+            "objects": {
+                "0": {
+                    "name": "irstbor.gnt",
+                    "hashes": {
+                        "RIPEMD-160": "9e2aCd8e7e1e3e233c5212bAcBD66454AA6Cae2F"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T19:15:17.472Z",
+            "modified": "2020-06-19T19:15:17.472Z"
+        },
+        {
+            "id": "observed-data--bbb2bdd2-6ce8-4970-bf91-bc45babbd3f4",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T14:15:17.473707Z",
+            "last_observed": "2020-06-19T14:15:17.473709Z",
+            "objects": {
+                "0": {
+                    "name": "ibrettis.svd",
+                    "hashes": {
+                        "MD5": "856Bf43E172CF87BF6c25dED099Fa784"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T19:15:17.473Z",
+            "modified": "2020-06-19T19:15:17.473Z"
+        }
+    ],
+    "type": "bundle"
+}

@@ -1,0 +1,33 @@
+{
+    "id": "bundle--bffded74-0fc2-45e9-bbf5-d717e4274f91",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdasadas",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--81f32eba-1e6b-43b5-9f76-4aed97e66c1b",
+            "created": "2020-06-19T19:16:01.734Z",
+            "modified": "2020-06-19T19:16:01.734Z"
+        },
+        {
+            "id": "observed-data--548c35f9-f4d6-4795-8d35-6c23a4d2efb4",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T14:16:01.735376Z",
+            "last_observed": "2020-06-19T14:16:01.73538Z",
+            "objects": {
+                "0": {
+                    "name": "nsulatio-adverte.wo7",
+                    "hashes": {
+                        "SHA-1": "cB27e7D1407d95DbE6Aa25F0D9A25a3977abB7aC"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T19:16:01.735Z",
+            "modified": "2020-06-19T19:16:01.735Z"
+        }
+    ],
+    "type": "bundle"
+}
