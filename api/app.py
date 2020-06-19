@@ -36,7 +36,8 @@ print(storage.get_info())
 
 ##		Tag and transform bundle for storage		##
 def transform_bundle(bundle):
-	rawbundle = str(bundle)
+	# use serialize for string transformations
+	rawbundle = bundle.serialize()
 	jsonbundle = json.loads(rawbundle)
 	return jsonbundle
 
