@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "id": "bundle--f48d063b-f041-4d53-bf40-cc87a7511a28",
     "spec_version": "2.0",
     "objects": [
@@ -72,10 +73,29 @@
             "number_observed": 1,
             "first_observed": "2020-06-18T20:45:40.260612Z",
             "last_observed": "2020-06-18T20:45:40.260615Z",
+=======
+    "id": "bundle--e6824e5b-588d-48a3-9da4-1716828217cd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "safd",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--6144a4ea-aecc-404a-bd03-4bdfb13a59de",
+            "created": "2020-06-19T14:58:57.315Z",
+            "modified": "2020-06-19T14:58:57.315Z"
+        },
+        {
+            "id": "observed-data--d535f4e2-62c3-44fd-9134-50eeb2a53845",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T09:58:57.316253Z",
+            "last_observed": "2020-06-19T09:58:57.316257Z",
+>>>>>>> 02440b5204594ba6d44449e3444947b6f212d17a
             "objects": {
                 "0": {
                     "value": "0.0.0.0",
                     "type": "ipv4-addr"
+<<<<<<< HEAD
                 },
                 "1": {
                     "value": "eimplementin-staggere-envelope.progressive",
@@ -104,6 +124,28 @@
             "type": "observed-data",
             "created": "2020-06-19T01:45:40.261Z",
             "modified": "2020-06-19T01:45:40.261Z"
+=======
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T14:58:57.316Z",
+            "modified": "2020-06-19T14:58:57.316Z"
+        },
+        {
+            "id": "observed-data--68cfdbe7-2893-43f5-a6e8-f78e4a18ff6d",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T09:58:57.316774Z",
+            "last_observed": "2020-06-19T09:58:57.316776Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.25",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T14:58:57.316Z",
+            "modified": "2020-06-19T14:58:57.316Z"
+>>>>>>> 02440b5204594ba6d44449e3444947b6f212d17a
         }
     ],
     "type": "bundle"

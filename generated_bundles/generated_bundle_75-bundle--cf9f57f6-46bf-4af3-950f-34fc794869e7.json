@@ -1,0 +1,38 @@
+{
+    "id": "bundle--cf9f57f6-46bf-4af3-950f-34fc794869e7",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "fadsfdas",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--43b7619d-0c1e-4a85-8882-5d7a3987983d",
+            "created": "2020-06-19T15:10:24.888Z",
+            "modified": "2020-06-19T15:10:24.888Z"
+        },
+        {
+            "id": "observed-data--85431b18-77d9-4b75-9fa3-63e288de4810",
+            "number_observed": 1,
+            "first_observed": "2020-06-19T10:10:24.888839Z",
+            "last_observed": "2020-06-19T10:10:24.888843Z",
+            "objects": {
+                "0": {
+                    "user_id": "yromania-apartmen-backin",
+                    "type": "user-account"
+                },
+                "1": {
+                    "value": "CC:46:D6:7d:d3:9a",
+                    "type": "mac-addr"
+                },
+                "2": {
+                    "value": "http://mbroiderin.honda/401SV7zqpm3/acteriologica-subsume-albu.esl",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-19T15:10:24.888Z",
+            "modified": "2020-06-19T15:10:24.888Z"
+        }
+    ],
+    "type": "bundle"
+}
