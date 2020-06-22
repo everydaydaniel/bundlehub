@@ -33,7 +33,7 @@ def mongo_connection():
 
 
 ##		Returns bson.ObjectId in string format		##
-def store_stix_bundle(bundle, label, industry, dataSourceName):
+def store_stix_bundle(bundle, label, industry, dataSourceName, template):
 
 	client, db, collection = mongo_connection()
 	bundle["label"] = label
@@ -41,7 +41,16 @@ def store_stix_bundle(bundle, label, industry, dataSourceName):
 	bundle["dataSourceName"] = dataSourceName
 	bundle_row_id = collection.insert_one(bundle).inserted_id
 	print(f"[STIX2 GEN] Mongo job finished inserting {bundle_row_id}")
-	return ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id)
+
+	if template:
+		previewObjects = bundle['objects'][0:2]
+		bundle['objects'] = previewObjects
+		del bundle['_id']
+		bundle_template = json.dumps(bundle)
+		
+		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': bundle_template}
+	elif template == False:
+		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': False}
 
 
 ##		Grabs bundle using string representing bson.ObjectId 		##

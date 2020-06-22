@@ -37,7 +37,8 @@ def check_repo_exists():
 
 def create_bundle_json(bundle):
     number_of_files = len([f for f in os.listdir(BUNDLEHUB_REPO_FILES_DIRECTORY)])
-    current_file_number = number_of_files + 1
+    current_file_number = str(number_of_files + 1)
+    current_file_number += "-" + bundle.get("id")
     os.chdir(BUNDLEHUB_REPO_FILES_DIRECTORY)
     print(number_of_files, current_file_number)
     print("writing bundle to file: generated_bundle_{}.json".format(str(current_file_number)))
@@ -45,7 +46,7 @@ def create_bundle_json(bundle):
     with open(file_name, "w") as f:
         f.write(bundle.serialize(indent=4))
     print("file written")
-    commit_message = '"created {}.json"'.format(str(file_name))
+    commit_message = '"created {}"'.format(str(file_name))
     return commit_message, file_name
 
 
@@ -64,6 +65,7 @@ def bundhub_main(bundle):
     # check for the repo and perform opperations
     check_repo_exists()
     commit_message, file_created = create_bundle_json(bundle)
+    pull_repo()
     commit_and_push(commit_message)
     link = create_link(file_created)
     return link

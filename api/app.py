@@ -36,7 +36,8 @@ print(storage.get_info())
 
 ##		Tag and transform bundle for storage		##
 def transform_bundle(bundle):
-	rawbundle = str(bundle)
+	# use serialize for string transformations
+	rawbundle = bundle.serialize()
 	jsonbundle = json.loads(rawbundle)
 	return jsonbundle
 
@@ -54,23 +55,28 @@ def get_object_map():
 def create_bundle():
 	data = request.get_json()
 	data = data["input"]
+	template = data['template']
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 
 	mongo_bundle_url = storage.store_stix_bundle(transform_bundle(bundle),
 												label=data["label"],
 												industry=data['industry'],
-												dataSourceName=data['dataSourceName'])
+												dataSourceName=data['dataSourceName'],
+												template=template)
 
 	try:
 		bundlehub_link = bundlehub.bundhub_main(bundle)
 	except Exception as e:
 		bundlehub_link = "Sorry, connection to github is unavailible right now."
 
+	bundle_template = mongo_bundle_url['template']
+	url = mongo_bundle_url['bundle_url']
 	response = {
-		"url": mongo_bundle_url,
-		"bundle_data": bundle.serialize(),
-		"bundlehub_link": bundlehub_link
+		"url": url,
+		"bundle_data": bundle_template or bundle.serialize(),
+		"bundlehub_link": bundlehub_link,
+		"template": template
 	}
 
 	return json.dumps(response)
