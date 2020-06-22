@@ -3,7 +3,7 @@
 STIX2 Bundle Generator
 
 """
-
+import time
 import datetime
 import json
 import time
@@ -51,6 +51,7 @@ class BundleGenerate(BundleBase):
         """Generates SDO based on
         data keys...
         """
+        t1 = time.time()
 
         for row in range(number_of_rows):
             sdo_dict = {}
@@ -64,7 +65,11 @@ class BundleGenerate(BundleBase):
                 else:
                     sdo_dict[str(sdo_idx)] = object_function()
             observed_data = self.create_observed_data(sdo_dict)
+
+            
             self.objects.append(observed_data)
+        t2 = time.time()
+        print('create_objects: ', t2 - t1)
 
     def check_max_row_num(self, number_of_rows):
         """Constraint on how many
