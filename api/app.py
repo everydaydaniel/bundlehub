@@ -55,7 +55,7 @@ def get_object_map():
 def create_bundle():
 	data = request.get_json()
 	data = data["input"]
-	print(data)
+	
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 
