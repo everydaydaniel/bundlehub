@@ -55,7 +55,7 @@ def get_object_map():
 def create_bundle():
 	data = request.get_json()
 	data = data["input"]
-	
+	template = data['template']
 	bundle_gen = BundleGenerate(data)
 	bundle = bundle_gen.return_bundle()
 
@@ -63,19 +63,23 @@ def create_bundle():
 												label=data["label"],
 												industry=data['industry'],
 												dataSourceName=data['dataSourceName'],
-												template=data['template'])
+												template=template)
 
 	try:
 		bundlehub_link = bundlehub.bundhub_main(bundle)
 	except Exception as e:
 		bundlehub_link = "Sorry, connection to github is unavailible right now."
 
+	bundle_template = mongo_bundle_url['template']
+	print('template right here =====> ', bundle_template)
+	url = mongo_bundle_url['bundle_url']
 	response = {
-		"url": mongo_bundle_url,
-		"bundle_data": bundle.serialize(),
-		"bundlehub_link": bundlehub_link
+		"url": url,
+		"bundle_data": bundle_template or bundle.serialize(),
+		"bundlehub_link": bundlehub_link,
+		"template": template
 	}
-
+	print(json.dumps(response))
 	return json.dumps(response)
 
 

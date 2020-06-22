@@ -46,10 +46,11 @@ def store_stix_bundle(bundle, label, industry, dataSourceName, template):
 		preview = bundle
 		previewObjects = preview['objects'][0:2]
 		preview['objects'] = previewObjects
-
-		return {'bundle': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': template}
+		del preview['_id']
+		
+		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': preview}
 	elif template == False:
-		return {'bundle': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': False}
+		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': False}
 
 
 ##		Grabs bundle using string representing bson.ObjectId 		##
