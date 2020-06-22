@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: stix-gen-ui
-    image: cnebs/bundlegenerator:3.1.0
+    image: cnebs/bundlegenerator:3.1.1
     ports:
     - containerPort: 3000
       name: stixgen
