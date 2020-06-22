@@ -43,12 +43,11 @@ def store_stix_bundle(bundle, label, industry, dataSourceName, template):
 	print(f"[STIX2 GEN] Mongo job finished inserting {bundle_row_id}")
 
 	if template:
-		preview = bundle
-		previewObjects = preview['objects'][0:2]
-		preview['objects'] = previewObjects
-		del preview['_id']
-		
-		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': preview}
+		previewObjects = bundle['objects'][0:2]
+		bundle['objects'] = previewObjects
+		del bundle['_id']
+		bundle_template = json.dumps(bundle)
+		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': bundle_template}
 	elif template == False:
 		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': False}
 

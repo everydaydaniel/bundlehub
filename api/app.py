@@ -79,7 +79,7 @@ def create_bundle():
 		"bundlehub_link": bundlehub_link,
 		"template": template
 	}
-	print(json.dumps(response))
+	print('RESPONSE: ', json.dumps(response))
 	return json.dumps(response)
 
 
