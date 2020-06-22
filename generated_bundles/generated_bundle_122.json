@@ -1,0 +1,130 @@
+{
+    "id": "bundle--daf92e52-a983-4418-be6c-726ace1e1cff",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "fd",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--c828b349-ace4-43a6-b1e5-5cffce34c1f5",
+            "created": "2020-06-22T15:06:15.634Z",
+            "modified": "2020-06-22T15:06:15.634Z"
+        },
+        {
+            "id": "observed-data--6f7da095-e2f1-4a9c-bc84-ab4b8e19abf5",
+            "number_observed": 1,
+            "first_observed": "2020-06-22T10:06:15.642828Z",
+            "last_observed": "2020-06-22T10:06:15.642834Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.111",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "CC:46:D6:2b:44:fe",
+                    "type": "mac-addr"
+                },
+                "2": {
+                    "user_id": "ignificantl",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-22T15:06:15.643Z",
+            "modified": "2020-06-22T15:06:15.643Z"
+        },
+        {
+            "id": "observed-data--51e85a14-6759-4ea0-9bfd-f4fd4e261f2d",
+            "number_observed": 1,
+            "first_observed": "2020-06-22T10:06:15.645269Z",
+            "last_observed": "2020-06-22T10:06:15.645273Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.25",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "CC:46:D6:60:80:fc",
+                    "type": "mac-addr"
+                },
+                "2": {
+                    "user_id": "hortwinde",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-22T15:06:15.645Z",
+            "modified": "2020-06-22T15:06:15.645Z"
+        },
+        {
+            "id": "observed-data--9653dbae-66a8-4bd9-9fa9-86ab48da9639",
+            "number_observed": 1,
+            "first_observed": "2020-06-22T10:06:15.647363Z",
+            "last_observed": "2020-06-22T10:06:15.647378Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.26",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "CC:46:D6:1d:77:cd",
+                    "type": "mac-addr"
+                },
+                "2": {
+                    "user_id": "hespia-coastguar",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-22T15:06:15.647Z",
+            "modified": "2020-06-22T15:06:15.647Z"
+        },
+        {
+            "id": "observed-data--a307b525-4d22-4bea-82b8-4516db2a30a1",
+            "number_observed": 1,
+            "first_observed": "2020-06-22T10:06:15.649469Z",
+            "last_observed": "2020-06-22T10:06:15.649474Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.224",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "CC:46:D6:75:17:7d",
+                    "type": "mac-addr"
+                },
+                "2": {
+                    "user_id": "propo-profanit",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-22T15:06:15.649Z",
+            "modified": "2020-06-22T15:06:15.649Z"
+        },
+        {
+            "id": "observed-data--501a4ad6-fff5-4c34-9e79-8c3049d7c39b",
+            "number_observed": 1,
+            "first_observed": "2020-06-22T10:06:15.651025Z",
+            "last_observed": "2020-06-22T10:06:15.651028Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.180",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "CC:46:D6:1a:f6:ca",
+                    "type": "mac-addr"
+                },
+                "2": {
+                    "user_id": "aite",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-22T15:06:15.651Z",
+            "modified": "2020-06-22T15:06:15.651Z"
+        }
+    ],
+    "type": "bundle"
+}
