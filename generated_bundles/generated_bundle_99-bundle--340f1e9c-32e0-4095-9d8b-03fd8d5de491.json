@@ -1,0 +1,30 @@
+{
+    "id": "bundle--340f1e9c-32e0-4095-9d8b-03fd8d5de491",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "fa",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--3ad03864-f9b6-4f7d-b2d1-889dabf01308",
+            "created": "2020-06-22T20:38:56.543Z",
+            "modified": "2020-06-22T20:38:56.543Z"
+        },
+        {
+            "id": "observed-data--cb23b46a-3aa0-48bb-959a-a027d5a0d48e",
+            "number_observed": 1,
+            "first_observed": "2020-06-22T20:38:56.544147Z",
+            "last_observed": "2020-06-22T20:38:56.544162Z",
+            "objects": {
+                "0": {
+                    "user_id": "olyunsaturate-nuclei-vocabular",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-22T20:38:56.544Z",
+            "modified": "2020-06-22T20:38:56.544Z"
+        }
+    ],
+    "type": "bundle"
+}
