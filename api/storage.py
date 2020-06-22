@@ -47,6 +47,7 @@ def store_stix_bundle(bundle, label, industry, dataSourceName, template):
 		bundle['objects'] = previewObjects
 		del bundle['_id']
 		bundle_template = json.dumps(bundle)
+		
 		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': bundle_template}
 	elif template == False:
 		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': False}

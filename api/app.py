@@ -71,7 +71,6 @@ def create_bundle():
 		bundlehub_link = "Sorry, connection to github is unavailible right now."
 
 	bundle_template = mongo_bundle_url['template']
-	print('template right here =====> ', bundle_template)
 	url = mongo_bundle_url['bundle_url']
 	response = {
 		"url": url,
@@ -79,7 +78,7 @@ def create_bundle():
 		"bundlehub_link": bundlehub_link,
 		"template": template
 	}
-	print('RESPONSE: ', json.dumps(response))
+
 	return json.dumps(response)
 
 
