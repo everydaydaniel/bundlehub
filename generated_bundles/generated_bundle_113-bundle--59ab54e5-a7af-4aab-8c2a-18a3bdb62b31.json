@@ -1,0 +1,83 @@
+{
+    "id": "bundle--59ab54e5-a7af-4aab-8c2a-18a3bdb62b31",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Guardium",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--00a802b3-e300-40d8-a98b-2b641f11ee49",
+            "created": "2020-06-23T15:49:37.772Z",
+            "modified": "2020-06-23T15:49:37.772Z"
+        },
+        {
+            "id": "observed-data--f9d1a210-4b76-49b4-abe5-8495812c8148",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T15:49:37.774268Z",
+            "last_observed": "2020-06-23T15:49:37.774276Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.0.10",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "o-iv-mechanic.cn",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "http://ethodologicall-internmen-decrement.anquan/hrT0973g86l7/9RI/orrode-emergencie-ane.opf",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "ramme-sonicall-geologist",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "miler-clearsighte-humourin.f16",
+                    "hashes": {
+                        "RIPEMD-160": "D9452388ae1a4f032208ccA7DbAf2C8F14bC33d8"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T15:49:37.774Z",
+            "modified": "2020-06-23T15:49:37.774Z"
+        },
+        {
+            "id": "observed-data--23fb78e9-cc8d-49fa-aefb-95c7a03db1ae",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T15:49:37.775548Z",
+            "last_observed": "2020-06-23T15:49:37.775552Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.0.8",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "baddomain.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://badsite.com",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "DumbUser",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "BadFile",
+                    "hashes": {
+                        "SHA-1": "968a1ef2a0015f55a0d80afda26e34580986b5c8"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T15:49:37.775Z",
+            "modified": "2020-06-23T15:49:37.775Z"
+        }
+    ],
+    "type": "bundle"
+}
