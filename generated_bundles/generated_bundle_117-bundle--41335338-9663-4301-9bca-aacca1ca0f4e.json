@@ -1,0 +1,145 @@
+{
+    "id": "bundle--41335338-9663-4301-9bca-aacca1ca0f4e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "AWS",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--4fa56860-d5fb-4f8a-88cb-3d4f6d88ff2f",
+            "created": "2020-06-23T20:34:26.353Z",
+            "modified": "2020-06-23T20:34:26.353Z"
+        },
+        {
+            "id": "observed-data--9d358ccb-92d9-48fe-a416-5f46da30bd3b",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T20:34:26.354639Z",
+            "last_observed": "2020-06-23T20:34:26.354648Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.208",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "elightin.finance",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "name": "ypese.v",
+                    "hashes": {
+                        "RIPEMD-160": "3bcAAeeBE2303eD5d886fD1069e60BcBbCfcA34A"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T20:34:26.354Z",
+            "modified": "2020-06-23T20:34:26.354Z"
+        },
+        {
+            "id": "observed-data--2aab01b2-873a-458f-a10a-7626d36279e2",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T20:34:26.356253Z",
+            "last_observed": "2020-06-23T20:34:26.356258Z",
+            "objects": {
+                "0": {
+                    "value": "10.1.1.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "baddomain.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "name": "test.txt",
+                    "hashes": {
+                        "SHA-1": "96A0fBcc0E36CBfAEEE6f76cCabbF1FEAADcD2dE"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T20:34:26.356Z",
+            "modified": "2020-06-23T20:34:26.356Z"
+        },
+        {
+            "id": "observed-data--9763077f-708e-4a09-8939-dbdb059431f2",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T20:34:26.357792Z",
+            "last_observed": "2020-06-23T20:34:26.357797Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.99",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "oor-captione-skidde.glade",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "name": "andbrake-splinter.sdw",
+                    "hashes": {
+                        "RIPEMD-160": "7ec6c1de487A2347A6432CC83dAFB36B3c5c0Afa"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T20:34:26.357Z",
+            "modified": "2020-06-23T20:34:26.357Z"
+        },
+        {
+            "id": "observed-data--3d19fa59-2b15-427b-a1c1-aebd81773e71",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T20:34:26.359339Z",
+            "last_observed": "2020-06-23T20:34:26.359344Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.200",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "isembarkatio-dre.li",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "name": "arcissis.nbf",
+                    "hashes": {
+                        "SHA-1": "A12886B8783c3bbf840CE8bFecd0FBcBc328b88f"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T20:34:26.359Z",
+            "modified": "2020-06-23T20:34:26.359Z"
+        },
+        {
+            "id": "observed-data--e8ff9cb9-83a1-49fb-85af-4e72465cdb98",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T20:34:26.361237Z",
+            "last_observed": "2020-06-23T20:34:26.361241Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.150",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ee-superfluou.avianca",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "name": "epositio-snugnes-filthie.pl3",
+                    "hashes": {
+                        "TLSH": "0C52F52cA20Bec65510d6FfBB5f214D2B7FC6Bb4A15D15dcB8Ec26c5eCBa5bFdf55Bfa"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T20:34:26.361Z",
+            "modified": "2020-06-23T20:34:26.361Z"
+        }
+    ],
+    "type": "bundle"
+}
