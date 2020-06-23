@@ -29,6 +29,7 @@ class BundleGenerate(BundleBase):
         print("data in BundleGenerate:", data)
         self.objects = []
         if data is not None:
+            self.dates = self.data.get("dateRange")
             self.custom_data = self.parse_custom()
             self.parse_data()
 
@@ -38,11 +39,12 @@ class BundleGenerate(BundleBase):
         return bundle
 
     def create_observed_data(self, objects):
+        rand_date = utils.random_day(self.dates.get("startDate"), self.dates.get("endDate"))
         observed_data = ObservedData(
             id="observed-data--{}".format(uuid4()),
             number_observed=1,
-            first_observed=datetime.datetime.now(),
-            last_observed=datetime.datetime.now(),
+            first_observed=rand_date,
+            last_observed=rand_date,
             objects=objects
             )
         return observed_data
@@ -66,7 +68,7 @@ class BundleGenerate(BundleBase):
                     sdo_dict[str(sdo_idx)] = object_function()
             observed_data = self.create_observed_data(sdo_dict)
 
-            
+
             self.objects.append(observed_data)
         t2 = time.time()
         print('create_objects: ', t2 - t1)

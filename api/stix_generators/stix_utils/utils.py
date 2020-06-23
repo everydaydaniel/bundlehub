@@ -4,6 +4,8 @@ STIX2 RANDOM UTILS
 
 """
 
+from datetime import timedelta
+from dateutil.parser import parse
 from random import randint
 import os
 
@@ -64,3 +66,18 @@ def random_file_extension():
 	"""
 
 	return ext_list[randint(0, len(ext_list) - 1)]
+
+
+def random_day(start_time, end_time):
+	"""
+	Generates random
+	a random time stamp
+	between two ranges
+	"""
+	start_time, end_time = parse(start_time) , parse(end_time)
+	time_delta = end_time - start_time
+	days = time_delta.days
+	day_change = randint(0,days)
+	random_day = end_time - timedelta(days=day_change)
+	newday = random_day.replace(hour=randint(0,23), minute=randint(0,59), second=randint(0,59), microsecond=randint(0,999999))
+	return newday
