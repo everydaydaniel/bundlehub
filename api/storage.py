@@ -42,7 +42,7 @@ def store_stix_bundle(bundle, label, industry, dataSourceName, template):
 		template['spec_version'] = returningTemplate['spec_version']
 		template['objects'] = previewObjects
 		returningTemplate['template'] = template
-		
+
 		return returningTemplate
 
 	client, db, collection = mongo_connection()
@@ -51,7 +51,7 @@ def store_stix_bundle(bundle, label, industry, dataSourceName, template):
 	bundle["dataSourceName"] = dataSourceName
 	bundle["template"] = template
 	returning_bundle = bundle if template == False else creatingTemplate(bundle)
-
+	
 	bundle_row_id = collection.insert_one(returning_bundle).inserted_id
 	print(f"[STIX2 GEN] Mongo job finished inserting {bundle_row_id}")
 
