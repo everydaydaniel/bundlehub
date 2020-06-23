@@ -1,0 +1,30 @@
+{
+    "id": "bundle--eafac514-1212-46fc-8e06-ced9f31a8718",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asd",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--5371a762-5fb4-47a4-be2b-2cc5d4d122b1",
+            "created": "2020-06-23T18:48:51.519Z",
+            "modified": "2020-06-23T18:48:51.519Z"
+        },
+        {
+            "id": "observed-data--051cae3e-c7af-4216-9cee-a0edac371023",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T13:48:51.520262Z",
+            "last_observed": "2020-06-23T13:48:51.520265Z",
+            "objects": {
+                "0": {
+                    "user_id": "emal-prey",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-23T18:48:51.520Z",
+            "modified": "2020-06-23T18:48:51.520Z"
+        }
+    ],
+    "type": "bundle"
+}
