@@ -35,45 +35,28 @@ def mongo_connection():
 ##		Returns bson.ObjectId in string format		##
 def store_stix_bundle(bundle, label, industry, dataSourceName, template):
 
-	def creatingTemplate(returning_template, storing_template):
-		if returning_template:
-			previewObjects = returning_template['objects'][0:2]
-			returning_template['objects'] = previewObjects
-			del returning_template['_id']
-			del returning_template['label']
-			del returning_template['industry']
-			del returning_template['dataSourceName']
-			bundle_template = json.dumps(returning_template)
-			return bundle_template
-			
-		elif storing_template:
-			
-			template = {}
-			previewObjects = storing_template['objects'][0:2]
-			template['id'] = storing_template['id']
-			template['spec_version'] = storing_template['spec_version']
-			template['objects'] = previewObjects
-
-			storing_template['template'] = template
-			return storing_template
+	def creatingTemplate(returningTemplate):
+		template = {}
+		previewObjects = returningTemplate['objects'][0:2]
+		template['id'] = returningTemplate['id']
+		template['spec_version'] = returningTemplate['spec_version']
+		template['objects'] = previewObjects
+		returningTemplate['template'] = template
+		
+		return returningTemplate
 
 	client, db, collection = mongo_connection()
 	bundle["label"] = label
 	bundle["industry"] = industry
 	bundle["dataSourceName"] = dataSourceName
 	bundle["template"] = template
-	returning_bundle = bundle
-
-	if template:
-		returning_bundle = creatingTemplate(False, bundle)
+	returning_bundle = bundle if template == False else creatingTemplate(bundle)
 
 	bundle_row_id = collection.insert_one(returning_bundle).inserted_id
 	print(f"[STIX2 GEN] Mongo job finished inserting {bundle_row_id}")
 
 	if template:
-		bundle_template = creatingTemplate(bundle, False)
-
-		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': bundle_template}
+		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': json.dumps(returning_bundle['template'])}
 	elif template == False:
 		return {'bundle_url': ROUTE + "." + OCP_CLUSTER + GRAB + str(bundle_row_id), 'template': False}
 

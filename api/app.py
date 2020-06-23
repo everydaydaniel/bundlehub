@@ -102,7 +102,6 @@ def grab_bundle():
 	del result["label"]
 	del result["industry"]
 	del result["dataSourceName"]
-	# result['template]
 	return json.dumps(result)
 
 
