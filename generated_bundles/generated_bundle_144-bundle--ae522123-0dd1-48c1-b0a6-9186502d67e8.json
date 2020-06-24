@@ -1,0 +1,104 @@
+{
+    "id": "bundle--ae522123-0dd1-48c1-b0a6-9186502d67e8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--f5e680e7-6319-4e81-8203-dd2ae63d2076",
+            "created": "2020-06-24T16:12:03.558Z",
+            "modified": "2020-06-24T16:12:03.558Z"
+        },
+        {
+            "id": "observed-data--1fb5f899-f698-49e7-8073-a919e68dc061",
+            "number_observed": 1,
+            "first_observed": "2020-06-24T16:12:03.561794Z",
+            "last_observed": "2020-06-24T16:12:03.561805Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.215",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "allroo-thrille-gathere.builders",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "cceptabilit",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "nsti-saver-lifelon.ins",
+                    "hashes": {
+                        "SHA-1": "EEAAfd3bCdBFFEf2798b6fFAaCfb304930cB26cf"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-24T16:12:03.561Z",
+            "modified": "2020-06-24T16:12:03.561Z"
+        },
+        {
+            "id": "observed-data--b0eb034a-9773-4e7e-9c29-464e3d996757",
+            "number_observed": 1,
+            "first_observed": "2020-06-24T16:12:03.56816Z",
+            "last_observed": "2020-06-24T16:12:03.568168Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.226",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "hawe.lgbt",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "nobserve-hecklin-maliciousl",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "ospe-quadran-skatin.nap",
+                    "hashes": {
+                        "SHA-256": "c772eBaf0ae34DCef59E119C590F91a3EB6222bb6Ba292e442Db3e59dF8CFADa"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-24T16:12:03.568Z",
+            "modified": "2020-06-24T16:12:03.568Z"
+        },
+        {
+            "id": "observed-data--937b775f-9955-44af-a7de-3d85d42aef61",
+            "number_observed": 1,
+            "first_observed": "2020-06-24T16:12:03.56974Z",
+            "last_observed": "2020-06-24T16:12:03.569745Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.22.22",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "BadDomain.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "DumbUser",
+                    "type": "user-account"
+                },
+                "3": {
+                    "hashes": {
+                        "MD5": "846cdb921841ac671c86350d494abf9c"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-24T16:12:03.569Z",
+            "modified": "2020-06-24T16:12:03.569Z"
+        }
+    ],
+    "type": "bundle"
+}

@@ -1,0 +1,74 @@
+{
+    "id": "bundle--7a777b1e-c997-440b-9312-9550b6b40f76",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "MS-ATP",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--d07fa87f-bf0a-4946-a152-83c67438f1bb",
+            "created": "2020-06-24T15:40:04.624Z",
+            "modified": "2020-06-24T15:40:04.624Z"
+        },
+        {
+            "id": "observed-data--7019a036-01ab-4327-be4e-cd8475cbf4ee",
+            "number_observed": 1,
+            "first_observed": "2020-06-24T15:40:04.62505Z",
+            "last_observed": "2020-06-24T15:40:04.62506Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.22.22",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "BadDomain.net",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "DumbUser",
+                    "type": "user-account"
+                },
+                "3": {
+                    "hashes": {
+                        "MD5": "846cdb921841ac671c86350d494abf9c"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-24T15:40:04.625Z",
+            "modified": "2020-06-24T15:40:04.625Z"
+        },
+        {
+            "id": "observed-data--16188fdd-0370-42a2-95d3-ef0ce1118d8d",
+            "number_observed": 1,
+            "first_observed": "2020-06-24T15:40:04.627453Z",
+            "last_observed": "2020-06-24T15:40:04.627458Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.65",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ammerhea-elevate-kitsc.sina",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "llusion-redepositio-glassies",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "har-afghan-lifestyl.wfc",
+                    "hashes": {
+                        "SHA3-224": "64619383072B6E39fee7db8cfd86afaA34aE8B08079b4412ceAAc767"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-24T15:40:04.627Z",
+            "modified": "2020-06-24T15:40:04.627Z"
+        }
+    ],
+    "type": "bundle"
+}
