@@ -1,0 +1,53 @@
+{
+    "id": "bundle--3dd37c4a-147f-4cd5-87f4-1759a8a3a6e3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--92671d9e-f1d7-4ddb-8781-c9e0cc95a788",
+            "created": "2020-06-24T15:43:31.467Z",
+            "modified": "2020-06-24T15:43:31.467Z"
+        },
+        {
+            "id": "observed-data--80a43de3-1a36-4749-879f-99505aa823cd",
+            "number_observed": 1,
+            "first_observed": "2020-06-24T15:43:31.469877Z",
+            "last_observed": "2020-06-24T15:43:31.469886Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.138",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ulture.rocks",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:89:c9:60",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://npac.xn--nqv7f/Slo9341/2/dLKtHRA29X8/mai-locall-notifyin.pzl",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ass-counsel",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "athe-sunse-aussi.tpp",
+                    "hashes": {
+                        "SHA-256": "AE2AD813e53aFB90F9Ecb9b3Df8C8efE7Ba25FCB4B1c8803d66dD28eBF96F70B"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-24T15:43:31.469Z",
+            "modified": "2020-06-24T15:43:31.469Z"
+        }
+    ],
+    "type": "bundle"
+}
