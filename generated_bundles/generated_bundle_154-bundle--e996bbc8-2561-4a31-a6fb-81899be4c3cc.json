@@ -1,0 +1,45 @@
+{
+    "id": "bundle--e996bbc8-2561-4a31-a6fb-81899be4c3cc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Test2",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--50745128-fbec-497e-9312-726fbd94f6f6",
+            "created": "2020-06-26T15:11:20.542Z",
+            "modified": "2020-06-26T15:11:20.542Z"
+        },
+        {
+            "id": "observed-data--0cc74ffe-5418-40f7-a7ce-e591274e075f",
+            "number_observed": 1,
+            "first_observed": "2020-06-26T15:11:20.542807Z",
+            "last_observed": "2020-06-26T15:11:20.542816Z",
+            "objects": {
+                "0": {
+                    "value": "1.10.1.1",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-26T15:11:20.542Z",
+            "modified": "2020-06-26T15:11:20.542Z"
+        },
+        {
+            "id": "observed-data--c2d11671-4183-47ed-b90f-a2fcd0b3050b",
+            "number_observed": 1,
+            "first_observed": "2020-06-26T15:11:20.543263Z",
+            "last_observed": "2020-06-26T15:11:20.543267Z",
+            "objects": {
+                "0": {
+                    "value": "2.2.2.2",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data",
+            "created": "2020-06-26T15:11:20.543Z",
+            "modified": "2020-06-26T15:11:20.543Z"
+        }
+    ],
+    "type": "bundle"
+}
