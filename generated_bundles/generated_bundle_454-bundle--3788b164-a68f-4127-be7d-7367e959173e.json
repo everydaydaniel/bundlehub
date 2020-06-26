@@ -1,0 +1,53 @@
+{
+    "id": "bundle--3788b164-a68f-4127-be7d-7367e959173e",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "name",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--24bf1015-599d-471a-8d9c-39e2b7ac5f1f",
+            "created": "2020-06-26T22:10:42.311Z",
+            "modified": "2020-06-26T22:10:42.311Z"
+        },
+        {
+            "id": "observed-data--c11ff4af-7d1f-4011-b29f-ba4b111efe98",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T22:00:35.349143Z",
+            "last_observed": "2020-06-25T22:00:35.349143Z",
+            "created": "2020-06-25T22:00:35.349Z",
+            "modified": "2020-06-25T22:00:35.349Z",
+            "objects": {
+                "0": {
+                    "value": "u.io",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "charles",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--2ed041f1-ee38-4486-a707-329d4af691cf",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T22:29:02.609566Z",
+            "last_observed": "2020-06-25T22:29:02.609566Z",
+            "created": "2020-06-25T22:29:02.609Z",
+            "modified": "2020-06-25T22:29:02.609Z",
+            "objects": {
+                "0": {
+                    "value": "https://rocur-culture-gatecras.koeln/8Xy1L54Ib0W57C1fSm5/ercutaneou-fuzze.fw3",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "ising-whir",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
