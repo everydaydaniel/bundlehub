@@ -1,0 +1,53 @@
+{
+    "id": "bundle--0ce93838-f855-4ac7-a01c-2c164a26e226",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "name",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--3510115c-21e6-46e3-a427-765ce18500e7",
+            "created": "2020-06-26T22:10:43.746Z",
+            "modified": "2020-06-26T22:10:43.746Z"
+        },
+        {
+            "id": "observed-data--ae087c84-e330-4523-b6b4-a6083efe09bf",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T06:12:15.885989Z",
+            "last_observed": "2020-06-25T06:12:15.885989Z",
+            "created": "2020-06-25T06:12:15.885Z",
+            "modified": "2020-06-25T06:12:15.885Z",
+            "objects": {
+                "0": {
+                    "value": "u.io",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "charles",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--13043c08-0e2b-4c6d-87de-ba89c2cb552c",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T14:14:16.118718Z",
+            "last_observed": "2020-06-25T14:14:16.118718Z",
+            "created": "2020-06-25T14:14:16.118Z",
+            "modified": "2020-06-25T14:14:16.118Z",
+            "objects": {
+                "0": {
+                    "value": "http://hromosom-dyadi.ly/nvICrZG/irulen-uncontroversia-revocation.chl",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "artograph",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
