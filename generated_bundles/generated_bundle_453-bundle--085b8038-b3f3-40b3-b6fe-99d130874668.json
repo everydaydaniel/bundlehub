@@ -1,0 +1,53 @@
+{
+    "id": "bundle--085b8038-b3f3-40b3-b6fe-99d130874668",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "name",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--b57db98b-8e3a-45eb-a244-d7aa6cddc5af",
+            "created": "2020-06-26T22:06:56.107Z",
+            "modified": "2020-06-26T22:06:56.107Z"
+        },
+        {
+            "id": "observed-data--c7738c65-40c9-4ae9-9f2c-6a2193f8e0d8",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T22:51:47.398333Z",
+            "last_observed": "2020-06-25T22:51:47.398333Z",
+            "created": "2020-06-25T22:51:47.398Z",
+            "modified": "2020-06-25T22:51:47.398Z",
+            "objects": {
+                "0": {
+                    "value": "u.io",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "charles",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--2e0d32e6-cf2b-4836-ba73-53c32690b53a",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T10:25:14.001162Z",
+            "last_observed": "2020-06-25T10:25:14.001162Z",
+            "created": "2020-06-25T10:25:14.001Z",
+            "modified": "2020-06-25T10:25:14.001Z",
+            "objects": {
+                "0": {
+                    "value": "https://lorificatio-scurrie.degree/dk/4u94530IBZLN8Dx5L55R/z45VlY5/isma-untru.t2",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "humbin-pain-suggestiv",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
