@@ -1,0 +1,34 @@
+{
+    "id": "bundle--0c58ff62-2198-4a75-8057-38e2172d33c9",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--19c67b79-b67e-4e23-8c51-c9b85610657c",
+            "created": "2020-06-29T20:08:32.114Z",
+            "modified": "2020-06-29T20:08:32.114Z"
+        },
+        {
+            "id": "observed-data--1b4aef56-a1c7-427b-94e2-32ae6cb9470c",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T11:41:42.828483Z",
+            "last_observed": "2020-06-29T11:41:42.828483Z",
+            "created": "2020-06-29T11:41:42.828Z",
+            "modified": "2020-06-29T11:41:42.828Z",
+            "objects": {
+                "0": {
+                    "value": "argete-lee.desi",
+                    "type": "domain-name"
+                },
+                "1": {
+                    "value": "192.168.1.155",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
