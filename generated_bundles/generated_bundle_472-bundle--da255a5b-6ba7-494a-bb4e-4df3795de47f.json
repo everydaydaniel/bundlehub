@@ -1,0 +1,34 @@
+{
+    "id": "bundle--da255a5b-6ba7-494a-bb4e-4df3795de47f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--ed0f5fcc-f6cc-4b86-961d-78ad4ecdb229",
+            "created": "2020-06-29T20:29:20.221Z",
+            "modified": "2020-06-29T20:29:20.221Z"
+        },
+        {
+            "id": "observed-data--092d95e5-8729-409a-bf78-6200757fb621",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T01:58:38.737505Z",
+            "last_observed": "2020-06-29T01:58:38.737505Z",
+            "created": "2020-06-29T01:58:38.737Z",
+            "modified": "2020-06-29T01:58:38.737Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.134",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "armin.hkt",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
