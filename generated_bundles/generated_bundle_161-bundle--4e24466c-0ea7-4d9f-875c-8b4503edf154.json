@@ -1,0 +1,84 @@
+{
+    "id": "bundle--4e24466c-0ea7-4d9f-875c-8b4503edf154",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--e22c3f09-4d97-4fcb-8edb-9af4f79ef1e4",
+            "created": "2020-06-29T16:51:43.849Z",
+            "modified": "2020-06-29T16:51:43.849Z"
+        },
+        {
+            "id": "observed-data--01c720d5-84f4-440e-824a-19993e3c435f",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T03:52:55.071368Z",
+            "last_observed": "2020-06-29T03:52:55.071368Z",
+            "created": "2020-06-29T03:52:55.071Z",
+            "modified": "2020-06-29T03:52:55.071Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.55",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "homboid.ne",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:53:77:f7",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--0f590495-f587-4e72-a06a-79e7b75418b3",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T08:47:41.694818Z",
+            "last_observed": "2020-06-29T08:47:41.694818Z",
+            "created": "2020-06-29T08:47:41.694Z",
+            "modified": "2020-06-29T08:47:41.694Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.56",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ellis.mil",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:45:51:3c",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--5e5d0078-2694-4d86-a837-da139337848e",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T18:13:45.527042Z",
+            "last_observed": "2020-06-29T18:13:45.527042Z",
+            "created": "2020-06-29T18:13:45.527Z",
+            "modified": "2020-06-29T18:13:45.527Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.163",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "recipitatin-gimmick-cultivation.xn--mgbaam7a8h",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:2a:83:23",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
