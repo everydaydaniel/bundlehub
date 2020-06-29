@@ -1,0 +1,34 @@
+{
+    "id": "bundle--ac1a2f11-1550-42b4-b7c2-15264c0681de",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--51e13183-2896-4cf8-85e6-8611feb5d137",
+            "created": "2020-06-29T20:09:46.245Z",
+            "modified": "2020-06-29T20:09:46.245Z"
+        },
+        {
+            "id": "observed-data--e4d4654e-853e-419f-adc5-571399d1f031",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T18:49:54.407057Z",
+            "last_observed": "2020-06-29T18:49:54.407057Z",
+            "created": "2020-06-29T18:49:54.407Z",
+            "modified": "2020-06-29T18:49:54.407Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.204",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "innacl.tickets",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
