@@ -1,0 +1,72 @@
+{
+    "id": "bundle--c197a7b5-06ca-49ef-8a16-36f9fa431325",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--7cd8f5f0-e9b2-4da2-910c-534b6b422df8",
+            "created": "2020-06-30T16:28:54.665Z",
+            "modified": "2020-06-30T16:28:54.665Z"
+        },
+        {
+            "id": "observed-data--aef0f2e8-d471-469a-add3-0bd417d2c977",
+            "number_observed": 1,
+            "first_observed": "2020-06-30T03:26:12.020099Z",
+            "last_observed": "2020-06-30T03:26:12.020099Z",
+            "created": "2020-06-30T03:26:12.020Z",
+            "modified": "2020-06-30T03:26:12.020Z",
+            "objects": {
+                "0": {
+                    "value": "ars-muddle-rouge.statefarm",
+                    "type": "domain-name"
+                },
+                "1": {
+                    "value": "192.168.1.51",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b86ff598-08d4-4749-b7e0-9aaf42a13a0b",
+            "number_observed": 1,
+            "first_observed": "2020-06-30T17:49:26.392396Z",
+            "last_observed": "2020-06-30T17:49:26.392396Z",
+            "created": "2020-06-30T17:49:26.392Z",
+            "modified": "2020-06-30T17:49:26.392Z",
+            "objects": {
+                "0": {
+                    "value": "ouncies-barebac-splodg.mu",
+                    "type": "domain-name"
+                },
+                "1": {
+                    "value": "192.168.1.169",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--28b012e3-0451-4279-bec3-56c1448194d2",
+            "number_observed": 1,
+            "first_observed": "2020-06-30T01:42:39.756518Z",
+            "last_observed": "2020-06-30T01:42:39.756518Z",
+            "created": "2020-06-30T01:42:39.756Z",
+            "modified": "2020-06-30T01:42:39.756Z",
+            "objects": {
+                "0": {
+                    "value": "iner.store",
+                    "type": "domain-name"
+                },
+                "1": {
+                    "value": "192.168.1.71",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
