@@ -1,0 +1,124 @@
+{
+    "id": "bundle--39bca0cb-578a-4abd-b4e9-2dabc5da8217",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "kljahsdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--10531594-2128-441c-b95d-ed5c548a3688",
+            "created": "2020-07-01T16:33:47.821Z",
+            "modified": "2020-07-01T16:33:47.821Z"
+        },
+        {
+            "id": "observed-data--232c23e8-60b3-4642-9e04-13bae36d8c58",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T21:34:27.354334Z",
+            "last_observed": "2020-07-01T21:34:27.354334Z",
+            "created": "2020-07-01T21:34:27.354Z",
+            "modified": "2020-07-01T21:34:27.354Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.213",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "atur.buy",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--99bf1a28-a32e-4d77-b0b9-948bb23ffed4",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T13:18:06.466967Z",
+            "last_observed": "2020-07-01T13:18:06.466967Z",
+            "created": "2020-07-01T13:18:06.466Z",
+            "modified": "2020-07-01T13:18:06.466Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.137",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ushion-ophthalmolog-octan.bargains",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--d2279779-6271-42d5-988b-cfbc67311808",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T20:55:30.745058Z",
+            "last_observed": "2020-07-01T20:55:30.745058Z",
+            "created": "2020-07-01T20:55:30.745Z",
+            "modified": "2020-07-01T20:55:30.745Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.100",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "udgetar.swiss",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--7d6c80e5-2d9b-47d3-a6b4-3d54046c5e74",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T17:39:25.928092Z",
+            "last_observed": "2020-07-01T17:39:25.928092Z",
+            "created": "2020-07-01T17:39:25.928Z",
+            "modified": "2020-07-01T17:39:25.928Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.165",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "uplicat.citic",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "name": "roffere-churchme.com",
+                    "hashes": {
+                        "ssdeep": "..1XlWtRqpeop.0FzYU9S1mBt36QDhhfD+l7H0i9JsFMH0nSSXWu8bc/34MIA"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--0dc2a47f-f784-422f-87af-c6afba3231e3",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T13:34:52.997066Z",
+            "last_observed": "2020-07-01T13:34:52.997066Z",
+            "created": "2020-07-01T13:34:52.997Z",
+            "modified": "2020-07-01T13:34:52.997Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.124",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "taircase-nightdres-brim.nagoya",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "name": "ambez.umf",
+                    "hashes": {
+                        "SHA3-224": "79f67Ff7Be1dc52D3fDD2cbBebbB2ef75a05945d09aCe23E548CaC3E"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
