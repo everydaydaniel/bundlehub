@@ -1,0 +1,33 @@
+{
+    "id": "bundle--1bafbef0-8f21-4dba-9dd6-8b9b4739dcd9",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "a",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--926bf28b-d2fd-406b-a1e1-b2f242785539",
+            "created": "2020-06-25T18:29:17.731Z",
+            "modified": "2020-06-25T18:29:17.731Z"
+        },
+        {
+            "id": "observed-data--32814e11-f094-4df6-9b6a-ae1ce5f10f94",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T22:26:24.911073Z",
+            "last_observed": "2020-06-25T22:26:24.911073Z",
+            "created": "2020-06-25T22:26:24.911Z",
+            "modified": "2020-06-25T22:26:24.911Z",
+            "objects": {
+                "0": {
+                    "name": "nmounte.brx",
+                    "hashes": {
+                        "MD5": "eEF05365C29f2EBFC25c9B89ffb8E1ce"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

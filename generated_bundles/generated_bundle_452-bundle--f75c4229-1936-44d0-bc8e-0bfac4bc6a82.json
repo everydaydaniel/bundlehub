@@ -1,0 +1,53 @@
+{
+    "id": "bundle--f75c4229-1936-44d0-bc8e-0bfac4bc6a82",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "name",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--3f0468a2-a758-4dcc-bd56-917eda3d2069",
+            "created": "2020-06-26T22:06:54.585Z",
+            "modified": "2020-06-26T22:06:54.585Z"
+        },
+        {
+            "id": "observed-data--93d93d8b-e4d5-4de4-b05f-b28ef24eff91",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T19:05:41.43044Z",
+            "last_observed": "2020-06-25T19:05:41.43044Z",
+            "created": "2020-06-25T19:05:41.430Z",
+            "modified": "2020-06-25T19:05:41.430Z",
+            "objects": {
+                "0": {
+                    "value": "u.io",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "charles",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--f8b5554a-f79d-4724-b433-9e58b125f17d",
+            "number_observed": 1,
+            "first_observed": "2020-06-25T11:19:14.512794Z",
+            "last_observed": "2020-06-25T11:19:14.512794Z",
+            "created": "2020-06-25T11:19:14.512Z",
+            "modified": "2020-06-25T11:19:14.512Z",
+            "objects": {
+                "0": {
+                    "value": "https://nnumerabl.smile/ui7eWVDR/ie8Dv6CFmSZQ3Ydb8R/x9jf730emyWZ5A/leeveles-mindin.xlt",
+                    "type": "url"
+                },
+                "1": {
+                    "user_id": "oache-misfortun-involvement",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "bundle--5c5c5e16-2b5a-4994-94af-8233e2815557",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--a25c5e3f-e914-4165-bc5a-2577e36d57c3",
+            "created": "2020-06-26T03:17:07.995Z",
+            "modified": "2020-06-26T03:17:07.995Z"
+        },
+        {
+            "id": "observed-data--33a2270f-6ab0-46f6-b85a-ac4ad953bd79",
+            "number_observed": 1,
+            "first_observed": "2020-06-26T13:15:47.430025Z",
+            "last_observed": "2020-06-26T13:15:47.430025Z",
+            "created": "2020-06-26T13:15:47.430Z",
+            "modified": "2020-06-26T13:15:47.430Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.113",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ongestin-maroone-keele.dk",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--c20b9b18-80a2-4ea9-a4d4-e3b13a1b0854",
+            "number_observed": 1,
+            "first_observed": "2020-06-26T11:12:14.584348Z",
+            "last_observed": "2020-06-26T11:12:14.584348Z",
+            "created": "2020-06-26T11:12:14.584Z",
+            "modified": "2020-06-26T11:12:14.584Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.242",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "mpassivit.wien",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

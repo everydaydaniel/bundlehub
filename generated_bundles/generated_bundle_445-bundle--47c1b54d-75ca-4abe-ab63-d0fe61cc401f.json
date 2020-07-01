@@ -1,0 +1,53 @@
+{
+    "id": "bundle--47c1b54d-75ca-4abe-ab63-d0fe61cc401f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "fdas",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--e95c2e3e-b219-4883-8d2b-64f21c209cea",
+            "created": "2020-06-26T05:27:42.055Z",
+            "modified": "2020-06-26T05:27:42.055Z"
+        },
+        {
+            "id": "observed-data--70a5bc09-7961-45c9-a4d6-7e54ed3ab319",
+            "number_observed": 1,
+            "first_observed": "2020-06-26T08:27:45.523516Z",
+            "last_observed": "2020-06-26T08:27:45.523516Z",
+            "created": "2020-06-26T08:27:45.523Z",
+            "modified": "2020-06-26T08:27:45.523Z",
+            "objects": {
+                "0": {
+                    "value": "https://rushe-compulsiv-radionuclid.xn--jlq61u9w7b/l/S2HPqRD0FoZY/etergent.123",
+                    "type": "url"
+                },
+                "1": {
+                    "value": "CC:46:D6:4a:28:86",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--63a356a6-aa9d-4564-95f2-33ec1c3e9a17",
+            "number_observed": 1,
+            "first_observed": "2020-06-26T07:49:51.196123Z",
+            "last_observed": "2020-06-26T07:49:51.196123Z",
+            "created": "2020-06-26T07:49:51.196Z",
+            "modified": "2020-06-26T07:49:51.196Z",
+            "objects": {
+                "0": {
+                    "value": "https://aste-outbuildin.afl/St46/Nktju5t5V6n7QT/sle-roache-tricke.rnd",
+                    "type": "url"
+                },
+                "1": {
+                    "value": "CC:46:D6:11:43:41",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

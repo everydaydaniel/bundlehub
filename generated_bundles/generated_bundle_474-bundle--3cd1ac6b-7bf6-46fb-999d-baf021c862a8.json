@@ -1,0 +1,84 @@
+{
+    "id": "bundle--3cd1ac6b-7bf6-46fb-999d-baf021c862a8",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--8f454372-304a-4e84-80fa-a7ebcc41300f",
+            "created": "2020-06-30T16:32:11.381Z",
+            "modified": "2020-06-30T16:32:11.381Z"
+        },
+        {
+            "id": "observed-data--156aba0c-de80-437a-8b17-c96098331875",
+            "number_observed": 1,
+            "first_observed": "2020-06-30T11:44:11.867534Z",
+            "last_observed": "2020-06-30T11:44:11.867534Z",
+            "created": "2020-06-30T11:44:11.867Z",
+            "modified": "2020-06-30T11:44:11.867Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.112",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "tringentl-entourag.song",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:8a:b5:86",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--8eb2e816-1493-4ad9-845e-7b5054847987",
+            "number_observed": 1,
+            "first_observed": "2020-06-30T04:41:19.169367Z",
+            "last_observed": "2020-06-30T04:41:19.169367Z",
+            "created": "2020-06-30T04:41:19.169Z",
+            "modified": "2020-06-30T04:41:19.169Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.99",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "oesn.rw",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:24:51:99",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--9f899a4f-af62-4549-8e26-fc61a04d6957",
+            "number_observed": 1,
+            "first_observed": "2020-06-30T20:47:02.539348Z",
+            "last_observed": "2020-06-30T20:47:02.539348Z",
+            "created": "2020-06-30T20:47:02.539Z",
+            "modified": "2020-06-30T20:47:02.539Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.125",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "frai.xn--h2breg3eve",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:10:e7:26",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

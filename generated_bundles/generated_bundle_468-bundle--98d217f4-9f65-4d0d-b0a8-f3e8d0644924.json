@@ -1,0 +1,34 @@
+{
+    "id": "bundle--98d217f4-9f65-4d0d-b0a8-f3e8d0644924",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--75f5aad1-f672-443d-9834-37d28ed71696",
+            "created": "2020-06-29T20:06:14.397Z",
+            "modified": "2020-06-29T20:06:14.397Z"
+        },
+        {
+            "id": "observed-data--3ab87ca6-496d-4b41-bb6a-fb34a9f0020f",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T10:33:25.106031Z",
+            "last_observed": "2020-06-29T10:33:25.106031Z",
+            "created": "2020-06-29T10:33:25.106Z",
+            "modified": "2020-06-29T10:33:25.106Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.214",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "rowningl-griffin-hanki.blackfriday",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

@@ -1,0 +1,34 @@
+{
+    "id": "bundle--32259b4f-9af5-411b-9bc2-ee07a8ec2681",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "adsf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--121727cc-a0b1-4c1f-b269-65a22bd43114",
+            "created": "2020-06-29T20:28:53.059Z",
+            "modified": "2020-06-29T20:28:53.059Z"
+        },
+        {
+            "id": "observed-data--70d97045-1151-41d4-a099-4f90299fa979",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T16:15:49.056021Z",
+            "last_observed": "2020-06-29T16:15:49.056021Z",
+            "created": "2020-06-29T16:15:49.056Z",
+            "modified": "2020-06-29T16:15:49.056Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.250",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "iserl.xn--3oq18vl8pn36a",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

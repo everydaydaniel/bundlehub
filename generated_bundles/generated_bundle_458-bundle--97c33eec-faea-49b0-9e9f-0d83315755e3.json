@@ -1,0 +1,72 @@
+{
+    "id": "bundle--97c33eec-faea-49b0-9e9f-0d83315755e3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--c28ae010-7020-4588-b3b6-494023ef00e8",
+            "created": "2020-06-29T15:52:54.879Z",
+            "modified": "2020-06-29T15:52:54.879Z"
+        },
+        {
+            "id": "observed-data--efae7a68-38b4-4d51-8214-3eb978b8fb2f",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T21:02:25.698244Z",
+            "last_observed": "2020-06-29T21:02:25.698244Z",
+            "created": "2020-06-29T21:02:25.698Z",
+            "modified": "2020-06-29T21:02:25.698Z",
+            "objects": {
+                "0": {
+                    "value": "0.0.0.0",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "www.charles.com",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--df23b0a7-0f1d-4d17-a9c3-68d2fea69cb4",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T11:46:23.432013Z",
+            "last_observed": "2020-06-29T11:46:23.432013Z",
+            "created": "2020-06-29T11:46:23.432Z",
+            "modified": "2020-06-29T11:46:23.432Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.81",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "inguistic-lun.today",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--4190c6df-beaa-4d5e-ad6c-99e1ed6dcbcc",
+            "number_observed": 1,
+            "first_observed": "2020-06-29T13:16:50.563213Z",
+            "last_observed": "2020-06-29T13:16:50.563213Z",
+            "created": "2020-06-29T13:16:50.563Z",
+            "modified": "2020-06-29T13:16:50.563Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.65",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "agnesiu-diamon-snail.chrome",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
