@@ -1,0 +1,53 @@
+{
+    "id": "bundle--8aa4f19c-3b9f-4cc3-b178-c286e206e7d2",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "test-bundle",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--1955e743-d57a-4fa7-b98b-497f89b241c6",
+            "created": "2020-07-02T18:23:47.399Z",
+            "modified": "2020-07-02T18:23:47.399Z"
+        },
+        {
+            "id": "observed-data--896f4dd3-62ed-41b9-8290-8f43156c5417",
+            "number_observed": 1,
+            "first_observed": "2020-06-21T07:31:07.197762Z",
+            "last_observed": "2020-06-21T07:31:07.197762Z",
+            "created": "2020-06-21T07:31:07.197Z",
+            "modified": "2020-06-21T07:31:07.197Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.202",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "echanis-deed-bower.next",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:e3:34:67",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://isrea-captivit.xn--80aswg/35tQR3OofDdmt01/xErWJz0v52OB8T0Q87/M/onditio-unseeingl.bv5",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "laybac-doer-mechanic",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ibran-reshufflin-orientat.cmm",
+                    "hashes": {
+                        "SHA3-224": "95fed8aCC997B49B5Bb9dA5bf885A3AdC0Fb1BDFB5Fb2F9dA8CB7F19"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
