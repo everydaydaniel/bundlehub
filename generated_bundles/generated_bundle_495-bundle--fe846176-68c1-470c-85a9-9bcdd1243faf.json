@@ -1,0 +1,30 @@
+{
+    "id": "bundle--fe846176-68c1-470c-85a9-9bcdd1243faf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "asdf",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--f814d495-2fc6-462a-93ee-18fa7c4b8ca0",
+            "created": "2020-07-02T16:27:54.801Z",
+            "modified": "2020-07-02T16:27:54.801Z"
+        },
+        {
+            "id": "observed-data--0105fec4-05e7-401e-bbfe-39240f4cbfca",
+            "number_observed": 1,
+            "first_observed": "2020-07-02T04:00:53.649024Z",
+            "last_observed": "2020-07-02T04:00:53.649024Z",
+            "created": "2020-07-02T04:00:53.649Z",
+            "modified": "2020-07-02T04:00:53.649Z",
+            "objects": {
+                "0": {
+                    "value": "atchback-ursin-spindl.intel",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
