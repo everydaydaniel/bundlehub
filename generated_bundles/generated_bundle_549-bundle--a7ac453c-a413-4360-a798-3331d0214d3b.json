@@ -1,0 +1,117 @@
+{
+    "id": "bundle--a7ac453c-a413-4360-a798-3331d0214d3b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--5ba271b1-b67e-4299-8c6a-97208b7be662",
+            "created": "2020-07-08T15:55:29.119Z",
+            "modified": "2020-07-08T15:55:29.119Z"
+        },
+        {
+            "id": "observed-data--e61368ff-d825-4a3c-9957-3d9683520dd2",
+            "number_observed": 1,
+            "first_observed": "2020-07-07T10:28:01.369099Z",
+            "last_observed": "2020-07-07T10:28:01.369099Z",
+            "created": "2020-07-07T10:28:01.369Z",
+            "modified": "2020-07-07T10:28:01.369Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.173",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "udg-interpretatio.film",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://ag-encapsulat-vandal.rich/U9RVhB0/onventionalis-main-massage.clg",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "rioritis-yellowis",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "unk.mcf",
+                    "hashes": {
+                        "SHA-256": "977fbAe63Ca47de963CFc67045b60C64ACa95F078C0ab96Fd0d52ebCCb7E577d"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--7ac6ce61-e0a3-44d6-932c-0bcc91b15aeb",
+            "number_observed": 1,
+            "first_observed": "2020-07-08T07:31:48.099859Z",
+            "last_observed": "2020-07-08T07:31:48.099859Z",
+            "created": "2020-07-08T07:31:48.099Z",
+            "modified": "2020-07-08T07:31:48.099Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.221",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "orsel-lament-knea.ec",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "http://run.gmo/fx/xpectantl.sbt",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "gai-decoy",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "issipatio-focusse-conveyanc.psr",
+                    "hashes": {
+                        "TLSH": "befaC7c759A4FEfbbaeD9879FCd7a257B0465AfCbf56Da7ABaC64ed5907a53B1C51529"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--f135900c-d66f-42e1-84e5-04ae99f2fc62",
+            "number_observed": 1,
+            "first_observed": "2020-07-06T18:43:08.331423Z",
+            "last_observed": "2020-07-06T18:43:08.331423Z",
+            "created": "2020-07-06T18:43:08.331Z",
+            "modified": "2020-07-06T18:43:08.331Z",
+            "objects": {
+                "0": {
+                    "value": "10.1.1.2",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "bad.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://badsite.com",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "BadUser",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "badfile.exe",
+                    "hashes": {
+                        "MD5": "106fcc5a6b51e4b2213694c7b5ff3c08"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
