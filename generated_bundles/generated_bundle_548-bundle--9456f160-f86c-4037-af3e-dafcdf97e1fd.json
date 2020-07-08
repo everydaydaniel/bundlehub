@@ -1,0 +1,69 @@
+{
+    "id": "bundle--9456f160-f86c-4037-af3e-dafcdf97e1fd",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--51b9ee1b-5cdf-4df6-9de9-234c9e49da25",
+            "created": "2020-07-08T15:39:33.183Z",
+            "modified": "2020-07-08T15:39:33.183Z"
+        },
+        {
+            "id": "observed-data--7d0aa1bc-747b-4d15-a3f5-6185f297ceba",
+            "number_observed": 1,
+            "first_observed": "2020-07-03T05:31:32.872347Z",
+            "last_observed": "2020-07-03T05:31:32.872347Z",
+            "created": "2020-07-03T05:31:32.872Z",
+            "modified": "2020-07-03T05:31:32.872Z",
+            "objects": {
+                "0": {
+                    "name": "deologue-grittin.hxm",
+                    "hashes": {
+                        "RIPEMD-160": "2ED5D59c5C8b0c83DFe8cB1b0C37A2bB6dfBfe74"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--c542aa66-b053-44ae-9933-cd37a432de86",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T16:31:56.730032Z",
+            "last_observed": "2020-07-01T16:31:56.730032Z",
+            "created": "2020-07-01T16:31:56.730Z",
+            "modified": "2020-07-01T16:31:56.730Z",
+            "objects": {
+                "0": {
+                    "name": "rostratio.m3",
+                    "hashes": {
+                        "RIPEMD-160": "4456ACb3f84BbDDB66176CEb99F05B71ea5704Fd"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--39cfd855-f529-4fe2-92e2-7b97992f85e6",
+            "number_observed": 1,
+            "first_observed": "2020-07-03T09:39:13.958374Z",
+            "last_observed": "2020-07-03T09:39:13.958374Z",
+            "created": "2020-07-03T09:39:13.958Z",
+            "modified": "2020-07-03T09:39:13.958Z",
+            "objects": {
+                "0": {
+                    "name": "badfile.exe",
+                    "hashes": {
+                        "SHA-256": "8978b5eb14061436a8d2249f9c92ac75d8307c83a09ea7aa3e6572f704b4335f"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
