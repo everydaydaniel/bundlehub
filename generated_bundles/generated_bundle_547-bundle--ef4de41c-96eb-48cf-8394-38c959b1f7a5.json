@@ -1,0 +1,60 @@
+{
+    "id": "bundle--ef4de41c-96eb-48cf-8394-38c959b1f7a5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "fsdgb",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--75ed41fe-221d-4237-8162-d36deb200cd9",
+            "created": "2020-07-08T14:47:33.821Z",
+            "modified": "2020-07-08T14:47:33.821Z"
+        },
+        {
+            "id": "observed-data--70e8be05-4078-4023-894b-469deb192805",
+            "number_observed": 1,
+            "first_observed": "2020-07-08T16:52:55.271565Z",
+            "last_observed": "2020-07-08T16:52:55.271565Z",
+            "created": "2020-07-08T16:52:55.271Z",
+            "modified": "2020-07-08T16:52:55.271Z",
+            "objects": {
+                "0": {
+                    "user_id": "ait",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b0a510b3-a5c2-4198-8cd2-d8fa8c9725a7",
+            "number_observed": 1,
+            "first_observed": "2020-07-08T22:58:02.772951Z",
+            "last_observed": "2020-07-08T22:58:02.772951Z",
+            "created": "2020-07-08T22:58:02.772Z",
+            "modified": "2020-07-08T22:58:02.772Z",
+            "objects": {
+                "0": {
+                    "user_id": "ront-ramme-revalu",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--15ebeafc-d2a1-4351-a7a4-75cc9250506f",
+            "number_observed": 1,
+            "first_observed": "2020-07-08T16:08:34.677001Z",
+            "last_observed": "2020-07-08T16:08:34.677001Z",
+            "created": "2020-07-08T16:08:34.677Z",
+            "modified": "2020-07-08T16:08:34.677Z",
+            "objects": {
+                "0": {
+                    "user_id": "jdoe",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
