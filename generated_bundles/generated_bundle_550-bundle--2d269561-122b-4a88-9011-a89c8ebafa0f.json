@@ -1,0 +1,117 @@
+{
+    "id": "bundle--2d269561-122b-4a88-9011-a89c8ebafa0f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--12755bc9-437b-4a4b-99f5-bb0baf983fcd",
+            "created": "2020-07-08T16:09:07.295Z",
+            "modified": "2020-07-08T16:09:07.295Z"
+        },
+        {
+            "id": "observed-data--b228bc23-9ac5-4a96-a291-4dc991456fc0",
+            "number_observed": 1,
+            "first_observed": "2020-07-08T03:46:42.374793Z",
+            "last_observed": "2020-07-08T03:46:42.374793Z",
+            "created": "2020-07-08T03:46:42.374Z",
+            "modified": "2020-07-08T03:46:42.374Z",
+            "objects": {
+                "0": {
+                    "value": "10.1.12.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "badoaomain.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "http://badsite.com",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "BadUser",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "BadFile.exe",
+                    "hashes": {
+                        "MD5": "106fcc5a6b51e4b2213694c7b5ff3c08"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b7ae9c9d-b41b-46c2-8696-209cac83ceb0",
+            "number_observed": 1,
+            "first_observed": "2020-07-07T13:28:04.775713Z",
+            "last_observed": "2020-07-07T13:28:04.775713Z",
+            "created": "2020-07-07T13:28:04.775Z",
+            "modified": "2020-07-07T13:28:04.775Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.210",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "wappe-spike-zeppeli.ggee",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "http://o-underclothin.beer/5193C640/roprieto.hyp",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "mplo",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "unner-unspeakabl-phrenolog.tdw",
+                    "hashes": {
+                        "TLSH": "B20Ccac701D1da54a22137368026c3fED1f0ac9a56A37DABC7c3B9ce3c5eb8571fbecE"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--c22d5c87-008f-4cf7-bb2c-e37d270163d7",
+            "number_observed": 1,
+            "first_observed": "2020-07-09T09:19:29.478321Z",
+            "last_observed": "2020-07-09T09:19:29.478321Z",
+            "created": "2020-07-09T09:19:29.478Z",
+            "modified": "2020-07-09T09:19:29.478Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.102",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "itherin-anagrammaticall.showtime",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://ppraisee-froth.versicherung/HaI74yp/rchitecture.rtl",
+                    "type": "url"
+                },
+                "3": {
+                    "user_id": "tarlik-unsea",
+                    "type": "user-account"
+                },
+                "4": {
+                    "name": "illion-enchantin.xpl",
+                    "hashes": {
+                        "SHA3-256": "4777e12a10feB439168CEAdc039dce25c1c60dEffbd4fB7FAA5DF5bB997ec4f1"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
