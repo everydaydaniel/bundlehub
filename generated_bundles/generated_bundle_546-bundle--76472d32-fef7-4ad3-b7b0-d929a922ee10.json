@@ -1,0 +1,114 @@
+{
+    "id": "bundle--76472d32-fef7-4ad3-b7b0-d929a922ee10",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "AWS",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--defc6e1c-b0b1-425e-aeab-ec2c59dea832",
+            "created": "2020-07-08T14:45:39.435Z",
+            "modified": "2020-07-08T14:45:39.435Z"
+        },
+        {
+            "id": "observed-data--1ab18b78-e657-48e5-be99-a6b4828a61cd",
+            "number_observed": 1,
+            "first_observed": "2020-06-12T16:29:57.98821Z",
+            "last_observed": "2020-06-12T16:29:57.98821Z",
+            "created": "2020-06-12T16:29:57.988Z",
+            "modified": "2020-06-12T16:29:57.988Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.2.2",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--6350f10e-2585-4d19-898e-f782c49890d6",
+            "number_observed": 1,
+            "first_observed": "2020-06-11T10:39:30.300513Z",
+            "last_observed": "2020-06-11T10:39:30.300513Z",
+            "created": "2020-06-11T10:39:30.300Z",
+            "modified": "2020-06-11T10:39:30.300Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.101",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "https://ndefinit.cash/N7Q8EA/S18/isso-consensu-temp.crz",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "oron-rearrangement",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--a40a8832-c700-4d97-a7d6-99d2503a9223",
+            "number_observed": 1,
+            "first_observed": "2020-07-03T13:08:45.967827Z",
+            "last_observed": "2020-07-03T13:08:45.967827Z",
+            "created": "2020-07-03T13:08:45.967Z",
+            "modified": "2020-07-03T13:08:45.967Z",
+            "objects": {
+                "0": {
+                    "value": "10.10.1.1",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--a03b6cec-b23f-46e7-97e4-d25e2bd04253",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T20:56:28.853578Z",
+            "last_observed": "2020-07-01T20:56:28.853578Z",
+            "created": "2020-07-01T20:56:28.853Z",
+            "modified": "2020-07-01T20:56:28.853Z",
+            "objects": {
+                "0": {
+                    "value": "1.2.2.2",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "https://bundle.com",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "johndoe",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--8b2a152a-666b-4ce4-9349-446404db2bce",
+            "number_observed": 1,
+            "first_observed": "2020-07-01T12:08:20.874163Z",
+            "last_observed": "2020-07-01T12:08:20.874163Z",
+            "created": "2020-07-01T12:08:20.874Z",
+            "modified": "2020-07-01T12:08:20.874Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.50",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "http://ribune.llp/c8Wow6nafpZ8Q6X/9j5F90C29YVw4mvSn/ntenna-perc-bitteres.apc",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "ynchin",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
