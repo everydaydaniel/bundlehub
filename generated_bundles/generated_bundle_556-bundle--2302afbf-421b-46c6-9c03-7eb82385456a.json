@@ -1,0 +1,105 @@
+{
+    "id": "bundle--2302afbf-421b-46c6-9c03-7eb82385456a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--bfd868ea-41f6-4e83-9d1f-def0796add81",
+            "created": "2020-07-10T16:56:45.819Z",
+            "modified": "2020-07-10T16:56:45.819Z"
+        },
+        {
+            "id": "observed-data--280abb64-c366-499c-80e7-42244cf43cb5",
+            "number_observed": 1,
+            "first_observed": "2020-07-06T07:49:24.210933Z",
+            "last_observed": "2020-07-06T07:49:24.210933Z",
+            "created": "2020-07-06T07:49:24.210Z",
+            "modified": "2020-07-06T07:49:24.210Z",
+            "objects": {
+                "0": {
+                    "value": "192.12.12.12",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "http://nadsite.com",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "BadUser",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "BadFile.exe",
+                    "hashes": {
+                        "SHA-1": "Dfdc90ddEc38Cf7b3EBC4F35735ef62d451eB694"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--f12a4020-e4bd-4986-becb-ac41184ff238",
+            "number_observed": 1,
+            "first_observed": "2020-07-07T03:32:50.62679Z",
+            "last_observed": "2020-07-07T03:32:50.62679Z",
+            "created": "2020-07-07T03:32:50.626Z",
+            "modified": "2020-07-07T03:32:50.626Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.100",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "https://limatologist.site/e3ObS378TI8j/owngrade-ducklin-spelling.ars",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "roatia-revelator-palindrome",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "rovabl.vcs",
+                    "hashes": {
+                        "TLSH": "4EFaBdE6300d8ecaad0D9e35AcA7a10beBFABede758c57FF6C3acbE78BD207DA5a1fFc"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--17024eae-3d69-4256-a87f-5e0f54aca35d",
+            "number_observed": 1,
+            "first_observed": "2020-07-06T11:27:43.373795Z",
+            "last_observed": "2020-07-06T11:27:43.373795Z",
+            "created": "2020-07-06T11:27:43.373Z",
+            "modified": "2020-07-06T11:27:43.373Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.92",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "https://earrangin-communall-cockl.okinawa/9Kwp0YdWx3/CZN70A4GDDYMMWsD10xI/isfavou.eml",
+                    "type": "url"
+                },
+                "2": {
+                    "user_id": "ackle",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "versee.shb",
+                    "hashes": {
+                        "TLSH": "7a4e4eB2EfD862fD3a7FdA5133c35c1089EdDa9390FA5a9840eD4ddc9e8fBCD3cADFe8"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
