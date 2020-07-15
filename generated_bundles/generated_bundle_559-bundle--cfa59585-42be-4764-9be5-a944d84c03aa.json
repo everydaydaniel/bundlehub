@@ -1,0 +1,125 @@
+{
+    "id": "bundle--cfa59585-42be-4764-9be5-a944d84c03aa",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--04567d51-41c2-4247-9168-fe98ec6e4241",
+            "created": "2020-07-15T15:34:32.642Z",
+            "modified": "2020-07-15T15:34:32.642Z"
+        },
+        {
+            "id": "observed-data--ace0721b-e2af-49d9-811d-c349f4b3fa7c",
+            "number_observed": 1,
+            "first_observed": "2020-07-05T06:34:04.328172Z",
+            "last_observed": "2020-07-05T06:34:04.328172Z",
+            "created": "2020-07-05T06:34:04.328Z",
+            "modified": "2020-07-05T06:34:04.328Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.95",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "ubri-model-vertebra.br",
+                    "hashes": {
+                        "TLSH": "eA623bF4b89Ec577D00ba0ca0A168e9a07cd4bDaf83af7b8fCF7A94bE3edb1bEE3fa46"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--7668dd5d-92dd-40fe-8325-d4217ccc02d6",
+            "number_observed": 1,
+            "first_observed": "2020-07-09T02:24:00.305459Z",
+            "last_observed": "2020-07-09T02:24:00.305459Z",
+            "created": "2020-07-09T02:24:00.305Z",
+            "modified": "2020-07-09T02:24:00.305Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.9",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "atrack-lanoli-demurrin.bug",
+                    "hashes": {
+                        "SHA-1": "f9c1653C38704F11BE4927b2f045290180A17D0F"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--c87c2f32-e79a-4f94-b374-25447e1c6bac",
+            "number_observed": 1,
+            "first_observed": "2020-07-11T10:59:35.263891Z",
+            "last_observed": "2020-07-11T10:59:35.263891Z",
+            "created": "2020-07-11T10:59:35.263Z",
+            "modified": "2020-07-11T10:59:35.263Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.139",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "enetia-encyclopedia.pft",
+                    "hashes": {
+                        "MD5": "f0aD6F6e70eBeBd72af7FCCCe856a75D"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--7818e4c7-ecf0-41f9-8b7b-59027d1d0692",
+            "number_observed": 1,
+            "first_observed": "2020-07-11T06:25:45.029342Z",
+            "last_observed": "2020-07-11T06:25:45.029342Z",
+            "created": "2020-07-11T06:25:45.029Z",
+            "modified": "2020-07-11T06:25:45.029Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.64",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "tonin-downland.mid",
+                    "hashes": {
+                        "SHA3-224": "B4542490bF5DF03Fe1b2ECa4EEa50B82Ed9bdA2bEaf6dd3dbBABB1DF"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--a0e5f81b-14e6-475d-9144-5e7e3d40f4a8",
+            "number_observed": 1,
+            "first_observed": "2020-07-14T08:26:25.8954Z",
+            "last_observed": "2020-07-14T08:26:25.8954Z",
+            "created": "2020-07-14T08:26:25.895Z",
+            "modified": "2020-07-14T08:26:25.895Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.74",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "iv-dedicat-blandnes.flk",
+                    "hashes": {
+                        "SHA-384": "Ef6edCBFfa4b9aDC3D157Bd700F3E437d7DbFEEcA27CbFE0efC8820eb08DefEd5d4a8Ae6c16bBB6fAbbaBeFC56EF86dc"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
