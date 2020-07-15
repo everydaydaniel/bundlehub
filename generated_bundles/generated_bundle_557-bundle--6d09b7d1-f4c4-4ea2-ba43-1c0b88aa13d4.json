@@ -1,0 +1,125 @@
+{
+    "id": "bundle--6d09b7d1-f4c4-4ea2-ba43-1c0b88aa13d4",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--cfbf43c5-43a3-47ac-b04d-3b5d8507d80f",
+            "created": "2020-07-15T15:13:52.563Z",
+            "modified": "2020-07-15T15:13:52.563Z"
+        },
+        {
+            "id": "observed-data--bbb219e5-e33d-4719-88a8-fc67632ace7a",
+            "number_observed": 1,
+            "first_observed": "2020-07-14T09:53:05.796655Z",
+            "last_observed": "2020-07-14T09:53:05.796655Z",
+            "created": "2020-07-14T09:53:05.796Z",
+            "modified": "2020-07-14T09:53:05.796Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.147",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "bsolet-loave.maff",
+                    "hashes": {
+                        "SHA3-256": "FBAd4cE678cFec8d7Ab78e025E8bD1303A80230D6EBFd09F5bBF73b57CD33e51"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--0dc2581b-7a43-47cc-934e-fa348eaa9ac1",
+            "number_observed": 1,
+            "first_observed": "2020-07-16T20:29:07.701531Z",
+            "last_observed": "2020-07-16T20:29:07.701531Z",
+            "created": "2020-07-16T20:29:07.701Z",
+            "modified": "2020-07-16T20:29:07.701Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.192",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "lectrode.otf",
+                    "hashes": {
+                        "SHA3-224": "dF71d60a38AB7C2530fAD2bFF6FB5DdAaDBf154b37905c7E9BBEed39"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--69816e4a-065b-4832-a8f3-0bbe5644daae",
+            "number_observed": 1,
+            "first_observed": "2020-07-14T19:59:47.33359Z",
+            "last_observed": "2020-07-14T19:59:47.33359Z",
+            "created": "2020-07-14T19:59:47.333Z",
+            "modified": "2020-07-14T19:59:47.333Z",
+            "objects": {
+                "0": {
+                    "value": "10.1.1.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "test.exe",
+                    "hashes": {
+                        "MD5": "D051137b92722c55834ebeEFe6635FAD"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--4e834725-34b3-4302-becb-fafe1d3a6957",
+            "number_observed": 1,
+            "first_observed": "2020-07-16T18:10:06.981754Z",
+            "last_observed": "2020-07-16T18:10:06.981754Z",
+            "created": "2020-07-16T18:10:06.981Z",
+            "modified": "2020-07-16T18:10:06.981Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.83",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "dumbrate-canap-shakedow.odg",
+                    "hashes": {
+                        "MD5": "b3d813bCFBf1eD0e44c5FAB49dB181aD"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b66dc4cd-cb05-4840-b63a-eca2700e9706",
+            "number_observed": 1,
+            "first_observed": "2020-07-16T23:36:02.456939Z",
+            "last_observed": "2020-07-16T23:36:02.456939Z",
+            "created": "2020-07-16T23:36:02.456Z",
+            "modified": "2020-07-16T23:36:02.456Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.44",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "sca-shipowner.w",
+                    "hashes": {
+                        "TLSH": "4A75eAb41ABf3Bd8BE5ca8efea2F1AF3cA4E06a111A8dFE89f96e5DaC21Fb992c67e6A"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
