@@ -1,0 +1,45 @@
+{
+    "id": "bundle--e9fb5953-964c-4dbe-a631-72c3b443dd54",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--007efdbf-d234-476d-9190-14c0531be93b",
+            "created": "2020-07-20T21:38:00.366Z",
+            "modified": "2020-07-20T21:38:00.366Z"
+        },
+        {
+            "id": "observed-data--b0824937-8285-4595-a355-14e1d6bb7be6",
+            "number_observed": 1,
+            "first_observed": "2020-07-08T18:06:44.839136Z",
+            "last_observed": "2020-07-08T18:06:44.839136Z",
+            "created": "2020-07-08T18:06:44.839Z",
+            "modified": "2020-07-08T18:06:44.839Z",
+            "objects": {
+                "0": {
+                    "value": "http://www.ibm.com",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--0576d0c3-9101-4af9-978f-88fe93b463d2",
+            "number_observed": 1,
+            "first_observed": "2020-07-08T19:19:51.487713Z",
+            "last_observed": "2020-07-08T19:19:51.487713Z",
+            "created": "2020-07-08T19:19:51.487Z",
+            "modified": "2020-07-08T19:19:51.487Z",
+            "objects": {
+                "0": {
+                    "value": "https://erritoriall.immobilien/00P/1SvBDPyECSWh6j/olouring.jsf",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
