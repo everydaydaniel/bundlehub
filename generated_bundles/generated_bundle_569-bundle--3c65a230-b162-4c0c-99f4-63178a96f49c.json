@@ -1,0 +1,37 @@
+{
+    "id": "bundle--3c65a230-b162-4c0c-99f4-63178a96f49c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "sectool",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--59168663-0e6e-403b-b5dd-e57aaebdf8df",
+            "created": "2020-07-29T16:29:10.681Z",
+            "modified": "2020-07-29T16:29:10.681Z"
+        },
+        {
+            "id": "observed-data--ad47c54f-568c-4dc0-8c88-581ceca8f2d6",
+            "number_observed": 1,
+            "first_observed": "2020-07-29T18:28:03.841394Z",
+            "last_observed": "2020-07-29T18:28:03.841394Z",
+            "created": "2020-07-29T18:28:03.841Z",
+            "modified": "2020-07-29T18:28:03.841Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.46",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "othe-dictate-industrialis.mdx",
+                    "hashes": {
+                        "RIPEMD-160": "aAeFd8AB8b31D425a588Ec4b6fA8fAbAF36d2DDa"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
