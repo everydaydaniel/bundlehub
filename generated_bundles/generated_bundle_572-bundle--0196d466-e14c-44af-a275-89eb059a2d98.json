@@ -1,0 +1,125 @@
+{
+    "id": "bundle--0196d466-e14c-44af-a275-89eb059a2d98",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "AWS",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--e75aabdf-1360-49d7-9e5a-b9b1cc6c2e53",
+            "created": "2020-08-03T15:08:59.775Z",
+            "modified": "2020-08-03T15:08:59.775Z"
+        },
+        {
+            "id": "observed-data--0367590b-e736-49dd-80f0-981d2b6cbdf0",
+            "number_observed": 1,
+            "first_observed": "2020-08-02T04:38:13.01975Z",
+            "last_observed": "2020-08-02T04:38:13.01975Z",
+            "created": "2020-08-02T04:38:13.019Z",
+            "modified": "2020-08-02T04:38:13.019Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.168",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "adden-apolitica-thinkin.ghs",
+                    "hashes": {
+                        "SHA3-224": "4C0d1b7e8a7AfaCDDF1e9F2Fc072264AfB0CeF30f4ECB5b0EFFf67BA"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--3cc665cc-faff-4020-959f-748b69381a35",
+            "number_observed": 1,
+            "first_observed": "2020-08-03T16:11:25.423485Z",
+            "last_observed": "2020-08-03T16:11:25.423485Z",
+            "created": "2020-08-03T16:11:25.423Z",
+            "modified": "2020-08-03T16:11:25.423Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.151",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "echanise-reproducibilit.gam",
+                    "hashes": {
+                        "SHA-256": "C157e856eBB1fbE2868fA50dFCE76bCfa3Fb09EaA63bbdBBF4dcc41e8B2cfeA1"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--9451413f-4cb9-4fda-b243-6da85e9769ce",
+            "number_observed": 1,
+            "first_observed": "2020-08-03T09:22:40.362817Z",
+            "last_observed": "2020-08-03T09:22:40.362817Z",
+            "created": "2020-08-03T09:22:40.362Z",
+            "modified": "2020-08-03T09:22:40.362Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.2.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "badfile.exe",
+                    "hashes": {
+                        "MD5": "c057b2dfdd97e6bcd1c6d2f5ac71c2ee"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--54739735-f538-4487-a29e-7b875b92d88f",
+            "number_observed": 1,
+            "first_observed": "2020-08-01T14:28:07.291216Z",
+            "last_observed": "2020-08-01T14:28:07.291216Z",
+            "created": "2020-08-01T14:28:07.291Z",
+            "modified": "2020-08-01T14:28:07.291Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.160",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "atlik-ruthles.gnt",
+                    "hashes": {
+                        "SHA-1": "544C7dAED505D7eCF2AD8969D47A5E4aEF4F75f4"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--e65bc0a8-d6a2-44d9-8f47-9f4a9014cf35",
+            "number_observed": 1,
+            "first_observed": "2020-08-02T05:27:18.259556Z",
+            "last_observed": "2020-08-02T05:27:18.259556Z",
+            "created": "2020-08-02T05:27:18.259Z",
+            "modified": "2020-08-02T05:27:18.259Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.207",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "avemen-climaticall-pilferin.gal",
+                    "hashes": {
+                        "SHA3-256": "B31af6b8F3cecF4dEcFd96FACF32Ac0e9aad5418Fd54E2c4a96BabadaBecC7e0"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
