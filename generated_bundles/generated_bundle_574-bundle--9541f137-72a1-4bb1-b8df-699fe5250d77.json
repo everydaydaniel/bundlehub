@@ -1,0 +1,91 @@
+{
+    "id": "bundle--9541f137-72a1-4bb1-b8df-699fe5250d77",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "John_Test",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--7474b634-86d7-4cd4-a706-5f8e9671c1c6",
+            "created": "2020-08-04T15:00:53.404Z",
+            "modified": "2020-08-04T15:00:53.404Z"
+        },
+        {
+            "id": "observed-data--f8b3171f-c987-4b9b-a777-d10df4102386",
+            "number_observed": 1,
+            "first_observed": "2019-08-04T19:14:38.790092Z",
+            "last_observed": "2019-08-04T19:14:38.790092Z",
+            "created": "2019-08-04T19:14:38.790Z",
+            "modified": "2019-08-04T19:14:38.790Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.180",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "one.gent",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:f7:7b:30",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://olymorphism.final/0n1ST/oa.pzl",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "uperficialit-pecker",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "romotabl-equivalenc.wcd",
+                    "hashes": {
+                        "SHA-384": "1462b1F93B6bD06Eaf302f6919B71e43D95Dba9CfCD3e6F6c192EFEFcaBb4b6AdEBAAE5FfF4B4340E0A4bf2F72a0A7F1"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--d3f727b4-06a5-4738-babe-54a6e607da72",
+            "number_observed": 1,
+            "first_observed": "2019-08-04T15:54:33.268538Z",
+            "last_observed": "2019-08-04T15:54:33.268538Z",
+            "created": "2019-08-04T15:54:33.268Z",
+            "modified": "2019-08-04T15:54:33.268Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.73",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "olymerise-preauthoris.audi",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:bd:08:cb",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://egulation-citation.berlin/0955214ZZd/3k/1z6fWCrQcruu4P0B/ounter-extende-lethargicall.mci",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "yrate",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "idge.sts",
+                    "hashes": {
+                        "SHA3-256": "Cc476d3Cf0E1Fbc9CECFCBF3ed34ea77DdEcb8808DE0b1BeDE73eCE0AA8c632f"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
