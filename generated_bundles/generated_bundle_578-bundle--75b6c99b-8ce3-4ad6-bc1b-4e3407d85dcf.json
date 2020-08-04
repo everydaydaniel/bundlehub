@@ -1,0 +1,33 @@
+{
+    "id": "bundle--75b6c99b-8ce3-4ad6-bc1b-4e3407d85dcf",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--0180b645-c5c4-43dc-a845-e4efa2ff9d00",
+            "created": "2020-08-04T21:01:11.497Z",
+            "modified": "2020-08-04T21:01:11.497Z"
+        },
+        {
+            "id": "observed-data--3ce25459-c2b3-4892-8dca-10c8e8ef9e3b",
+            "number_observed": 1,
+            "first_observed": "2020-08-02T21:35:58.540928Z",
+            "last_observed": "2020-08-02T21:35:58.540928Z",
+            "created": "2020-08-02T21:35:58.540Z",
+            "modified": "2020-08-02T21:35:58.540Z",
+            "objects": {
+                "0": {
+                    "name": "ode-submittin.wbx",
+                    "hashes": {
+                        "SHA-1": "A448e880ad03a1BceE63a56c57D9CEad42D3F724"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
