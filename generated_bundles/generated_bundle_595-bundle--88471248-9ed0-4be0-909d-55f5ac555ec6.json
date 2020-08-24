@@ -1,0 +1,60 @@
+{
+    "id": "bundle--88471248-9ed0-4be0-909d-55f5ac555ec6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "efwerfwer",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--9df0b4da-aba9-4b8f-bac0-f9986d6b9f07",
+            "created": "2020-08-24T17:31:48.592Z",
+            "modified": "2020-08-24T17:31:48.592Z"
+        },
+        {
+            "id": "observed-data--2f217aa9-2210-436c-b7b8-73f214bcb7b3",
+            "number_observed": 1,
+            "first_observed": "2020-08-21T20:45:19.849481Z",
+            "last_observed": "2020-08-21T20:45:19.849481Z",
+            "created": "2020-08-21T20:45:19.849Z",
+            "modified": "2020-08-21T20:45:19.849Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.0.4",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--35e59991-8471-411e-bbdd-6a31e0c1c781",
+            "number_observed": 1,
+            "first_observed": "2020-08-22T18:04:56.525508Z",
+            "last_observed": "2020-08-22T18:04:56.525508Z",
+            "created": "2020-08-22T18:04:56.525Z",
+            "modified": "2020-08-22T18:04:56.525Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.58",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--8896b105-485b-4a9a-b955-d0cded0161c0",
+            "number_observed": 1,
+            "first_observed": "2020-08-21T01:09:10.942002Z",
+            "last_observed": "2020-08-21T01:09:10.942002Z",
+            "created": "2020-08-21T01:09:10.942Z",
+            "modified": "2020-08-21T01:09:10.942Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.204",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
