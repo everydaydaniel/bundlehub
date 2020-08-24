@@ -1,0 +1,30 @@
+{
+    "id": "bundle--ee0f0a6d-e4e0-4a6e-ab60-d4363c481def",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "ewrfer",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--048727f3-7ef0-4ab8-bb66-750cb53191cd",
+            "created": "2020-08-24T17:35:50.365Z",
+            "modified": "2020-08-24T17:35:50.365Z"
+        },
+        {
+            "id": "observed-data--fa7f8257-ef12-4757-924a-b0eaaf3e63e4",
+            "number_observed": 1,
+            "first_observed": "2020-08-24T07:21:20.232002Z",
+            "last_observed": "2020-08-24T07:21:20.232002Z",
+            "created": "2020-08-24T07:21:20.232Z",
+            "modified": "2020-08-24T07:21:20.232Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.15",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
