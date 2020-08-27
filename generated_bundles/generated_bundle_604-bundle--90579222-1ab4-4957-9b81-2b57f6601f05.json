@@ -1,0 +1,91 @@
+{
+    "id": "bundle--90579222-1ab4-4957-9b81-2b57f6601f05",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Email Ingestion",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--c30fd482-5933-44f7-a70b-2f8697b9fde1",
+            "created": "2020-08-27T19:56:07.349Z",
+            "modified": "2020-08-27T19:56:07.349Z"
+        },
+        {
+            "id": "observed-data--dc1bfba5-4397-4ef5-9c94-7decaf7c75fe",
+            "number_observed": 1,
+            "first_observed": "2020-07-09T05:08:08.966367Z",
+            "last_observed": "2020-07-09T05:08:08.966367Z",
+            "created": "2020-07-09T05:08:08.966Z",
+            "modified": "2020-07-09T05:08:08.966Z",
+            "objects": {
+                "0": {
+                    "value": "82.202.65.125",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "nterceptor.shia",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:72:04:08",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://hysiqu-cedill-gree.weather/5RSp56V8ZnoDqI3J/lsV6cp1L8s/xcursio-instantiat.blend",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "verea",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "opiou.pcb",
+                    "hashes": {
+                        "SHA-256": "c269cbffec913fe22458ebaf05a0b70fdd339f39123c9809c4997bb40107a73f"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--03bd4e4d-6f0a-4f3a-b1a6-5bac3799a334",
+            "number_observed": 1,
+            "first_observed": "2020-07-11T10:07:36.112205Z",
+            "last_observed": "2020-07-11T10:07:36.112205Z",
+            "created": "2020-07-11T10:07:36.112Z",
+            "modified": "2020-07-11T10:07:36.112Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.108",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "125-65-202-82.hicoria.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:f2:45:38",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://hmbidgp.monsters",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "TBY1992",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "uiete-imbrogli-megabyt.tpf",
+                    "hashes": {
+                        "SHA-256": "35e1f022861474407246f0c66218a83019381e8745e4c6b294cf150f401c16dc"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
