@@ -1,0 +1,91 @@
+{
+    "id": "bundle--f5fb2b69-f03b-480b-9d2c-c572e582e9f5",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Email Ingestion",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--a79ab022-7ad6-430d-bbd0-f67e552fec51",
+            "created": "2020-08-27T19:51:22.985Z",
+            "modified": "2020-08-27T19:51:22.985Z"
+        },
+        {
+            "id": "observed-data--0db68a36-e8ae-48b8-ad47-a6248b972ec3",
+            "number_observed": 1,
+            "first_observed": "2020-05-06T21:44:37.821682Z",
+            "last_observed": "2020-05-06T21:44:37.821682Z",
+            "created": "2020-05-06T21:44:37.821Z",
+            "modified": "2020-05-06T21:44:37.821Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.173",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "oole-nationhoo.tkmaxx",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:f7:b2:58",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://ncase-billow-bus.careers/aq399HTB0EX7mJB/void.kp2",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "egressin-staf",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "xtricat-limberin-neuroticall.inc",
+                    "hashes": {
+                        "SHA-1": "04318ef6B62BdF66BeaD5b7Ea7c9aA37616be6E9"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--7fdc289b-3493-48cf-989a-1c861ddd015d",
+            "number_observed": 1,
+            "first_observed": "2020-08-02T05:06:46.005448Z",
+            "last_observed": "2020-08-02T05:06:46.005448Z",
+            "created": "2020-08-02T05:06:46.005Z",
+            "modified": "2020-08-02T05:06:46.005Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.4",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "atercourse.university",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:ec:dc:0a",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://ucleu-softl-enchante.int/v14YYdOniHJToT/eutralise.qvm",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "iverte-join-marmoset",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "mokeles.mod",
+                    "hashes": {
+                        "TLSH": "ff2b09db057e555E7fA8Cdf3f0BCeFAD763BfEF9964cF4FB8c8B9deB0b6BeEcB3fDD86"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
