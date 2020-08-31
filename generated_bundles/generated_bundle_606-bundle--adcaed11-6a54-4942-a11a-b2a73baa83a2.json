@@ -1,0 +1,145 @@
+{
+    "id": "bundle--adcaed11-6a54-4942-a11a-b2a73baa83a2",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Guardium",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--6bb26878-dc8b-4a35-b64b-13e5c7deb1f8",
+            "created": "2020-08-31T16:59:29.706Z",
+            "modified": "2020-08-31T16:59:29.706Z"
+        },
+        {
+            "id": "observed-data--b261f95b-a519-49fe-a5f5-9fa9edcab329",
+            "number_observed": 1,
+            "first_observed": "2020-04-17T01:29:57.648632Z",
+            "last_observed": "2020-04-17T01:29:57.648632Z",
+            "created": "2020-04-17T01:29:57.648Z",
+            "modified": "2020-04-17T01:29:57.648Z",
+            "objects": {
+                "0": {
+                    "user_id": "irin",
+                    "type": "user-account"
+                },
+                "1": {
+                    "name": "mble-amend-disobeye.sc3",
+                    "hashes": {
+                        "ssdeep": "4B/ooP6rG705Q+c7vsod/rDjWb9X6J4VurYRPCAOGPsgKtXL8GN62HXyICryL2E6bHLG2bPV:Jd9C6Rsrxx:Q"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "value": "192.168.1.198",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--67fa5859-7be5-4ee0-94da-dd4dfb3a87e3",
+            "number_observed": 1,
+            "first_observed": "2020-04-30T01:54:50.644924Z",
+            "last_observed": "2020-04-30T01:54:50.644924Z",
+            "created": "2020-04-30T01:54:50.644Z",
+            "modified": "2020-04-30T01:54:50.644Z",
+            "objects": {
+                "0": {
+                    "user_id": "piralle-whippe-romanticise",
+                    "type": "user-account"
+                },
+                "1": {
+                    "name": "arce-medull.chn",
+                    "hashes": {
+                        "SHA-1": "0E4C8E0d0E0db4CFe59aF2131a012E33e8DAEdA6"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "value": "192.168.1.253",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--3f745752-0d90-44dc-93d3-43379e331fb7",
+            "number_observed": 1,
+            "first_observed": "2020-06-23T20:19:16.347009Z",
+            "last_observed": "2020-06-23T20:19:16.347009Z",
+            "created": "2020-06-23T20:19:16.347Z",
+            "modified": "2020-06-23T20:19:16.347Z",
+            "objects": {
+                "0": {
+                    "user_id": "egatt",
+                    "type": "user-account"
+                },
+                "1": {
+                    "name": "laboratenes.fpc",
+                    "hashes": {
+                        "SHA-224": "ae5FBB8cdB6d2f13df1B1Efe60bb2b02BA1dfFf8C30AdA947edC0fF7"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "value": "192.168.1.165",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--ff47a9fb-7ea8-4994-8fea-a3cbd85386a5",
+            "number_observed": 1,
+            "first_observed": "2020-05-31T02:14:27.432663Z",
+            "last_observed": "2020-05-31T02:14:27.432663Z",
+            "created": "2020-05-31T02:14:27.432Z",
+            "modified": "2020-05-31T02:14:27.432Z",
+            "objects": {
+                "0": {
+                    "user_id": "quirm-usag",
+                    "type": "user-account"
+                },
+                "1": {
+                    "name": "awin-sto-unaltere.ng",
+                    "hashes": {
+                        "SHA-224": "BdE5fA1977b9938E6e0eAe831cB36d14dDc9c3FF4DaBaBa0CA8EDe58"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "value": "192.168.1.184",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--7811e843-0e2e-491a-8fb5-0f0a0e69cf3f",
+            "number_observed": 1,
+            "first_observed": "2020-06-02T00:06:18.028608Z",
+            "last_observed": "2020-06-02T00:06:18.028608Z",
+            "created": "2020-06-02T00:06:18.028Z",
+            "modified": "2020-06-02T00:06:18.028Z",
+            "objects": {
+                "0": {
+                    "user_id": "assionatel-dimnes-esquire",
+                    "type": "user-account"
+                },
+                "1": {
+                    "name": "bidja-refer.toc",
+                    "hashes": {
+                        "ssdeep": "c5dBUKs39uDkudZypzoZcXLKe7K7DV"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "value": "192.168.1.215",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
