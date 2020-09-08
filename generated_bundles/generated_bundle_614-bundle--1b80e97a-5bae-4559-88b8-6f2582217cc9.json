@@ -1,0 +1,67 @@
+{
+    "id": "bundle--1b80e97a-5bae-4559-88b8-6f2582217cc9",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "ZOS3",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--9c456ef6-caca-47e6-b80a-78559a17f2c0",
+            "created": "2020-09-08T21:14:20.937Z",
+            "modified": "2020-09-08T21:14:20.937Z"
+        },
+        {
+            "id": "observed-data--10bc7339-5010-4c5f-8ae5-cf0e5cae56e5",
+            "number_observed": 1,
+            "first_observed": "2020-09-08T13:14:33.335345Z",
+            "last_observed": "2020-09-08T13:14:33.335345Z",
+            "created": "2020-09-08T13:14:33.335Z",
+            "modified": "2020-09-08T13:14:33.335Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.113",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "rive-contactin-vaste.bom",
+                    "hashes": {
+                        "TLSH": "2c6A57ED63F2D6A8cEDF71BE0Db4Ac53A9413EEaa399DEF3fFEcdf67F9B45EdC39aeac"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "user_id": "nowdrift-dashe",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--8dcc4145-8b98-49dd-be5d-3ecf0fd27d43",
+            "number_observed": 1,
+            "first_observed": "2020-09-08T15:36:57.250779Z",
+            "last_observed": "2020-09-08T15:36:57.250779Z",
+            "created": "2020-09-08T15:36:57.250Z",
+            "modified": "2020-09-08T15:36:57.250Z",
+            "objects": {
+                "0": {
+                    "value": "63.90.229.133",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "ELV.APF",
+                    "hashes": {
+                        "SHA3-384": "eeBcBaeE34726aea0458E1dfa5b35FDB2ccd2243BC3541a991d3d875eDE86d9Fe9f0A2279c9e0A24CD098Bc4dDfbe7ab"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "user_id": "DZROSSI",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
