@@ -1,0 +1,41 @@
+{
+    "id": "bundle--163082af-41be-45e0-b816-26d70bde6e6f",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Z_OS2",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--86d49852-b764-4dfd-b5be-4f94bdc58504",
+            "created": "2020-09-08T21:11:06.923Z",
+            "modified": "2020-09-08T21:11:06.923Z"
+        },
+        {
+            "id": "observed-data--fc93fc93-23dd-4133-9324-6b302e1f253c",
+            "number_observed": 1,
+            "first_observed": "2020-09-08T10:14:24.615344Z",
+            "last_observed": "2020-09-08T10:14:24.615344Z",
+            "created": "2020-09-08T10:14:24.615Z",
+            "modified": "2020-09-08T10:14:24.615Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.119",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "epartmentall-lyris-misquotatio.ovd",
+                    "hashes": {
+                        "SHA-1": "5d5D1981E93B7f2DE75daaf52bCA9B94E1aD6F60"
+                    },
+                    "type": "file"
+                },
+                "2": {
+                    "user_id": "lint",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
