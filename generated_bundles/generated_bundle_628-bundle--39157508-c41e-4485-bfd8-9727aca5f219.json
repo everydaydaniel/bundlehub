@@ -1,0 +1,59 @@
+{
+    "id": "bundle--39157508-c41e-4485-bfd8-9727aca5f219",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Fracrtal_mex",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--d1ea372f-8e26-4968-8999-ac78ef72ee25",
+            "created": "2020-10-30T17:54:01.330Z",
+            "modified": "2020-10-30T17:54:01.330Z"
+        },
+        {
+            "id": "observed-data--5431a37f-3d09-4044-bcee-0a4655357f31",
+            "number_observed": 1,
+            "first_observed": "2020-10-30T13:58:05.120124Z",
+            "last_observed": "2020-10-30T13:58:05.120124Z",
+            "created": "2020-10-30T13:58:05.120Z",
+            "modified": "2020-10-30T13:58:05.120Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.5.5",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "ip.exe",
+                    "hashes": {
+                        "SHA-256": "7b9c90a3ba0b4f28ef5bcc9d3e13c2d6ac5a7301106c5cc4a6685819728ab264"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--724c66a3-3bae-40c7-b289-4fda7cbcf51b",
+            "number_observed": 1,
+            "first_observed": "2020-10-27T03:11:40.450759Z",
+            "last_observed": "2020-10-27T03:11:40.450759Z",
+            "created": "2020-10-27T03:11:40.450Z",
+            "modified": "2020-10-27T03:11:40.450Z",
+            "objects": {
+                "0": {
+                    "value": "175.45.176.69",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "win.doc",
+                    "hashes": {
+                        "MD5": "9ae3934b0265cff987870f261a62242e"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
