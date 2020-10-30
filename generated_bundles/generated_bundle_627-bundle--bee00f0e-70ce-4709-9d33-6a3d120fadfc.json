@@ -1,0 +1,59 @@
+{
+    "id": "bundle--bee00f0e-70ce-4709-9d33-6a3d120fadfc",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Fractal AWS",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--591ceb57-f86f-4a58-a870-30ab69dc2fd1",
+            "created": "2020-10-30T00:04:52.964Z",
+            "modified": "2020-10-30T00:04:52.964Z"
+        },
+        {
+            "id": "observed-data--cd1a9f71-d1c7-428b-8377-423b779236a0",
+            "number_observed": 1,
+            "first_observed": "2020-10-30T01:43:58.119346Z",
+            "last_observed": "2020-10-30T01:43:58.119346Z",
+            "created": "2020-10-30T01:43:58.119Z",
+            "modified": "2020-10-30T01:43:58.119Z",
+            "objects": {
+                "0": {
+                    "name": "win.doc",
+                    "hashes": {
+                        "MD5": "59034bdb4deb4bf2e5d4431383d6e3b6"
+                    },
+                    "type": "file"
+                },
+                "1": {
+                    "value": "10.10.10.10",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--404c0475-8492-4008-934a-71c03ab37832",
+            "number_observed": 1,
+            "first_observed": "2020-10-30T12:46:54.404661Z",
+            "last_observed": "2020-10-30T12:46:54.404661Z",
+            "created": "2020-10-30T12:46:54.404Z",
+            "modified": "2020-10-30T12:46:54.404Z",
+            "objects": {
+                "0": {
+                    "name": "tets.xls",
+                    "hashes": {
+                        "SHA-256": "916abe8be310891906d5608092f8c1918e138ce98290a5072e7126b970593ae8"
+                    },
+                    "type": "file"
+                },
+                "1": {
+                    "value": "10.2.2.2",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
