@@ -1,0 +1,139 @@
+{
+    "id": "bundle--8f91472c-eb12-4880-bc41-3061e4870628",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "qradar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--dae9cc6c-e5bf-40c1-b4e3-28dc9509df4a",
+            "created": "2020-10-31T05:55:32.306Z",
+            "modified": "2020-10-31T05:55:32.306Z"
+        },
+        {
+            "id": "observed-data--881ca231-98c4-4c29-8cf5-46c31d7733d1",
+            "number_observed": 1,
+            "first_observed": "2020-10-30T13:42:35.183899Z",
+            "last_observed": "2020-10-30T13:42:35.183899Z",
+            "created": "2020-10-30T13:42:35.183Z",
+            "modified": "2020-10-30T13:42:35.183Z",
+            "objects": {
+                "0": {
+                    "value": "10.10.10.27",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "fractal.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "win_mmunch",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "klm.txt",
+                    "hashes": {
+                        "MD5": "9ae3934b0265cff987870f261a62242e"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--01429922-761f-4590-b4a3-54d85d2f7f25",
+            "number_observed": 1,
+            "first_observed": "2020-10-28T13:11:15.581203Z",
+            "last_observed": "2020-10-28T13:11:15.581203Z",
+            "created": "2020-10-28T13:11:15.581Z",
+            "modified": "2020-10-28T13:11:15.581Z",
+            "objects": {
+                "0": {
+                    "value": "10.10.10.98",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "fractal.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "win_adm",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "ttf.doc",
+                    "hashes": {
+                        "MD5": "9ae3934b0265cff987870f261a62242e"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--f770f052-d276-45a3-8d9f-9bad2d1fba18",
+            "number_observed": 1,
+            "first_observed": "2020-10-29T12:53:54.42348Z",
+            "last_observed": "2020-10-29T12:53:54.42348Z",
+            "created": "2020-10-29T12:53:54.423Z",
+            "modified": "2020-10-29T12:53:54.423Z",
+            "objects": {
+                "0": {
+                    "value": "10.50.45.20",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "fractal.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "aws_adm",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "jill.txt",
+                    "hashes": {
+                        "MD5": "9ae3934b0265cff987870f261a62242e"
+                    },
+                    "type": "file"
+                },
+                "4": {
+                    "value": "https://awsfractal.com",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--0f031a8e-ab95-4f20-b473-7d10b6e38bcf",
+            "number_observed": 1,
+            "first_observed": "2020-10-30T20:28:48.386315Z",
+            "last_observed": "2020-10-30T20:28:48.386315Z",
+            "created": "2020-10-30T20:28:48.386Z",
+            "modified": "2020-10-30T20:28:48.386Z",
+            "objects": {
+                "0": {
+                    "value": "10.10.10.88",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "fractal.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "user_id": "win_davmm",
+                    "type": "user-account"
+                },
+                "3": {
+                    "name": "buy.doc",
+                    "hashes": {
+                        "MD5": "9ae3934b0265cff987870f261a62242e"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
