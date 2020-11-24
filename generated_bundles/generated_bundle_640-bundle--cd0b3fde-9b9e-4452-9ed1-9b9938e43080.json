@@ -1,0 +1,37 @@
+{
+    "id": "bundle--cd0b3fde-9b9e-4452-9ed1-9b9938e43080",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "MicrosoftATP",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--a5d130d3-a304-4d9e-bdd1-2ed7aa8957d0",
+            "created": "2020-11-24T15:39:25.422Z",
+            "modified": "2020-11-24T15:39:25.422Z"
+        },
+        {
+            "id": "observed-data--ec322b09-a59a-48be-99ba-2f78d7453e00",
+            "number_observed": 1,
+            "first_observed": "2020-11-24T23:48:35.183877Z",
+            "last_observed": "2020-11-24T23:48:35.183877Z",
+            "created": "2020-11-24T23:48:35.183Z",
+            "modified": "2020-11-24T23:48:35.183Z",
+            "objects": {
+                "0": {
+                    "name": "isusin-bibl-crescen.m_u",
+                    "hashes": {
+                        "SHA-384": "1D10DdcE8fc9E45127Cf7fa2F09dA3C6839f2e84EFefF3f96fD5bFa0fA0ddf38E5D7AC92cf6E5adB0BD86DaE2D2Acc1C"
+                    },
+                    "type": "file"
+                },
+                "1": {
+                    "user_id": "reelanc-wed",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
