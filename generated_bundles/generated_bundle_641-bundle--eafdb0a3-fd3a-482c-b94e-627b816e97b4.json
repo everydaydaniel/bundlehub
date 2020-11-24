@@ -1,0 +1,48 @@
+{
+    "id": "bundle--eafdb0a3-fd3a-482c-b94e-627b816e97b4",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "MS ATP",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--a2b4db1f-99fe-44cf-aaec-c0711d0a5cc7",
+            "created": "2020-11-24T15:43:25.332Z",
+            "modified": "2020-11-24T15:43:25.332Z"
+        },
+        {
+            "id": "observed-data--6f4dd51c-62bf-4e56-92cd-8f7bfdbee994",
+            "number_observed": 1,
+            "first_observed": "2020-11-24T07:42:20.908328Z",
+            "last_observed": "2020-11-24T07:42:20.908328Z",
+            "created": "2020-11-24T07:42:20.908Z",
+            "modified": "2020-11-24T07:42:20.908Z",
+            "objects": {
+                "1": {
+                    "user_id": "DanielJones",
+                    "type": "user-account"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--0a64756f-2a01-4507-ac22-b9d218332f13",
+            "number_observed": 1,
+            "first_observed": "2020-11-24T18:50:36.6569Z",
+            "last_observed": "2020-11-24T18:50:36.6569Z",
+            "created": "2020-11-24T18:50:36.656Z",
+            "modified": "2020-11-24T18:50:36.656Z",
+            "objects": {
+                "0": {
+                    "name": "badtrojan.exe",
+                    "hashes": {
+                        "SHA-256": "b33b3beb75ffe4fda66b9b38e3121f1abb4b7896f99ba4f35b511c7ed63c305c"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
