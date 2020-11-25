@@ -1,0 +1,45 @@
+{
+    "id": "bundle--ca463904-1b6d-4337-9e2c-733effdcaec4",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "MS ATP",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--16dce24d-8e98-41b4-9ae8-9f4fbc734b26",
+            "created": "2020-11-25T16:26:42.747Z",
+            "modified": "2020-11-25T16:26:42.747Z"
+        },
+        {
+            "id": "observed-data--065c7be5-314d-4d2b-ad2f-b3946175e20a",
+            "number_observed": 1,
+            "first_observed": "2020-11-25T02:01:58.953274Z",
+            "last_observed": "2020-11-25T02:01:58.953274Z",
+            "created": "2020-11-25T02:01:58.953Z",
+            "modified": "2020-11-25T02:01:58.953Z",
+            "objects": {
+                "0": {
+                    "name": "TIITEST.exe",
+                    "hashes": {
+                        "SHA-256": "ac7a9727ebae6d5a18bb9742c2e637bbdbceb1f17b90943ee267b5b8b18124a5"
+                    },
+                    "type": "file"
+                },
+                "1": {
+                    "user_id": "Rodney",
+                    "type": "user-account"
+                },
+                "2": {
+                    "value": "192.168.1.231",
+                    "type": "ipv4-addr"
+                },
+                "3": {
+                    "value": "http://carifyin.discount/zuM1k2xKvKYPE/99WbwwagHCqAKY7/EC8p4sL4AjsYTqLiN8I/ommitment-plod.cache",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
