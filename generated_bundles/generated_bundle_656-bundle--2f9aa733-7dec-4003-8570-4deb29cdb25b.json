@@ -1,0 +1,107 @@
+{
+    "id": "bundle--2f9aa733-7dec-4003-8570-4deb29cdb25b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Threat Basin ",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--1566f0c3-a5d5-471f-8982-fa672b515ae6",
+            "created": "2021-01-08T16:51:33.324Z",
+            "modified": "2021-01-08T16:51:33.324Z"
+        },
+        {
+            "id": "observed-data--f6d04b0d-0325-4599-a3e2-e2ba0b320a2d",
+            "number_observed": 1,
+            "first_observed": "2020-12-30T15:58:01.902593Z",
+            "last_observed": "2020-12-30T15:58:01.902593Z",
+            "created": "2020-12-30T15:58:01.902Z",
+            "modified": "2020-12-30T15:58:01.902Z",
+            "objects": {
+                "0": {
+                    "value": "20.140.0.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "appsync-api.us-east-1.avsvmcloud.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://avsvmcloud.com",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--825469e0-c35f-47ea-ac0f-b674f867cdaa",
+            "number_observed": 1,
+            "first_observed": "2020-12-25T23:53:26.927567Z",
+            "last_observed": "2020-12-25T23:53:26.927567Z",
+            "created": "2020-12-25T23:53:26.927Z",
+            "modified": "2020-12-25T23:53:26.927Z",
+            "objects": {
+                "0": {
+                    "value": "20.140.0.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "appsync-api.us-east-2.avsvmcloud.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://avsvmcloud.com",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--03d41d4d-e105-4f78-ba69-6f6b95dce8f5",
+            "number_observed": 1,
+            "first_observed": "2020-12-31T03:37:16.7244Z",
+            "last_observed": "2020-12-31T03:37:16.7244Z",
+            "created": "2020-12-31T03:37:16.724Z",
+            "modified": "2020-12-31T03:37:16.724Z",
+            "objects": {
+                "0": {
+                    "value": "20.140.0.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "appsync-api.eu-west-1.avsvmcloud.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://avsvmcloud.com",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--d605de2f-8750-40db-85a6-de8c39feb9d5",
+            "number_observed": 1,
+            "first_observed": "2020-12-29T04:14:07.542733Z",
+            "last_observed": "2020-12-29T04:14:07.542733Z",
+            "created": "2020-12-29T04:14:07.542Z",
+            "modified": "2020-12-29T04:14:07.542Z",
+            "objects": {
+                "0": {
+                    "value": "20.140.0.1",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "appsync-api.us-west-2.avsvmcloud.com",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "https://avsvmcloud.com",
+                    "type": "url"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
