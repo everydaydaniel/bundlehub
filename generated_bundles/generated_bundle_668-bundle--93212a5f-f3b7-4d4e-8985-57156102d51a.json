@@ -1,0 +1,45 @@
+{
+    "id": "bundle--93212a5f-f3b7-4d4e-8985-57156102d51a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "test",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--706bf129-1c92-41e8-ab72-e73d4a09f633",
+            "created": "2021-03-17T13:48:50.198Z",
+            "modified": "2021-03-17T13:48:50.198Z"
+        },
+        {
+            "id": "observed-data--451cf39c-85ee-49e5-a527-9ec5bae8ecac",
+            "number_observed": 1,
+            "first_observed": "2021-03-17T10:54:18.874286Z",
+            "last_observed": "2021-03-17T10:54:18.874286Z",
+            "created": "2021-03-17T10:54:18.874Z",
+            "modified": "2021-03-17T10:54:18.874Z",
+            "objects": {
+                "0": {
+                    "value": "ortunetellin.search",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--0eca8608-e1e6-44db-9473-0442534c6a90",
+            "number_observed": 1,
+            "first_observed": "2021-03-17T20:33:56.169203Z",
+            "last_observed": "2021-03-17T20:33:56.169203Z",
+            "created": "2021-03-17T20:33:56.169Z",
+            "modified": "2021-03-17T20:33:56.169Z",
+            "objects": {
+                "0": {
+                    "value": "utonom-summonse.gs",
+                    "type": "domain-name"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
