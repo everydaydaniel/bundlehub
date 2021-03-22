@@ -1,0 +1,75 @@
+{
+    "id": "bundle--82372a65-488a-4eb5-b03f-5c104139ff35",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "testing_fields",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--50b8e9a6-eb1a-4984-91e5-0677738f31cc",
+            "created": "2021-03-22T22:15:07.247Z",
+            "modified": "2021-03-22T22:15:07.247Z"
+        },
+        {
+            "id": "observed-data--2f91dacd-d622-4d8c-8416-fc585e3e0657",
+            "number_observed": 1,
+            "first_observed": "2021-03-25T11:54:05.116086Z",
+            "last_observed": "2021-03-25T11:54:05.116086Z",
+            "created": "2021-03-25T11:54:05.116Z",
+            "modified": "2021-03-25T11:54:05.116Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.30.2",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--2ef9dabc-ed7a-44ea-868e-cdf71c2aaf05",
+            "number_observed": 1,
+            "first_observed": "2021-03-22T10:44:04.390595Z",
+            "last_observed": "2021-03-22T10:44:04.390595Z",
+            "created": "2021-03-22T10:44:04.390Z",
+            "modified": "2021-03-22T10:44:04.390Z",
+            "objects": {
+                "0": {
+                    "value": "10.10.10.1",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b1a50ebf-6274-46ef-8fe3-3544669387bb",
+            "number_observed": 1,
+            "first_observed": "2021-03-23T12:59:42.783479Z",
+            "last_observed": "2021-03-23T12:59:42.783479Z",
+            "created": "2021-03-23T12:59:42.783Z",
+            "modified": "2021-03-23T12:59:42.783Z",
+            "objects": {
+                "0": {
+                    "value": "10.10.10.3",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--1b2ca71b-5374-43dc-98e9-6ef9f05ab896",
+            "number_observed": 1,
+            "first_observed": "2021-03-25T07:26:49.708303Z",
+            "last_observed": "2021-03-25T07:26:49.708303Z",
+            "created": "2021-03-25T07:26:49.708Z",
+            "modified": "2021-03-25T07:26:49.708Z",
+            "objects": {
+                "0": {
+                    "value": "1.1.1.1",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
