@@ -1,0 +1,60 @@
+{
+    "id": "bundle--1ed73f35-3f38-4963-87ca-4de9e161418b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "test5",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--e70c8c91-9aad-408a-b2ad-fac3b2845f7a",
+            "created": "2021-03-23T20:39:01.000Z",
+            "modified": "2021-03-23T20:39:01.000Z"
+        },
+        {
+            "id": "observed-data--56ebcfac-0808-4106-959c-b66d61dd62ed",
+            "number_observed": 1,
+            "first_observed": "2021-03-23T06:39:25.957853Z",
+            "last_observed": "2021-03-23T06:39:25.957853Z",
+            "created": "2021-03-23T06:39:25.957Z",
+            "modified": "2021-03-23T06:39:25.957Z",
+            "objects": {
+                "0": {
+                    "value": "9.9.9.9",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--6d568a06-3b47-4280-9845-8ae6ea3b9aad",
+            "number_observed": 1,
+            "first_observed": "2021-03-26T22:55:32.745027Z",
+            "last_observed": "2021-03-26T22:55:32.745027Z",
+            "created": "2021-03-26T22:55:32.745Z",
+            "modified": "2021-03-26T22:55:32.745Z",
+            "objects": {
+                "0": {
+                    "value": "10.10.10.1",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--9dafa754-7a68-466a-81fe-7a9957115a29",
+            "number_observed": 1,
+            "first_observed": "2021-03-26T12:57:29.581723Z",
+            "last_observed": "2021-03-26T12:57:29.581723Z",
+            "created": "2021-03-26T12:57:29.581Z",
+            "modified": "2021-03-26T12:57:29.581Z",
+            "objects": {
+                "0": {
+                    "value": "2.2.2.2",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
