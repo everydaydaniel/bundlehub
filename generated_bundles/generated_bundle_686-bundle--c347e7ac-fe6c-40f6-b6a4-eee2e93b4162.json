@@ -1,0 +1,45 @@
+{
+    "id": "bundle--c347e7ac-fe6c-40f6-b6a4-eee2e93b4162",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Carbonblack",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--4c86ae39-6b11-4c82-a135-88ed21a29ab5",
+            "created": "2021-03-29T12:44:11.100Z",
+            "modified": "2021-03-29T12:44:11.100Z"
+        },
+        {
+            "id": "observed-data--a7b5374c-be75-4a59-a4b7-763c3371f086",
+            "number_observed": 1,
+            "first_observed": "2021-03-22T14:50:15.920283Z",
+            "last_observed": "2021-03-22T14:50:15.920283Z",
+            "created": "2021-03-22T14:50:15.920Z",
+            "modified": "2021-03-22T14:50:15.920Z",
+            "objects": {
+                "0": {
+                    "value": "2.2.2.2",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--328c7f95-569e-4003-bfc1-ed4645b79187",
+            "number_observed": 1,
+            "first_observed": "2021-03-21T17:45:50.329685Z",
+            "last_observed": "2021-03-21T17:45:50.329685Z",
+            "created": "2021-03-21T17:45:50.329Z",
+            "modified": "2021-03-21T17:45:50.329Z",
+            "objects": {
+                "0": {
+                    "value": "1.1.1.1",
+                    "type": "ipv4-addr"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
