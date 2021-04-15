@@ -1,0 +1,53 @@
+{
+    "id": "bundle--0262e124-36f3-4c75-8552-2c5d98e23e3a",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Cylera",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--04acb717-d7ed-47b6-a71e-926dfb4f233b",
+            "created": "2021-04-15T19:35:55.877Z",
+            "modified": "2021-04-15T19:35:55.877Z"
+        },
+        {
+            "id": "observed-data--0dfa185f-6938-4892-9bc2-228906224371",
+            "number_observed": 1,
+            "first_observed": "2021-04-12T17:33:55.885397Z",
+            "last_observed": "2021-04-12T17:33:55.885397Z",
+            "created": "2021-04-12T17:33:55.885Z",
+            "modified": "2021-04-12T17:33:55.885Z",
+            "objects": {
+                "0": {
+                    "value": "10.80.23.15",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ancrea-disma.cfa",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "3c:9a:49:6f:cb:91",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://endere.oracle/0BK5Q98f68/raniu.chr",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "hlorid",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "rizzle-qualifie.sid",
+                    "hashes": {
+                        "MD5": "00A2BbF29D349ed1CbF7ACf3900b8FaB"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
