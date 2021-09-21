@@ -1,0 +1,91 @@
+{
+    "id": "bundle--a15d3029-5401-4c69-a8c9-dd3b1e9f32ae",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "ZT",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--d9346760-f761-4cb9-ada7-430e708826d6",
+            "created": "2021-09-21T20:58:10.360Z",
+            "modified": "2021-09-21T20:58:10.360Z"
+        },
+        {
+            "id": "observed-data--c92284de-bf69-42cb-9a74-58a5c292be98",
+            "number_observed": 1,
+            "first_observed": "2021-09-23T22:32:33.149592Z",
+            "last_observed": "2021-09-23T22:32:33.149592Z",
+            "created": "2021-09-23T22:32:33.149Z",
+            "modified": "2021-09-23T22:32:33.149Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.127",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "esponsibl.life",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:8d:16:2e",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://rofus-som-untruthfull.cal/hVqI9Kc0gv1277kGeGNy/9Wd7jR0jN4ln0CN9K/ie.fmg",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "arpet-discretel",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "o.ace",
+                    "hashes": {
+                        "SHA3-224": "3Edf068EBc9cf1BCAFDf251D70245d9c4e5008BaccCbFD1803c2cffe"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--29169868-f6c8-48a3-8a70-cb2a11b82bb1",
+            "number_observed": 1,
+            "first_observed": "2021-09-23T01:37:24.140039Z",
+            "last_observed": "2021-09-23T01:37:24.140039Z",
+            "created": "2021-09-23T01:37:24.140Z",
+            "modified": "2021-09-23T01:37:24.140Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.52",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "prising.ieee",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:43:7d:d0",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://rossnes-sweatie.fit/jaKZ/oKUg6G19t02U75c0/C0/adl.sim",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ersuasivenes",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "estyle-reservist.8u",
+                    "hashes": {
+                        "ssdeep": "13hk"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
