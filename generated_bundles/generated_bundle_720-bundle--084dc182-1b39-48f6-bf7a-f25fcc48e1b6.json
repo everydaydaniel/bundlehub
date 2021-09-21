@@ -1,0 +1,81 @@
+{
+    "id": "bundle--084dc182-1b39-48f6-bf7a-f25fcc48e1b6",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "QRadar",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--ee0cdfd1-501d-4a2f-b1e8-aab6e77e65ba",
+            "created": "2021-09-21T20:55:10.085Z",
+            "modified": "2021-09-21T20:55:10.085Z"
+        },
+        {
+            "id": "observed-data--39131147-395e-443f-8b8d-61f9b27f3210",
+            "number_observed": 1,
+            "first_observed": "2021-09-21T20:15:03.91838Z",
+            "last_observed": "2021-09-21T20:15:03.91838Z",
+            "created": "2021-09-21T20:15:03.918Z",
+            "modified": "2021-09-21T20:15:03.918Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.10.10",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "file.doc",
+                    "hashes": {
+                        "ssdeep": "0rb0Vbnr3j8DZyxBm3feT.upgSJpSDYi+YqfA5JifdNEA44KTN+1I/u4pNE55ZHgFBia6F4m+vTZLLbPEV+B+PMf63IOA:"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--768833b2-5faf-486b-a635-4e799119ff98",
+            "number_observed": 1,
+            "first_observed": "2021-09-21T05:36:29.323547Z",
+            "last_observed": "2021-09-21T05:36:29.323547Z",
+            "created": "2021-09-21T05:36:29.323Z",
+            "modified": "2021-09-21T05:36:29.323Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.109",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "ntonin-idolatrou-tweake.mdl",
+                    "hashes": {
+                        "ssdeep": "KjrThoJM8BEWGFssqQTR6i5cX"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--5353aa89-bc58-465b-8d59-b57e30d36208",
+            "number_observed": 1,
+            "first_observed": "2021-09-21T03:56:35.440457Z",
+            "last_observed": "2021-09-21T03:56:35.440457Z",
+            "created": "2021-09-21T03:56:35.440Z",
+            "modified": "2021-09-21T03:56:35.440Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.126",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "name": "tea-bugge.wn",
+                    "hashes": {
+                        "TLSH": "fc94bc44e9e9A9FA52AB2262405DcBdE34002eA5CEBbfA706Dff685e47A68eD0F5ef46"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
